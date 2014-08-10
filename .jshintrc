@@ -2,7 +2,9 @@
   "predef": {
     "document": true,
     "window": true,
-    "HomeENV": true
+    "HomeENV": true,
+    "Ember": true,
+    "$": true
   },
   "browser" : true,
   "boss" : true,

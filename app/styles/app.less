@@ -1,13 +1,20 @@
 @import "vendor/bootstrap/less/bootstrap.less";
+@import "app/styles/spinner.less";
+
+.well hr {
+  border-top: 1px solid #dddddd;
+}
+
+/* Footer Specific Styles */
+.mainContainer {
+  margin-bottom: 60px;
+}
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   background-color: @gray-lighter;
   padding: 10px 10px 0px;
 }
-
-.well hr {
-  border-top: 1px solid #dddddd;
-}
+/* End Footer Specific Styles */
