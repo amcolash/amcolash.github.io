@@ -1,11 +1,30 @@
 <h1>Projects</h1>
 <hr/>
 
-<h2>My Github Projects <img src="img/GitHub-Mark-32px.png"/></h2>
+<div id="title" class="row">
 
-{{#each}}
+  <div class="col-md-6">
+    <h2>My Github Projects
+      <img id="github" src="img/GitHub-Mark-32px.png"/>
+    </h2>
+  </div>
+
+  <div class="col-md-6">
+    <div class="btn-group pull-right">
+      <button type="button" {{bind-attr class=":btn :btn-default name:active"}} {{action nameSort}}>Name</button>
+      <button type="button" {{bind-attr class=":btn :btn-default push:active"}} {{action pushSort}}>Last Push</button>
+    </div>
+    <span class="pull-right">Sort By: </span>
+  </div>
+
+</div>
+
+
+<br/>
+
+{{#each model}}
   <div class="well">
-    <h3><a target="_blank" {{bindAttr href=html_url}}>{{name}}</a></h3>
+    <h3><a target="_blank" {{bind-attr href=html_url}}>{{name}}</a></h3>
     <hr/>
     <div class="row">
       <div class="col-md-8">
