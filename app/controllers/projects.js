@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-  name : true,
-  push : false,
+  name : false,
+  push : true,
 
   actions : {
     nameSort : function() {
