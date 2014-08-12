@@ -10,8 +10,8 @@
 
   <div class="col-md-6">
     <div class="btn-group pull-right">
-      <button type="button" {{bind-attr class=":btn :btn-default name:active"}} {{action nameSort}}>Name</button>
-      <button type="button" {{bind-attr class=":btn :btn-default push:active"}} {{action pushSort}}>Last Push</button>
+      <button type="button" {{bind-attr class=":btn :btn-default sortName:active"}} {{action nameSort}}>Name</button>
+      <button type="button" {{bind-attr class=":btn :btn-default sortName::active"}} {{action pushSort}}>Last Push</button>
     </div>
     <span class="pull-right">Sort By: </span>
   </div>

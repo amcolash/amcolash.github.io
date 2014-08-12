@@ -2,18 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-  name : false,
-  push : true,
+  sortName : false,
 
   actions : {
     nameSort : function() {
-      this.set('name', true);
-      this.set('push', false);
+      this.set('sortName', true);
       this.send('sort');
     },
     pushSort : function() {
-      this.set('name', false);
-      this.set('push', true);
+      this.set('sortName', false);
       this.send('sort');
     },
     sort : function() {
@@ -24,7 +21,7 @@ export default Ember.Controller.extend({
       }
       console.log(projects);
 
-      if (this.get('name')) {
+      if (this.get('sortName')) {
         projects.sort( function(a, b) {
           console.log("comapring b: " + b.name + ", to a: " + a.name);
           return a.name.localeCompare(b.name);
