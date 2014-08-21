@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"fu",
+				"function"
+			],
+			[
 				"margin",
 				"margin-top"
 			],
@@ -216,19 +220,19 @@
 	"buffers":
 	[
 		{
-			"file": "/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/ember.sublime-build",
+			"file": "app/router.js",
 			"settings":
 			{
-				"buffer_size": 75,
-				"line_ending": "Windows"
+				"buffer_size": 291,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/projects.hbs",
+			"file": "vendor/ember/ember.js",
 			"settings":
 			{
-				"buffer_size": 1111,
-				"line_ending": "Windows"
+				"buffer_size": 1520574,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -264,8 +268,15 @@
 	},
 	"file_history":
 	[
-		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/routes/projects.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/projects.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/controllers/projects.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/about.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/index.hbs",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/app/templates/error.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/vendor/bootstrap/less/variables.less",
 		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/ember.sublime-build",
+		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/vendor/googleAnalytics/main.js",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/Brocfile.js",
 		"/D/Users/Andrew/Dropbox/Public/iParkMe/index.html",
@@ -283,13 +294,8 @@
 		"/D/Users/Andrew/Documents/Web/iParkMe/index.html",
 		"/D/Users/Andrew/Documents/Web/iParkMe/js/gps.js",
 		"/d/Users/Andrew/Documents/Web/iParkMe/pageMoved/index.html",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/projects.hbs",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/routes/projects.js",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/controllers/projects.js",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/index.hbs",
 		"/d/Users/Andrew/Documents/Web/amcolash-website/build/dasff",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/bower.json",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/about.hbs",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/styles/app.less",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/components/main-header.hbs",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/views/application.js",
@@ -432,23 +438,53 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/ember.sublime-build",
+					"file": "app/router.js",
 					"settings":
 					{
-						"buffer_size": 75,
+						"buffer_size": 291,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								75,
-								75
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								80
+							],
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "vendor/ember/ember.js",
+					"settings":
+					{
+						"buffer_size": 1520574,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -459,37 +495,7 @@
 								-0.1,
 								0.2
 							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/projects.hbs",
-					"settings":
-					{
-						"buffer_size": 1111,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								202,
-								202
-							]
-						],
-						"settings":
-						{
-							"rulers":
-							[
-								80
-							],
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -562,6 +568,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 186.0,
+	"side_bar_width": 212.0,
 	"status_bar_visible": true
 }
