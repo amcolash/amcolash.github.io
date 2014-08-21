@@ -1,2 +1,2 @@
-ember build --environment=production --output-path=build
+cmd /c ember build --environment=production --output-path=build
 appcfg.py --oauth2 update build/
