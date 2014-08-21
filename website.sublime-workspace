@@ -1,0 +1,567 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"pu",
+				"pushed_at"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"p",
+				"pushSort"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"temp",
+				"tempSpeed"
+			],
+			[
+				"fin",
+				"finalSpeed"
+			],
+			[
+				"tot",
+				"totalSpeed"
+			],
+			[
+				"cu",
+				"curTime"
+			],
+			[
+				"sta",
+				"startTime"
+			],
+			[
+				"to",
+				"totalDist"
+			],
+			[
+				"pts",
+				"ptsNew"
+			],
+			[
+				"find",
+				"findDistance"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"da",
+				"day"
+			],
+			[
+				"chart",
+				"chartReady"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"de",
+				"deltaY"
+			],
+			[
+				"delta",
+				"deltaX"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ro",
+				"rotationImg"
+			],
+			[
+				"sa",
+				"savedLat"
+			],
+			[
+				"an",
+				"angle"
+			],
+			[
+				"c",
+				"currentLong"
+			],
+			[
+				"al",
+				"alert-info"
+			],
+			[
+				"se",
+				"setCenter"
+			],
+			[
+				"rotation",
+				"rotationImage"
+			],
+			[
+				"roation",
+				"rotationArrow"
+			],
+			[
+				"roa",
+				"rotationDot"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"rotatio",
+				"rotationDebug"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"save",
+				"savedLat"
+			],
+			[
+				"saved",
+				"savedLat"
+			],
+			[
+				"Saved",
+				"savedLat"
+			],
+			[
+				"cur",
+				"currentLong"
+			],
+			[
+				"curren",
+				"currentLat"
+			],
+			[
+				"new",
+				"newPoint"
+			],
+			[
+				"curr",
+				"currentLong"
+			],
+			[
+				"show",
+				"showPosition"
+			],
+			[
+				"cle",
+				"clearMap"
+			],
+			[
+				"sav",
+				"savedLong"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/ember.sublime-build",
+			"settings":
+			{
+				"buffer_size": 75,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/templates/projects.hbs",
+			"settings":
+			{
+				"buffer_size": 1111,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/ember.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/ember.sublime-build",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/vendor/googleAnalytics/main.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/Brocfile.js",
+		"/D/Users/Andrew/Dropbox/Public/iParkMe/index.html",
+		"/D/Users/Andrew/Desktop/website/main.py",
+		"/D/Users/Andrew/Desktop/website/app.yaml",
+		"/D/Users/Andrew/Desktop/website/index.yaml",
+		"/G/Program Files (x86)/Microsoft Games/Age of Mythology/startup/User.cfg",
+		"/G/Program Files (x86)/Microsoft Games/Age of Mythology/startup/User - Copy.cfg",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/sitemap.txt",
+		"/D/Users/Andrew/Documents/Web/iParkMe/app.manifest",
+		"/D/Users/Andrew/Documents/Web/iParkMe/css/main.css",
+		"/D/Users/Andrew/Documents/Web/iParkMe/css/bootstrap.min.css",
+		"/D/Users/Andrew/Documents/Web/iParkMe/pageMoved.html",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/vendor/googleAnalytics/main.js",
+		"/D/Users/Andrew/Documents/Web/iParkMe/index.html",
+		"/D/Users/Andrew/Documents/Web/iParkMe/js/gps.js",
+		"/d/Users/Andrew/Documents/Web/iParkMe/pageMoved/index.html",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/projects.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/routes/projects.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/controllers/projects.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/index.hbs",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/build/dasff",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/bower.json",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/about.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/styles/app.less",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/components/main-header.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/views/application.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/.bowerrc",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/.gitignore",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/helpers/pretty-date.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/components/main-footer.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/router.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/README.md",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/dist/index.html",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/app/styles/spinner.less",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/app/templates/loading.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/styles/footer.less",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/application.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/.jshintrc",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/app/styles/footer.less",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/app/helpers/pretty-date.js",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/controllers/projects.js.old",
+		"/D/Users/Andrew/Documents/Web/home/app/templates/about.hbs",
+		"/d/Users/Andrew/Documents/Web/home/app/templates/index.hbs",
+		"/D/Users/Andrew/Documents/Web/home/app/styles/app.less",
+		"/D/Users/Andrew/Documents/Web/home/app/templates/components/main-footer.hbs",
+		"/D/Users/Andrew/Documents/Web/home/app/templates/projects.hbs",
+		"/D/Users/Andrew/Documents/Web/home/app/templates/application.hbs",
+		"/d/Users/Andrew/Documents/Web/home/app/templates/components/main-footer.hbs",
+		"/d/Users/Andrew/Documents/Web/home/app/templates/about.hbs",
+		"/d/Users/Andrew/Documents/Web/home/app/templates/projects.hbs",
+		"/D/Users/Andrew/Documents/Web/home/app/router.js",
+		"/D/Users/Andrew/Documents/Web/home/app/templates/components/main-header.hbs",
+		"/D/Users/Andrew/Documents/Web/home/Brocfile.js",
+		"/d/Users/Andrew/Desktop/gps.html",
+		"/d/Users/Andrew/Documents/Web/home/app/templates/components/header.hbs",
+		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/Users/Andrew/Desktop/cardinal-spline-js-master/demos/demo.html",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/Tracker/app.manifest",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/Tracker/index.html",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/Tracker/js/tracker.js",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/Tracker/css/style.css",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/iParkMe/index.html",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/iParkMe/js/gps.js",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/iParkMe/app.manifest",
+		"/d/Users/Andrew/Downloads/iPhone/Webapps/Tracker/js/tracker.js",
+		"/d/Users/Andrew/Downloads/iPhone/Webapps/Tracker/app.manifest",
+		"/D/Users/Andrew/Downloads/iPhone/Webapps/BasicSite/index.html",
+		"/D/Users/Andrew/Downloads/iPhone/Counter/index.html",
+		"/D/Users/Andrew/Downloads/iPhone/Counter/css/style.css",
+		"/d/Users/Andrew/Downloads/iPhone/Counter/css/style.css",
+		"/d/Users/Andrew/Downloads/iPhone/Counter/index.html",
+		"/d/Users/Andrew/Downloads/iPhone/Counter/css/bootstrap.min.css",
+		"/D/Users/Andrew/Documents/EconWebsite/css/style.css",
+		"/d/Users/Andrew/Documents/EconWebsite/index.html",
+		"/D/Users/Andrew/Downloads/Emulators/PSP/README.md",
+		"/d/Users/Andrew/Desktop/list.txt",
+		"/D/Users/Andrew/Desktop/Library/Notes/notes.idx",
+		"/D/Users/Andrew/Desktop/Library/Notes/notes.sqlite",
+		"/d/Users/Andrew/Documents/EconWebsite/css/style.css",
+		"/D/Users/Andrew/Downloads/iPhone/iParkMe/css/main.css",
+		"/D/Users/Andrew/Downloads/iPhone/iParkMe/js/gps.js",
+		"/D/Users/Andrew/Downloads/iPhone/iParkMe/index.html",
+		"/D/Users/Andrew/Downloads/iPhone/Themes/ColorFlow3.4.theme/LockBackground.html",
+		"/D/Users/Andrew/Downloads/iPhone/iParkMe/js/initialize.js",
+		"/d/Users/Andrew/Downloads/iPhone/iParkMe/css/main.css",
+		"/D/Users/Andrew/Downloads/iPhone/Themes/ColorFlow3.4.theme/js/settings.js",
+		"/d/Users/Andrew/Downloads/iPhone/iParkMe/js/initialize.js",
+		"/D/Users/Andrew/Downloads/iPhone/iParkMe/css/mainColor.css",
+		"/d/Users/Andrew/Downloads/iPhone/iParkMe/src/js/gps.js",
+		"/D/Users/Andrew/Downloads/iPhone/iParkMe/bootstrap-3.1.1/bootstrap-3.1.1/docs/examples/grid/index.html",
+		"/d/Users/Andrew/Downloads/iPhone/iParkMe/src/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"addtohomescreen",
+			"addtohome",
+			"//@",
+			"file",
+			", 4",
+			"-\\d+.\\d+,",
+			",",
+			"],[",
+			"-89.62319072881833",
+			"-89.6219782649271",
+			"-89.61981827311368",
+			"-89.62467721363542",
+			"\n44.959576738144115",
+			"-89.62160390711321",
+			"\n44.95447615755559",
+			"\n44.95447615755559 ",
+			"],",
+			"[",
+			"    ",
+			"div\n",
+			"<div>\n",
+			">\n",
+			"fff",
+			"    ",
+			"wrap",
+			"$",
+			"80",
+			"line",
+			"shift",
+			"bra"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"],[4",
+			"$1],[",
+			"],[",
+			"$1],[",
+			"],[",
+			",",
+			"),\\n",
+			"new google.maps.LatLng(",
+			"\\n",
+			"  "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/ember.sublime-build",
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								80,
+								-0.1,
+								0.2
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/templates/projects.hbs",
+					"settings":
+					{
+						"buffer_size": 1111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"rulers":
+							[
+								80
+							],
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 192.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": true
+}

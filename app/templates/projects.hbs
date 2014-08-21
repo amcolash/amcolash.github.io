@@ -2,13 +2,13 @@
 <hr/>
 
 <div id="title" class="row">
-  <div class="col-md-6">
+  <div class="col-sm-6">
     <h2>My Github Projects
       <img id="github" src="img/GitHub-Mark-32px.png"/>
     </h2>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-sm-6">
     <div class="btn-group pull-right">
       <button type="button" {{bind-attr class=":btn :btn-default sortName:active"}} {{action nameSort}}>Name</button>
       <button type="button" {{bind-attr class=":btn :btn-default sortName::active"}} {{action pushSort}}>Last Push</button>
@@ -34,6 +34,8 @@
     </div>
   </div>
 {{/each}}
+
+<hr/>
 
 <h3>iParkMe Webapp</h3>
 <p>Simply go to <a href="http://amcolash.tk/iParkMe">this</a> location on your
