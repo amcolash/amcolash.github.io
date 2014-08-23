@@ -219,22 +219,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/router.js",
-			"settings":
-			{
-				"buffer_size": 291,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "vendor/ember/ember.js",
-			"settings":
-			{
-				"buffer_size": 1520574,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/User/ember.sublime-build",
 	"command_palette":
@@ -268,13 +252,22 @@
 	},
 	"file_history":
 	[
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/router.js",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/app/styles/buttons.less",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/vendor/bootstrap/less/variables.less",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/components/main-footer.hbs",
+		"/D/Users/Andrew/Desktop/bootswatch.less",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/styles/app.less",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/components/main-header.hbs",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/app/styles/navbar.less",
+		"/d/Users/Andrew/Documents/Web/amcolash-website/app/styles/bootswatch.less",
+		"/D/Users/Andrew/Documents/Web/amcolash-website/vendor/ember/ember.js",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/routes/projects.js",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/projects.hbs",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/controllers/projects.js",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/about.hbs",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/index.hbs",
 		"/d/Users/Andrew/Documents/Web/amcolash-website/app/templates/error.hbs",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/vendor/bootstrap/less/variables.less",
 		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/ember.sublime-build",
 		"/d/Users/Andrew/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/vendor/googleAnalytics/main.js",
@@ -296,14 +289,10 @@
 		"/d/Users/Andrew/Documents/Web/iParkMe/pageMoved/index.html",
 		"/d/Users/Andrew/Documents/Web/amcolash-website/build/dasff",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/bower.json",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/styles/app.less",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/components/main-header.hbs",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/views/application.js",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/.bowerrc",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/.gitignore",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/app/helpers/pretty-date.js",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/templates/components/main-footer.hbs",
-		"/D/Users/Andrew/Documents/Web/amcolash-website/app/router.js",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/README.md",
 		"/D/Users/Andrew/Documents/Web/amcolash-website/dist/index.html",
 		"/d/Users/Andrew/Documents/Web/amcolash-website/app/styles/spinner.less",
@@ -381,6 +370,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"navbar",
+			"default",
 			"addtohomescreen",
 			"addtohome",
 			"//@",
@@ -438,73 +429,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/router.js",
-					"settings":
-					{
-						"buffer_size": 291,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								223,
-								223
-							]
-						],
-						"settings":
-						{
-							"rulers":
-							[
-								80
-							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "vendor/ember/ember.js",
-					"settings":
-					{
-						"buffer_size": 1520574,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"rulers":
-							[
-								80,
-								-0.1,
-								0.2
-							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

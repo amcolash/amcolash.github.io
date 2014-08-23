@@ -1,5 +1,12 @@
 @import "vendor/bootstrap/less/bootstrap.less";
+@import "app/styles/buttons.less";
+@import "app/styles/navbar.less";
 @import "app/styles/spinner.less";
+@import url("//fonts.googleapis.com/css?family=Lato:400,700,400italic");
+
+body {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 
 /* Projects Styles */
 #title h2 {
@@ -47,7 +54,8 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  background-color: @gray-lighter;
+  color: @colDefault;
+  background-color: @bgDefault;
   border-top: #bbb 1px solid;
   padding: 10px 10px 0px;
 }
