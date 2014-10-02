@@ -8,9 +8,9 @@ threadsafe: yes
 
 handlers:
 
-- url: /(.*\.(gif|png|jpg|ico|js|css|pdf))
+- url: /(.*\.(gif|png|jpg|ico|js|css|pdf|txt))
   static_files: \1
-  upload: (.*\.(gif|png|jpg|ico|js|css|pdf))
+  upload: (.*\.(gif|png|jpg|ico|js|css|pdf|txt))
 
 - url: /
   static_files: index.html
