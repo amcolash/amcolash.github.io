@@ -19,8 +19,32 @@ body {
 }
 
 #github {
-  margin-top: -4px;
-  width: 26px;
+  display: inline-block;
+}
+
+#github #text {
+  float: left;
+}
+
+#github:hover {
+  #text {
+    text-decoration: underline;
+  }
+}
+
+#github #image {
+  float: right;
+  margin-left: 10px;
+  margin-right: 6px;
+  width: 32px;
+  height: 32px;
+  background: url("../img/GitHub-Mark-32px.png");
+}
+
+#github:hover {
+  #image {
+    background: url("../img/GitHub-Mark-32px-blue.png");
+  }
 }
 
 .well hr {

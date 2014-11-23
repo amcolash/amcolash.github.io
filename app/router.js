@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 var Router = Ember.Router.extend({
+  rootUrl: "/"
   //location: HomeENV.locationType
 });
 
