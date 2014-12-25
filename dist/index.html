@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="1_qz4Abkuo7i3xDrFL92d22ICXiWNU3gQXvfMpMU5dQ" />
+    <base href="/" />
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/home.css">
+  </head>
+  <body>
+    <script>
+      window.HomeENV = {"environment":"development","baseURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
+      window.EmberENV = window.HomeENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/home.js"></script>
+    <script>
+      window.Home = require('home/app')['default'].create(HomeENV.APP);
+    </script>
+  </body>
+</html>
