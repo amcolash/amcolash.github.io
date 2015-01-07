@@ -6331,7 +6331,6 @@ hr {
 /* End Github Projects Styles */
 /* Other Projects Styles */
 .projectImg {
-  max-width: 300px;
   border-radius: 5px;
 }
 .modal-dialog {

@@ -6,8 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route("github", { path: "/github" });
   this.route("projects", { path: "/projects" });
-  this.route("other", { path: "/other" });
   this.route("about", { path: "/about" });
   this.route("error", { path: "/error" });
 });

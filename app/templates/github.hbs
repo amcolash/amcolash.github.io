@@ -1,0 +1,39 @@
+<h1>Github</h1>
+<hr/>
+
+<div id="title" class="row">
+  <div class="col-sm-6">
+    <a id="github" href="https://github.com/amcolash/">
+      <h2>
+        <div id="text">My Github Repositories</div>
+        <div id="image"></div>
+      </h2>
+    </a>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="btn-group pull-right">
+      <button type="button" {{bind-attr class=":btn :btn-default sortName:active"}} {{action nameSort}}>Name</button>
+      <button type="button" {{bind-attr class=":btn :btn-default sortName::active"}} {{action pushSort}}>Last Push</button>
+    </div>
+    <span class="pull-right">Sort By: </span>
+  </div>
+</div>
+
+<br/>
+
+{{#each model}}
+  <div class="well">
+    <h3><a target="_blank" {{bind-attr href=html_url}}>{{name}}</a></h3>
+    <hr/>
+    <div class="row">
+      <div class="col-md-8">
+        <p>{{description}}</p>
+      </div>
+      <div class="col-md-4">
+        <p>Last Push: {{pretty-date pushed_at}}</p>
+        <p>Created: {{pretty-date created_at}}</p>
+      </div>
+    </div>
+  </div>
+{{/each}}
