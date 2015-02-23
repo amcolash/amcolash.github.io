@@ -1,4 +1,11 @@
+http://amcolash.com
+http://amcolash.com/#/
+http://amcolash.com/#/about
+http://amcolash.com/#/projects
+http://amcolash.com/#/github
+
 http://amcolash.appspot.com
 http://amcolash.appspot.com/#/
 http://amcolash.appspot.com/#/about
 http://amcolash.appspot.com/#/projects
+http://amcolash.appspot.com/#/github
