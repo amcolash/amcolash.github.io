@@ -1,5 +1,7 @@
 # amcolash
 
+This is the original version of my website written with EmberJS, the new version of the site is in the master branch.
+
 This README outlines the details of collaborating on this Ember application.
 
 ## Installation
