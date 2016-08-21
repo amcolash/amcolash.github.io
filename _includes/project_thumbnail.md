@@ -1,7 +1,7 @@
-<div class="col-xs-12 col-sm-6 col-lg-4">
-  <div class="project-thumbnail box">
-    Name: {{ include.name }}
-    <br>
-    Url: {{ include.url }}
-  </div>
+<div class="col-xs-6 col-lg-4">
+  <a href="{{ include.url }}">
+    <div class="project-thumbnail box">
+      <span class="title">Name: {{ include.name }}</span>
+    </div>
+  </a>
 </div>

@@ -1,4 +1,19 @@
 .project-thumbnail {
-  background-color: blue;
+  background-image: url("http://placehold.it/450x100");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100px;
+
   margin-bottom: 16px;
+  position: relative;
+
+  .title {
+    position: absolute;
+    bottom: 12px;
+    right: 26px;
+
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black;
+  }
 }
