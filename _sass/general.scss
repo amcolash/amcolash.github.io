@@ -2,6 +2,13 @@
   border-radius: 100%;
 }
 
+.side-img {
+  width: 220px;
+  height: 220px;
+  float: left;
+  margin-right: 50px;
+}
+
 .center-img {
   display: block;
   margin: auto;
@@ -9,6 +16,10 @@
 
 .site-header {
   border-top: none;
+}
+
+.padding-bottom {
+  padding-bottom: 16px;
 }
 
 .icon > svg {
