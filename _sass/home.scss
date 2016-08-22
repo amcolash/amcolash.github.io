@@ -11,9 +11,25 @@
 
 .main-header h1 {
   position: absolute;
-  bottom: 20px;
-  right: 70px;
   color: white;
+  text-align: right;
   text-shadow: 2px 2px 3px black;
-  font-size: 46px;
+
+  @media (max-width: 460px) {
+    font-size: 26px;
+    bottom: 10px;
+    right: 35px;
+  }
+
+  @media (min-width: 461px) and (max-width: 650px) {
+    font-size: 34px;
+    bottom: 15px;
+    right: 50px;
+  }
+
+  @media (min-width: 651px) {
+    font-size: 46px;
+    bottom: 20px;
+    right: 70px;
+  }
 }

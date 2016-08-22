@@ -14,12 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Andrew McOlash
+subtitle: Software Engineer
 email: amcolash@gmail.com
+
+main_header: "Developer, Maker, Hacker"
 description: > # this means to ignore newlines until "baseurl:"
   The personal website of Andrew McOlash, web developer and creator
   of cool things!
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://amcolash.com" # the base hostname & protocol for your site
+
 github_username: "amcolash"
 twitter_username: "amcolash"
 linkedin_name: "Andrew McOlash"
