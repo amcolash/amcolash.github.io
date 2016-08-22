@@ -17,7 +17,7 @@
         {% for my_page in site.pages %}
           {% unless my_page.exclude %}
             {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{% if my_page.link_name %}{{ my_page.link_name | escape }}{% else %}{{ my_page.title | escape }}{% endif %}</a>
             {% endif %}
           {% endunless %}
         {% endfor %}

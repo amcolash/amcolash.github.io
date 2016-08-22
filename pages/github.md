@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Github
+title: Github Repositories
+link_name: Github
 permalink: /github/
 ---
 
-This is all about me! Woot woot
+<script src="../js/github.js" type="text/javascript"></script>
+
+<div id="repositories"></div>
