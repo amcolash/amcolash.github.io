@@ -22,6 +22,9 @@ exclude: true
     <div class="row">
       <div class="col-sm center-img padding-bottom">
           <img src="{{ page.image }}" alt="">
+          {% if page.image2 %}
+            <img src="{{ page.image2 }}" alt="">
+          {% endif %}
       </div>
 
       <div class="col-sm">

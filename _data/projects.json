@@ -6,8 +6,8 @@
     "image": "../public/img/projects/Dragonsoul.jpg",
     "links": [
       {
-        "title": "link1",
-        "url": "#"
+        "title": "Website",
+        "url": "http://dragonsoulgame.com/"
       }
     ],
     "description": "long bio goes here"
@@ -15,8 +15,8 @@
   {
     "name": "WiscPortal",
     "section": "UW SHOW (2014-2015)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/projects/WiscPo.png",
+    "image": "../public/img/projects/WiscPo.png",
     "links": [
       {
         "title": "Github",
@@ -38,8 +38,8 @@
     "name": "Mobile App Requests",
     "nice_name": "Mobile App Requets Webpage",
     "section": "Liberty Mutual (2014)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/projects/ETS.png",
+    "image": "../public/img/projects/ETS.png",
     "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a
       pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved
       by various managers before actually being allowed into the app stores. This was a big upgrade from the email
@@ -48,8 +48,8 @@
   {
     "name": "Careers Website",
     "section": "Liberty Mutual (2014)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/projects/Careers.png",
+    "image": "../public/img/projects/Careers.png",
     "links": [
       {
         "title": "Live Site",
@@ -63,8 +63,8 @@
   {
     "name": "GiffingAwesome",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/projects/GiffingAwesome.png",
+    "image": "../public/img/projects/GiffingAwesome.png",
     "links": [
       {
         "title": "link1",
@@ -76,8 +76,9 @@
   {
     "name": "ScaleIoT",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/thumbnails/ScaleIoT.png",
+    "image": "../public/img/projects/ScaleIoT.gif",
+    "image2": "../public/img/projects/ScaleIoT.jpg",
     "links": [
       {
         "title": "link1",
@@ -89,8 +90,8 @@
   {
     "name": "IoTBuddy",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/thumbnails/IoTBuddy.png",
+    "image": "../public/img/projects/IoTBuddy.png",
     "links": [
       {
         "title": "link1",
@@ -102,8 +103,8 @@
   {
     "name": "Pebblify",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/projects/Pebblify.png",
+    "image": "../public/img/projects/Pebblify.png",
     "links": [
       {
         "title": "Github",
@@ -124,8 +125,8 @@
   {
     "name": "Collabify",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/projects/Collabify.jpg",
+    "image": "../public/img/projects/Collabify.jpg",
     "links": [
       {
         "title": "Github",
@@ -149,8 +150,8 @@
   {
     "name": "iParkMe",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/projects/iParkMe.png",
+    "image": "../public/img/projects/iParkMe.png",
     "links": [
       {
         "title": "Github",
