@@ -1,9 +1,8 @@
 ---
-layout: 2column
+layout: about
 title: About
 permalink: /about/
 image: "http://www.gravatar.com/avatar/a2821096114f7641f9a304453fa56137?s=300"
-round_image: true
 ---
 
 # A little about me

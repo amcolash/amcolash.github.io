@@ -1,0 +1,168 @@
+[
+  {
+    "name": "Dragonsoul",
+    "section": "Perblue (2015-2016)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "link1",
+        "url": "#"
+      }
+    ],
+    "description": "long bio goes here"
+  },
+  {
+    "name": "WiscPortal",
+    "section": "UW SHOW (2014-2015)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/uw-madison-show/wisc-po"
+      },
+      {
+        "title": "Live Site",
+        "url": "https://show.wisc.edu/data/charts/"
+      }
+    ],
+    "description": "During the end of the fall semester and all of spring semester, I was employed by the Survey of the
+      Health of Wisconsin (SHOW). As a web developer, I was in charge of a new system to disseminate data for both
+      public health officials as well as the common public. In the course of this position, I took a concept and
+      transformed it into a fully functioning and mobile responsive HTML5 website. In addition to being responsive to
+      different screen sizes using Bottstrap, the page is fully touch capable and dynamically draws charts and graphs
+      using HighCharts."
+  },
+  {
+    "name": "Mobile App Requests",
+    "nice_name": "Mobile App Requets Webpage",
+    "section": "Liberty Mutual (2014)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a
+      pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved
+      by various managers before actually being allowed into the app stores. This was a big upgrade from the email
+      chains which were used prior to this."
+  },
+  {
+    "name": "Careers Website",
+    "section": "Liberty Mutual (2014)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "Live Site",
+        "url": "http://www.careers.libertymutualgroup.com/"
+      }
+    ],
+    "description": "For my internship at Liberty Mutual, I worked on upgrading and maintaining the liberty mutual
+      carrers website. This website provides basic information about potential career paths in the company. I personally
+      worked on integrating social media into many of the areas of the website as well."
+  },
+  {
+    "name": "GiffingAwesome",
+    "section": "Personal Projects (2014-2016)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "link1",
+        "url": "#"
+      }
+    ],
+    "description": "long bio goes here"
+  },
+  {
+    "name": "ScaleIoT",
+    "section": "Personal Projects (2014-2016)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "link1",
+        "url": "#"
+      }
+    ],
+    "description": "long bio goes here"
+  },
+  {
+    "name": "IoTBuddy",
+    "section": "Personal Projects (2014-2016)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "link1",
+        "url": "#"
+      }
+    ],
+    "description": "long bio goes here"
+  },
+  {
+    "name": "Pebblify",
+    "section": "Personal Projects (2014-2016)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/pebblify"
+      },
+      {
+        "title": "Project Submission",
+        "url": "http://devpost.com/software/pebblify"
+      }
+    ],
+    "description": "In the spring of 2015, I signed up to take part in UW Madison's first ever hackathon entitled
+      MadHacks. This hackathon was very open and had many different types of possibilities available. Since Pebble was a
+      sponsor at the event and had some staff on hand, our group decided to make a Pebble watch application that could
+      control Spotify and display album artwork on your wrist from another device. This app, while not polished and not
+      completely finished was a proof of concept and helped to open the road for me to continue developing other Pebble
+      app projects. Our group won the \"Best Pebble Hack\" award, which made the experience even more rewarding!"
+  },
+  {
+    "name": "Collabify",
+    "section": "Personal Projects (2014-2016)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/Collabify"
+      },
+      {
+        "title": "Project Presentation",
+        "url": "../public/documents/Collabify_Presentation.pdf"
+      },
+      {
+        "title": "Project Manual",
+        "url": "../public/documents/Collabify_Manual.pdf"
+      }
+    ],
+    "description": "For my last semester of school at the University of Wisconsin Madison, I enrolled in a software
+      engineering course. In this class, we worked in groups and had the task of developing a new piece of software.
+      Our team decided on making an Android app with a Python backend that would allow for the creation of dynamic Spotify
+      playlists that could be collaborated and voted upon - the ultimate party playlist. In addition to a lot of code
+      from Github, there is also a link to some of the documentation and presentation that we have from the final project."
+  },
+  {
+    "name": "iParkMe",
+    "section": "Personal Projects (2014-2016)",
+    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "image": "../public/img/projects/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/iParkMe"
+      },
+      {
+        "title": "Mobile Site",
+        "url": "http://amcolash-iparkme.appspot.com/"
+      }
+    ],
+    "description": "This simple web app happened after I got lost in a large parking lot for almost 15 minutes. I
+      decided that I needed a better way to keep track of where I parked - whether it was in my car, or on my bike. In a
+      few hours, I whipped up this simple site which will show you where you parked."
+  }
+]

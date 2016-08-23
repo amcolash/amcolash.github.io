@@ -33,3 +33,9 @@ linkedin_username: "andrew-mcolash-66a03350"
 # Build settings
 markdown: kramdown
 theme: minima
+
+page_gen:
+  - data: 'projects'
+    template: 'project'
+    name: 'name'
+    dir: 'projects'
