@@ -13,17 +13,27 @@ exclude: true
       {% endif %}
     </h1>
 
-    {% for link in page.links %}
+    {% if page.links %}
+      {% for link in page.links %}
         <h3 class="no-margin"><a href="{{ link.url }}">{{ link.title }}</a></h3>
-    {% endfor %}
+      {% endfor %}
+    {% endif %}
   </header>
 
   <div class="post-content">
     <div class="row">
-      <div class="col-sm center-img padding-bottom">
-          <img src="{{ page.image }}" alt="">
-          {% if page.image2 %}
-            <img src="{{ page.image2 }}" alt="">
+      <div class="col-sm center-img">
+          {% if page.images %}
+            {% for image in page.images %}
+              <img src="{{ image }}" alt="">
+            {% endfor %}
+          {% endif %}
+
+          {% if page.video %}
+            <div class="videoWrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.video }}"
+              frameborder="0" allowfullscreen></iframe>
+            </div>
           {% endif %}
       </div>
 

@@ -3,20 +3,25 @@
     "name": "Dragonsoul",
     "section": "Perblue (2015-2016)",
     "thumbnail": "../public/img/projects/Dragonsoul.jpg",
-    "image": "../public/img/projects/Dragonsoul.jpg",
     "links": [
       {
         "title": "Website",
         "url": "http://dragonsoulgame.com/"
       }
     ],
-    "description": "long bio goes here"
+    "video": "lhneHPxP9kg",
+    "description": "Since the summer of 2015, I have worked on developing and implementing new content into the
+    mobile role playing game - DragonSoul by PerBlue. The game focuses on collecting heroes to fight against the forces
+    of evil. On the technical side of things, I have worked on implementing unique combat logic, content (new heroes,
+    npcs and game modes) and developing tooling for both our art team and quality assurance team."
   },
   {
     "name": "WiscPortal",
     "section": "UW SHOW (2014-2015)",
-    "thumbnail": "../public/img/projects/WiscPo.png",
-    "image": "../public/img/projects/WiscPo.png",
+    "thumbnail": "../public/img/thumbnails/WiscPo.png",
+    "images": [
+      "../public/img/projects/WiscPo.png"
+    ],
     "links": [
       {
         "title": "Github",
@@ -31,15 +36,17 @@
       Health of Wisconsin (SHOW). As a web developer, I was in charge of a new system to disseminate data for both
       public health officials as well as the common public. In the course of this position, I took a concept and
       transformed it into a fully functioning and mobile responsive HTML5 website. In addition to being responsive to
-      different screen sizes using Bottstrap, the page is fully touch capable and dynamically draws charts and graphs
-      using HighCharts."
+      different screen sizes for mobile by using Twitter Bootstrap, the page also is fully touch capable and dynamically
+      draws charts and graphs using HighCharts."
   },
   {
     "name": "Mobile App Requests",
     "nice_name": "Mobile App Requets Webpage",
     "section": "Liberty Mutual (2014)",
-    "thumbnail": "../public/img/projects/ETS.png",
-    "image": "../public/img/projects/ETS.png",
+    "thumbnail": "../public/img/thumbnails/ETS.png",
+    "images": [
+      "../public/img/projects/ETS.png"
+    ],
     "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a
       pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved
       by various managers before actually being allowed into the app stores. This was a big upgrade from the email
@@ -48,8 +55,10 @@
   {
     "name": "Careers Website",
     "section": "Liberty Mutual (2014)",
-    "thumbnail": "../public/img/projects/Careers.png",
-    "image": "../public/img/projects/Careers.png",
+    "thumbnail": "../public/img/thumbnails/Careers.png",
+    "images": [
+      "../public/img/projects/Careers.png"
+    ],
     "links": [
       {
         "title": "Live Site",
@@ -63,48 +72,78 @@
   {
     "name": "GiffingAwesome",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/GiffingAwesome.png",
-    "image": "../public/img/projects/GiffingAwesome.png",
+    "thumbnail": "../public/img/thumbnails/GiffingAwesome.png",
+    "images": [
+      "../public/img/projects/GiffingAwesome.png"
+    ],
     "links": [
       {
-        "title": "link1",
-        "url": "#"
+        "title": "Github",
+        "url": "https://github.com/amcolash/GiffingAwesome"
+      },
+      {
+        "title": "Website",
+        "url": "https://giffingawesome.firebaseapp.com"
       }
     ],
-    "description": "long bio goes here"
+    "description": "GiffingAwesome is a simple site that allows you to keep track of your favorite GIF images. I
+    personally love to share these animated images with friends, but it was more difficult than necessary to save and
+    share from a library of my favorites. I had to either locally save all of the files, or keep a list of links.
+    GiffingAwesome was a simple idea that turned into much more. I was interested in learning about the service Firebase
+    for my next side project. I was particularly interested in catching up on my Angular skills (the last time I had used
+    it was in 2014). The project taught me about not only Angular but also about the Ionic framework which was the star
+    of this project."
   },
   {
     "name": "ScaleIoT",
     "section": "Personal Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/ScaleIoT.png",
-    "image": "../public/img/projects/ScaleIoT.gif",
-    "image2": "../public/img/projects/ScaleIoT.jpg",
+    "images": [
+      "../public/img/projects/ScaleIoT.gif",
+      "../public/img/projects/ScaleIoT.jpg"
+    ],
     "links": [
       {
-        "title": "link1",
-        "url": "#"
+        "title": "Github",
+        "url": "https://github.com/amcolash/ScaleIoT"
       }
     ],
-    "description": "long bio goes here"
+    "description": "ScaleIoT is another project from my large collection of IoT (Internet of Things) projects. In this
+    project, I decided to make a smart scale that would record the weight of a user that stepped onto the scale and then
+    display statistics on the users' weight over time on a web page. This project uses a raspberry pi and a webcam, along
+    with a python-based OpenCV image processing component. I learned a lot about OpenCV and image processing through
+    the course of this project and it is one of my most useful projects to date!"
   },
   {
     "name": "IoTBuddy",
     "section": "Personal Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/IoTBuddy.png",
-    "image": "../public/img/projects/IoTBuddy.png",
+    "images": [
+      "../public/img/projects/IoTBuddy.png"
+    ],
     "links": [
       {
-        "title": "link1",
-        "url": "#"
+        "title": "Github",
+        "url": "https://github.com/amcolash/IoT-Buddy"
+      },
+      {
+        "title": "Pebble App Store",
+        "url": "https://apps.getpebble.com/en_US/application/568f550d05f633c62800003d"
       }
     ],
-    "description": "long bio goes here"
+    "description": "For a gift, I had recieved an internet enabled outlet strip. Not knowing quite what to do with it, I
+    decided to make a simple application for my Pebble Time smartwatch. This smartwatch app then interfaced with the
+    popular web service <a href='http://ifttt.com'>IFTTT</a>. This service lets you link different other web services,
+    such as Twitter, Facebook, Gmail or in my case a smart outlet strip together. IoTBuddy allows users to trigger
+    an IFTTT event from anywhere in the world without needing to use a phone or web browser."
   },
   {
     "name": "Pebblify",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Pebblify.png",
-    "image": "../public/img/projects/Pebblify.png",
+    "thumbnail": "../public/img/thumbnails/Pebblify.png",
+    "images": [
+      "../public/img/projects/Pebblify.png"
+    ],
     "links": [
       {
         "title": "Github",
@@ -125,8 +164,10 @@
   {
     "name": "Collabify",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/Collabify.jpg",
-    "image": "../public/img/projects/Collabify.jpg",
+    "thumbnail": "../public/img/thumbnails/Collabify.png",
+    "images": [
+      "../public/img/projects/Collabify.jpg"
+    ],
     "links": [
       {
         "title": "Github",
@@ -150,8 +191,10 @@
   {
     "name": "iParkMe",
     "section": "Personal Projects (2014-2016)",
-    "thumbnail": "../public/img/projects/iParkMe.png",
-    "image": "../public/img/projects/iParkMe.png",
+    "thumbnail": "../public/img/thumbnails/iParkMe.png",
+    "images": [
+      "../public/img/projects/iParkMe.png"
+    ],
     "links": [
       {
         "title": "Github",
