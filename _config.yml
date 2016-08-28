@@ -33,7 +33,7 @@ linkedin_username: "andrew-mcolash-66a03350"
 # Build settings
 markdown: kramdown
 theme: minima
-
+destination: docs
 
 gems:
   - jekyll-minifier
