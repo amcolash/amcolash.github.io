@@ -37,6 +37,7 @@ theme: minima
 
 gems:
   - jekyll-minifier
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 page_gen:
