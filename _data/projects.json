@@ -10,10 +10,7 @@
       }
     ],
     "video": "lhneHPxP9kg",
-    "description": "Since the summer of 2015, I have worked on developing and implementing new content into the
-    mobile role playing game - DragonSoul by PerBlue. The game focuses on collecting heroes to fight against the forces
-    of evil. On the technical side of things, I have worked on implementing unique combat logic, content (new heroes,
-    npcs and game modes) and developing tooling for both our art team and quality assurance team."
+    "description": "Since the summer of 2015, I have worked on developing and implementing new content into the mobile role playing game - DragonSoul by PerBlue. The game focuses on collecting heroes to fight against the forces of evil. On the technical side of things, I have worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both our art team and quality assurance team."
   },
   {
     "name": "WiscPortal",
@@ -32,12 +29,7 @@
         "url": "https://show.wisc.edu/data/charts/"
       }
     ],
-    "description": "During the end of the fall semester and all of spring semester, I was employed by the Survey of the
-      Health of Wisconsin (SHOW). As a web developer, I was in charge of a new system to disseminate data for both
-      public health officials as well as the common public. In the course of this position, I took a concept and
-      transformed it into a fully functioning and mobile responsive HTML5 website. In addition to being responsive to
-      different screen sizes for mobile by using Twitter Bootstrap, the page also is fully touch capable and dynamically
-      draws charts and graphs using HighCharts."
+    "description": "During the end of the fall semester and all of spring semester, I was employed by the Survey of the Health of Wisconsin (SHOW). As a web developer, I was in charge of a new system to disseminate data for both public health officials as well as the common public. In the course of this position, I took a concept and transformed it into a fully functioning and mobile responsive HTML5 website. In addition to being responsive to different screen sizes for mobile by using Twitter Bootstrap, the page also is fully touch capable and dynamically draws charts and graphs using HighCharts."
   },
   {
     "name": "Mobile App Requests",
@@ -47,10 +39,7 @@
     "images": [
       "../public/img/projects/ETS.png"
     ],
-    "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a
-      pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved
-      by various managers before actually being allowed into the app stores. This was a big upgrade from the email
-      chains which were used prior to this."
+    "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved by various managers before actually being allowed into the app stores. This was a big upgrade from the email chains which were used prior to this."
   },
   {
     "name": "Careers Website",
@@ -65,9 +54,7 @@
         "url": "http://www.careers.libertymutualgroup.com/"
       }
     ],
-    "description": "For my internship at Liberty Mutual, I worked on upgrading and maintaining the liberty mutual
-      carrers website. This website provides basic information about potential career paths in the company. I personally
-      worked on integrating social media into many of the areas of the website as well."
+    "description": "For my internship at Liberty Mutual, I worked on upgrading and maintaining the liberty mutual carrers website. This website provides basic information about potential career paths in the company. I personally worked on integrating social media into many of the areas of the website as well."
   },
   {
     "name": "GiffingAwesome",
@@ -86,13 +73,7 @@
         "url": "https://giffingawesome.firebaseapp.com"
       }
     ],
-    "description": "GiffingAwesome is a simple site that allows you to keep track of your favorite GIF images. I
-    personally love to share these animated images with friends, but it was more difficult than necessary to save and
-    share from a library of my favorites. I had to either locally save all of the files, or keep a list of links.
-    GiffingAwesome was a simple idea that turned into much more. I was interested in learning about the service Firebase
-    for my next side project. I was particularly interested in catching up on my Angular skills (the last time I had used
-    it was in 2014). The project taught me about not only Angular but also about the Ionic framework which was the star
-    of this project."
+    "description": "GiffingAwesome is a simple site that allows you to keep track of your favorite GIF images. I personally love to share these animated images with friends, but it was more difficult than necessary to save and share from a library of my favorites. I had to either locally save all of the files, or keep a list of links. GiffingAwesome was a simple idea that turned into much more. I was interested in learning about the service Firebase for my next side project. I was particularly interested in catching up on my Angular skills (the last time I had used it was in 2014). The project taught me about not only Angular but also about the Ionic framework which was the star of this project."
   },
   {
     "name": "ScaleIoT",
@@ -108,11 +89,7 @@
         "url": "https://github.com/amcolash/ScaleIoT"
       }
     ],
-    "description": "ScaleIoT is another project from my large collection of IoT (Internet of Things) projects. In this
-    project, I decided to make a smart scale that would record the weight of a user that stepped onto the scale and then
-    display statistics on the users' weight over time on a web page. This project uses a raspberry pi and a webcam, along
-    with a python-based OpenCV image processing component. I learned a lot about OpenCV and image processing through
-    the course of this project and it is one of my most useful projects to date!"
+    "description": "ScaleIoT is another project from my large collection of IoT (Internet of Things) projects. In this project, I decided to make a smart scale that would record the weight of a user that stepped onto the scale and then display statistics on the users' weight over time on a web page. This project uses a raspberry pi and a webcam, along with a python-based OpenCV image processing component. I learned a lot about OpenCV and image processing through the course of this project and it is one of my most useful projects to date!"
   },
   {
     "name": "IoTBuddy",
@@ -131,11 +108,7 @@
         "url": "https://apps.getpebble.com/en_US/application/568f550d05f633c62800003d"
       }
     ],
-    "description": "For a gift, I had recieved an internet enabled outlet strip. Not knowing quite what to do with it, I
-    decided to make a simple application for my Pebble Time smartwatch. This smartwatch app then interfaced with the
-    popular web service <a href='http://ifttt.com'>IFTTT</a>. This service lets you link different other web services,
-    such as Twitter, Facebook, Gmail or in my case a smart outlet strip together. IoTBuddy allows users to trigger
-    an IFTTT event from anywhere in the world without needing to use a phone or web browser."
+    "description": "For a gift, I had recieved an internet enabled outlet strip. Not knowing quite what to do with it, I decided to make a simple application for my Pebble Time smartwatch. This smartwatch app then interfaced with the popular web service <a href='http://ifttt.com'>IFTTT</a>. This service lets you link different other web services, such as Twitter, Facebook, Gmail or in my case a smart outlet strip together. IoTBuddy allows users to trigger an IFTTT event from anywhere in the world without needing to use a phone or web browser."
   },
   {
     "name": "Pebblify",
@@ -154,12 +127,7 @@
         "url": "http://devpost.com/software/pebblify"
       }
     ],
-    "description": "In the spring of 2015, I signed up to take part in UW Madison's first ever hackathon entitled
-      MadHacks. This hackathon was very open and had many different types of possibilities available. Since Pebble was a
-      sponsor at the event and had some staff on hand, our group decided to make a Pebble watch application that could
-      control Spotify and display album artwork on your wrist from another device. This app, while not polished and not
-      completely finished was a proof of concept and helped to open the road for me to continue developing other Pebble
-      app projects. Our group won the \"Best Pebble Hack\" award, which made the experience even more rewarding!"
+    "description": "In the spring of 2015, I signed up to take part in UW Madison's first ever hackathon entitled MadHacks. This hackathon was very open and had many different types of possibilities available. Since Pebble was a sponsor at the event and had some staff on hand, our group decided to make a Pebble watch application that could control Spotify and display album artwork on your wrist from another device. This app, while not polished and not completely finished was a proof of concept and helped to open the road for me to continue developing other Pebble app projects. Our group won the \"Best Pebble Hack\" award, which made the experience even more rewarding!"
   },
   {
     "name": "Collabify",
@@ -182,11 +150,7 @@
         "url": "../public/documents/Collabify_Manual.pdf"
       }
     ],
-    "description": "For my last semester of school at the University of Wisconsin Madison, I enrolled in a software
-      engineering course. In this class, we worked in groups and had the task of developing a new piece of software.
-      Our team decided on making an Android app with a Python backend that would allow for the creation of dynamic Spotify
-      playlists that could be collaborated and voted upon - the ultimate party playlist. In addition to a lot of code
-      from Github, there is also a link to some of the documentation and presentation that we have from the final project."
+    "description": "For my last semester of school at the University of Wisconsin Madison, I enrolled in a software engineering course. In this class, we worked in groups and had the task of developing a new piece of software. Our team decided on making an Android app with a Python backend that would allow for the creation of dynamic Spotify playlists that could be collaborated and voted upon - the ultimate party playlist. In addition to a lot of code from Github, there is also a link to some of the documentation and presentation that we have from the final project."
   },
   {
     "name": "iParkMe",
@@ -205,8 +169,6 @@
         "url": "http://amcolash-iparkme.appspot.com/"
       }
     ],
-    "description": "This simple web app happened after I got lost in a large parking lot for almost 15 minutes. I
-      decided that I needed a better way to keep track of where I parked - whether it was in my car, or on my bike. In a
-      few hours, I whipped up this simple site which will show you where you parked."
+    "description": "This simple web app happened after I got lost in a large parking lot for almost 15 minutes. I decided that I needed a better way to keep track of where I parked - whether it was in my car, or on my bike. In a few hours, I whipped up this simple site which will show you where you parked."
   }
 ]
