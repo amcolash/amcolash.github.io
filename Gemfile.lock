@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.4.0)
     colorator (1.1.0)
     cssminify (1.0.2)
     execjs (2.7.0)
@@ -26,7 +27,8 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.0.0)
       jekyll (~> 3.1)
-    jekyll-sitemap (0.10.0)
+    jekyll-sitemap (0.11.0)
+      addressable (~> 2.4.0)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     json (2.0.2)
