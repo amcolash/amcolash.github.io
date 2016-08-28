@@ -34,6 +34,11 @@ linkedin_username: "andrew-mcolash-66a03350"
 markdown: kramdown
 theme: minima
 
+
+gems:
+  - jekyll-minifier
+  - jekyll-sitemap
+
 page_gen:
   - data: 'projects'
     template: 'project'
