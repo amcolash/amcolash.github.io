@@ -2,7 +2,7 @@
   {
     "name": "Dragonsoul",
     "section": "Perblue (2015-2016)",
-    "thumbnail": "../public/img/projects/Dragonsoul.jpg",
+    "thumbnail": "../public/img/thumbnails/Dragonsoul.png",
     "links": [
       {
         "title": "Website",
@@ -81,7 +81,7 @@
     "thumbnail": "../public/img/thumbnails/ScaleIoT.png",
     "images": [
       "../public/img/projects/ScaleIoT.gif",
-      "../public/img/projects/ScaleIoT.jpg"
+      "../public/img/projects/ScaleIoT.png"
     ],
     "links": [
       {
@@ -134,7 +134,7 @@
     "section": "Personal Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/Collabify.png",
     "images": [
-      "../public/img/projects/Collabify.jpg"
+      "../public/img/projects/Collabify.png"
     ],
     "links": [
       {
