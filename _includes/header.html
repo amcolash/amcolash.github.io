@@ -21,6 +21,9 @@
             {% endif %}
           {% endunless %}
         {% endfor %}
+        {% if site.resume %}
+          <a class="page-link" href="{{site.resume}}">Resume</a>
+        {% endif %}
       </div>
     </nav>
 

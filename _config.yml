@@ -22,6 +22,8 @@ description: > # this means to ignore newlines until "baseurl:"
   The personal website of Andrew McOlash, web developer and creator
   of cool things!
 
+resume: "/resume"
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://amcolash.com" # the base hostname & protocol for your site
 
@@ -34,6 +36,17 @@ linkedin_username: "andrew-mcolash-66a03350"
 markdown: kramdown
 theme: minima
 destination: docs
+
+exclude: [
+  'README.md',
+  'Gemfile*',
+  'feed.xml',
+  'resume/assets/',
+  'resume/*.js',
+  'resume/*.md',
+  'resume/*.json',
+  'resume/*.template'
+]
 
 gems:
   - jekyll-minifier
