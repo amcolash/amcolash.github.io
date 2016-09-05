@@ -42,6 +42,7 @@ exclude: [
   'Gemfile*',
   'feed.xml',
   'resume/assets/',
+  'resume/node_modules/',
   'resume/*.js',
   'resume/*.md',
   'resume/*.json',
