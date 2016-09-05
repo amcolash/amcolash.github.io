@@ -18,7 +18,7 @@ subtitle: Software Engineer
 email: amcolash@gmail.com
 
 main_header: "Developer, Maker, Hacker"
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines until next variable
   The personal website of Andrew McOlash, web developer and creator
   of cool things!
 
