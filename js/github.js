@@ -6,10 +6,15 @@ xhttp.onreadystatechange=function() {
   if (xhttp.readyState == 4 && xhttp.status == 200) {
     var data = JSON.parse(xhttp.responseText);
     var repos = document.getElementById("repositories");
+    var title = document.getElementsByClassName("post-title");
+    title[0].innerHTML = "Github Repositories I Contribute To (" + data.length + ")";
+
+    var date_options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric'};
+
     for (var i = 0; i < data.length; i++) {
       var repo = data[i];
       var name = repo.name;
-      var date = repo.updated_at;
+      var date = (new Date(repo.pushed_at)).toLocaleDateString('en-US', date_options);
       var description = repo.description;
       var url = repo.html_url;
       var fork = repo.fork;
