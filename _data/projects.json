@@ -58,7 +58,7 @@
   },
   {
     "name": "GiffingAwesome",
-    "section": "Personal Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/GiffingAwesome.png",
     "images": [
       "../public/img/projects/GiffingAwesome.png"
@@ -77,7 +77,7 @@
   },
   {
     "name": "ScaleIoT",
-    "section": "Personal Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/ScaleIoT.png",
     "images": [
       "../public/img/projects/ScaleIoT.gif",
@@ -93,7 +93,7 @@
   },
   {
     "name": "IoTBuddy",
-    "section": "Personal Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/IoTBuddy.png",
     "images": [
       "../public/img/projects/IoTBuddy.png"
@@ -112,7 +112,7 @@
   },
   {
     "name": "Pebblify",
-    "section": "Personal Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/Pebblify.png",
     "images": [
       "../public/img/projects/Pebblify.png"
@@ -131,7 +131,7 @@
   },
   {
     "name": "Collabify",
-    "section": "Personal Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/Collabify.png",
     "images": [
       "../public/img/projects/Collabify.png"
@@ -154,7 +154,7 @@
   },
   {
     "name": "iParkMe",
-    "section": "Personal Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/iParkMe.png",
     "images": [
       "../public/img/projects/iParkMe.png"
@@ -172,3 +172,4 @@
     "description": "This simple web app happened after I got lost in a large parking lot for almost 15 minutes. I decided that I needed a better way to keep track of where I parked - whether it was in my car, or on my bike. In a few hours, I whipped up this simple site which will show you where you parked."
   }
 ]
+
