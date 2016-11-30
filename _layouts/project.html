@@ -20,21 +20,21 @@ exclude: true
     {% endif %}
   </header>
 
+
   <div class="post-content">
     <div class="row">
-      <div class="col-sm center-img">
-          {% if page.images %}
-            {% for image in page.images %}
-              <img src="{{ image }}" alt="">
-            {% endfor %}
-          {% endif %}
+      <div class="col-sm project-right">
+        {% if page.images %}
+          {% for image in page.images %}
+            <img class="project-image" src="{{ image }}" alt="{{ page.title }}">
+          {% endfor %}
+        {% endif %}
 
-          {% if page.video %}
-            <div class="videoWrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.video }}"
-              frameborder="0" allowfullscreen></iframe>
-            </div>
-          {% endif %}
+        {% if page.video %}
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/{{ page.video }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        {% endif %}
       </div>
 
       <div class="col-sm">

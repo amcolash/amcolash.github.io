@@ -37,14 +37,30 @@ h3.no-margin {
   }
 }
 
+.project-right {
+  @media (min-width: 768px) {
+    padding-right: 20px;
+    border-right: 1px solid #e8e8e8;
+    margin-right: 12px;
+  }
 
-.videoWrapper {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.video-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
+  overflow: hidden;
 
-  iframe {
+  iframe, object, embed {
   	position: absolute;
   	top: 0;
   	left: 0;

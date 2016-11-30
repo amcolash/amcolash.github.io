@@ -57,6 +57,25 @@
     "description": "For my internship at Liberty Mutual, I worked on upgrading and maintaining the liberty mutual carrers website. This website provides basic information about potential career paths in the company. I personally worked on integrating social media into many of the areas of the website as well."
   },
   {
+    "name": "AR Treasure Hunt Game",
+    "section": "Personal and School Projects (2014-2016)",
+    "thumbnail": "../public/img/thumbnails/ARTreasureHunt.png",
+    "images": [
+      "../public/img/projects/ARTreasureHunt.png"
+    ],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/AR-Treasure-Hunt"
+      },
+      {
+        "title": "Website",
+        "url": "https://ar-treasure-hunt.firebaseapp.com"
+      }
+    ],
+    "description": "AR Treasure Hunt was a hackaton game that I completed in about 24 hours. The game has a simple premise - solve riddles and navigate your city to find the prize. It had opportunities for monetization and sponsorship as well as the perk of being an augmented reality game. I worked with 2 other developers that mostly intrepreted the design requirements of our 2 designers. I wrote the code for the site and later one of the other developers started to implement his own unique software into my code. I wrote the game with Firebase and Ionic. A mostly functioning game is availible at the website listed above."
+  },
+  {
     "name": "GiffingAwesome",
     "section": "Personal and School Projects (2014-2016)",
     "thumbnail": "../public/img/thumbnails/GiffingAwesome.png",
@@ -172,4 +191,3 @@
     "description": "This simple web app happened after I got lost in a large parking lot for almost 15 minutes. I decided that I needed a better way to keep track of where I parked - whether it was in my car, or on my bike. In a few hours, I whipped up this simple site which will show you where you parked."
   }
 ]
-
