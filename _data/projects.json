@@ -1,7 +1,24 @@
 [
   {
-    "name": "Dragonsoul",
-    "section": "Perblue (2015-2016)",
+    "name": "BlockBoss (Beta)",
+    "section": "Perblue (2015-Present)",
+    "date": "2016-Present",
+    "thumbnail": "../public/img/thumbnails/Blockboss.png",
+    "links": [
+      {
+        "title": "Google Play Store",
+        "url": "https://play.google.com/store/apps/details?id=com.perblue.blockbossbeta&hl=en"
+      }
+    ],
+    "images": [
+      "../public/img/projects/Blockboss.png"
+    ],
+    "description": "Since September 2016, I have been working on a new beta game from PerBlue called Blockboss. It is a location-based and augmented reality RPG game. I am currently working on hero implementations (similar to DragonSoul) and improving the game engine itself. This includes adding in new functionality into the particle system engine, creating a 3d territory-based map and creating tooling for VFX artists to preview their effects on heroes with a setup similiar to in-game."
+  },
+  {
+    "name": "DragonSoul",
+    "section": "Perblue (2015-Present)",
+    "date": "2015-2016",
     "thumbnail": "../public/img/thumbnails/Dragonsoul.png",
     "links": [
       {
@@ -10,11 +27,12 @@
       }
     ],
     "video": "lhneHPxP9kg",
-    "description": "Since the summer of 2015, I have worked on developing and implementing new content into the mobile role playing game - DragonSoul by PerBlue. The game focuses on collecting heroes to fight against the forces of evil. On the technical side of things, I have worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both our art team and quality assurance team."
+    "description": "From the summer of 2015 through September 2016, I worked on developing and implementing new content into the mobile role playing game - DragonSoul by PerBlue. The game focuses on collecting heroes to fight against the forces of evil. On the technical side of things, I have worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both our art team and quality assurance team."
   },
   {
     "name": "WiscPortal",
     "section": "UW SHOW (2014-2015)",
+    "date": "2014-2015",
     "thumbnail": "../public/img/thumbnails/WiscPo.png",
     "images": [
       "../public/img/projects/WiscPo.png"
@@ -35,6 +53,7 @@
     "name": "Mobile App Requests",
     "nice_name": "Mobile App Requets Webpage",
     "section": "Liberty Mutual (2014)",
+    "date": "2014",
     "thumbnail": "../public/img/thumbnails/ETS.png",
     "images": [
       "../public/img/projects/ETS.png"
@@ -44,6 +63,7 @@
   {
     "name": "Careers Website",
     "section": "Liberty Mutual (2014)",
+    "date": "2014",
     "thumbnail": "../public/img/thumbnails/Careers.png",
     "images": [
       "../public/img/projects/Careers.png"
@@ -58,7 +78,8 @@
   },
   {
     "name": "AR Treasure Hunt Game",
-    "section": "Personal and School Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2016",
     "thumbnail": "../public/img/thumbnails/ARTreasureHunt.png",
     "images": [
       "../public/img/projects/ARTreasureHunt.png"
@@ -77,7 +98,8 @@
   },
   {
     "name": "GiffingAwesome",
-    "section": "Personal and School Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2016",
     "thumbnail": "../public/img/thumbnails/GiffingAwesome.png",
     "images": [
       "../public/img/projects/GiffingAwesome.png"
@@ -96,7 +118,8 @@
   },
   {
     "name": "ScaleIoT",
-    "section": "Personal and School Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2016",
     "thumbnail": "../public/img/thumbnails/ScaleIoT.png",
     "images": [
       "../public/img/projects/ScaleIoT.gif",
@@ -112,7 +135,8 @@
   },
   {
     "name": "IoTBuddy",
-    "section": "Personal and School Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2016",
     "thumbnail": "../public/img/thumbnails/IoTBuddy.png",
     "images": [
       "../public/img/projects/IoTBuddy.png"
@@ -131,7 +155,8 @@
   },
   {
     "name": "Pebblify",
-    "section": "Personal and School Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2015",
     "thumbnail": "../public/img/thumbnails/Pebblify.png",
     "images": [
       "../public/img/projects/Pebblify.png"
@@ -150,7 +175,8 @@
   },
   {
     "name": "Collabify",
-    "section": "Personal and School Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2014-2015",
     "thumbnail": "../public/img/thumbnails/Collabify.png",
     "images": [
       "../public/img/projects/Collabify.png"
@@ -173,7 +199,8 @@
   },
   {
     "name": "iParkMe",
-    "section": "Personal and School Projects (2014-2016)",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2014-2015",
     "thumbnail": "../public/img/thumbnails/iParkMe.png",
     "images": [
       "../public/img/projects/iParkMe.png"

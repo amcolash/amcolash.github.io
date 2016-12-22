@@ -13,6 +13,12 @@ exclude: true
       {% endif %}
     </h1>
 
+    {% if page.date %}
+      <h2>
+        ({{ page.date }})
+      </h2>
+    {% endif %}
+
     {% if page.links %}
       {% for link in page.links %}
         <h3 class="no-margin"><a href="{{ link.url }}">{{ link.title }}</a></h3>
