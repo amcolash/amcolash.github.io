@@ -1,19 +1,19 @@
 [
   {
-    "name": "BlockBoss (Beta)",
+    "name": "Portal Quest",
     "section": "Perblue (2015-Present)",
     "date": "2016-Present",
     "thumbnail": "../public/img/thumbnails/Blockboss.png",
     "links": [
       {
         "title": "Google Play Store",
-        "url": "https://play.google.com/store/apps/details?id=com.perblue.blockbossbeta&hl=en"
+        "url": "https://play.google.com/store/apps/details?id=com.perblue.portalquest&hl=en"
       }
     ],
     "images": [
       "../public/img/projects/Blockboss.png"
     ],
-    "description": "Since September 2016, I have been working on a new beta game from PerBlue called Blockboss. It is a location-based and augmented reality RPG game. I am currently working on hero implementations (similar to DragonSoul) and improving the game engine itself. This includes adding in new functionality into the particle system engine, creating a 3d territory-based map and creating tooling for VFX artists to preview their effects on heroes with a setup similiar to in-game."
+    "description": "Since September 2016, I have been working on a new mobile RPG game from PerBlue called Portal Quest. I am currently working on hero implementations (similar to DragonSoul) and improving the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
   },
   {
     "name": "DragonSoul",
@@ -77,6 +77,26 @@
     "description": "For my internship at Liberty Mutual, I worked on upgrading and maintaining the liberty mutual carrers website. This website provides basic information about potential career paths in the company. I personally worked on integrating social media into many of the areas of the website as well."
   },
   {
+    "name": "GiffingAwesome",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2016",
+    "thumbnail": "../public/img/thumbnails/GiffingAwesome.png",
+    "images": [
+      "../public/img/projects/GiffingAwesome.png"
+    ],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/GiffingAwesome"
+      },
+      {
+        "title": "Website",
+        "url": "https://giffingawesome.firebaseapp.com"
+      }
+    ],
+    "description": "GiffingAwesome is a simple site that allows you to keep track of your favorite GIF images. I personally love to share these animated images with friends, but it was more difficult than necessary to save and share from a library of my favorites. I had to either locally save all of the files, or keep a list of links. GiffingAwesome was a simple idea that turned into much more. I was interested in learning about the service Firebase for my next side project. I was particularly interested in catching up on my Angular skills (the last time I had used it was in 2014). The project taught me about not only Angular but also about the Ionic and Corvoda frameworks which were the stars of this project."
+  },
+  {
     "name": "AR Treasure Hunt Game",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2016",
@@ -95,26 +115,6 @@
       }
     ],
     "description": "AR Treasure Hunt was a hackaton game that I completed in about 24 hours. The game has a simple premise - solve riddles and navigate your city to find the prize. It had opportunities for monetization and sponsorship as well as the perk of being an augmented reality game. I worked with 2 other developers that mostly intrepreted the design requirements of our 2 designers. I wrote the code for the site and later one of the other developers started to implement his own unique software into my code. I wrote the game with Firebase and Ionic. A mostly functioning game is availible at the website listed above."
-  },
-  {
-    "name": "GiffingAwesome",
-    "section": "Personal and School Projects (2014-Present)",
-    "date": "2016",
-    "thumbnail": "../public/img/thumbnails/GiffingAwesome.png",
-    "images": [
-      "../public/img/projects/GiffingAwesome.png"
-    ],
-    "links": [
-      {
-        "title": "Github",
-        "url": "https://github.com/amcolash/GiffingAwesome"
-      },
-      {
-        "title": "Website",
-        "url": "https://giffingawesome.firebaseapp.com"
-      }
-    ],
-    "description": "GiffingAwesome is a simple site that allows you to keep track of your favorite GIF images. I personally love to share these animated images with friends, but it was more difficult than necessary to save and share from a library of my favorites. I had to either locally save all of the files, or keep a list of links. GiffingAwesome was a simple idea that turned into much more. I was interested in learning about the service Firebase for my next side project. I was particularly interested in catching up on my Angular skills (the last time I had used it was in 2014). The project taught me about not only Angular but also about the Ionic framework which was the star of this project."
   },
   {
     "name": "ScaleIoT",
