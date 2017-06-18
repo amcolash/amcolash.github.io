@@ -5,9 +5,7 @@ link_name: Github
 permalink: /github/
 ---
 
-<script type="text/javascript">
-  {% include js/github.js %}
-</script>
+<script type="text/javascript">{% include js/github.js %}</script>
 
 <div class="spinner">
   <div class="double-bounce1"></div>
