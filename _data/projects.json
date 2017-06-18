@@ -3,7 +3,7 @@
     "name": "Portal Quest",
     "section": "Perblue (2015-Present)",
     "date": "2016-Present",
-    "thumbnail": "../public/img/thumbnails/Blockboss.png",
+    "thumbnail": "/img/thumbnails/Blockboss.png",
     "links": [
       {
         "title": "Google Play Store",
@@ -11,7 +11,7 @@
       }
     ],
     "images": [
-      "../public/img/projects/Blockboss.png"
+      "/img/projects/Blockboss.png"
     ],
     "description": "Since September 2016, I have been working on a new mobile RPG game from PerBlue called Portal Quest. I am currently working on hero implementations (similar to DragonSoul) and improving the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
   },
@@ -19,7 +19,7 @@
     "name": "DragonSoul",
     "section": "Perblue (2015-Present)",
     "date": "2015-2016",
-    "thumbnail": "../public/img/thumbnails/Dragonsoul.png",
+    "thumbnail": "/img/thumbnails/Dragonsoul.png",
     "links": [
       {
         "title": "Website",
@@ -33,9 +33,9 @@
     "name": "WiscPortal",
     "section": "UW SHOW (2014-2015)",
     "date": "2014-2015",
-    "thumbnail": "../public/img/thumbnails/WiscPo.png",
+    "thumbnail": "/img/thumbnails/WiscPo.png",
     "images": [
-      "../public/img/projects/WiscPo.png"
+      "/img/projects/WiscPo.png"
     ],
     "links": [
       {
@@ -54,9 +54,9 @@
     "nice_name": "Mobile App Requets Webpage",
     "section": "Liberty Mutual (2014)",
     "date": "2014",
-    "thumbnail": "../public/img/thumbnails/ETS.png",
+    "thumbnail": "/img/thumbnails/ETS.png",
     "images": [
-      "../public/img/projects/ETS.png"
+      "/img/projects/ETS.png"
     ],
     "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved by various managers before actually being allowed into the app stores. This was a big upgrade from the email chains which were used prior to this."
   },
@@ -64,9 +64,9 @@
     "name": "Careers Website",
     "section": "Liberty Mutual (2014)",
     "date": "2014",
-    "thumbnail": "../public/img/thumbnails/Careers.png",
+    "thumbnail": "/img/thumbnails/Careers.png",
     "images": [
-      "../public/img/projects/Careers.png"
+      "/img/projects/Careers.png"
     ],
     "links": [
       {
@@ -80,9 +80,9 @@
     "name": "GiffingAwesome",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2016",
-    "thumbnail": "../public/img/thumbnails/GiffingAwesome.png",
+    "thumbnail": "/img/thumbnails/GiffingAwesome.png",
     "images": [
-      "../public/img/projects/GiffingAwesome.png"
+      "/img/projects/GiffingAwesome.png"
     ],
     "links": [
       {
@@ -100,9 +100,9 @@
     "name": "AR Treasure Hunt Game",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2016",
-    "thumbnail": "../public/img/thumbnails/ARTreasureHunt.png",
+    "thumbnail": "/img/thumbnails/ARTreasureHunt.png",
     "images": [
-      "../public/img/projects/ARTreasureHunt.png"
+      "/img/projects/ARTreasureHunt.png"
     ],
     "links": [
       {
@@ -120,10 +120,10 @@
     "name": "ScaleIoT",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2016",
-    "thumbnail": "../public/img/thumbnails/ScaleIoT.png",
+    "thumbnail": "/img/thumbnails/ScaleIoT.png",
     "images": [
-      "../public/img/projects/ScaleIoT.gif",
-      "../public/img/projects/ScaleIoT.png"
+      "/img/projects/ScaleIoT.gif",
+      "/img/projects/ScaleIoT.png"
     ],
     "links": [
       {
@@ -137,9 +137,9 @@
     "name": "IoTBuddy",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2016",
-    "thumbnail": "../public/img/thumbnails/IoTBuddy.png",
+    "thumbnail": "/img/thumbnails/IoTBuddy.png",
     "images": [
-      "../public/img/projects/IoTBuddy.png"
+      "/img/projects/IoTBuddy.png"
     ],
     "links": [
       {
@@ -157,9 +157,9 @@
     "name": "Pebblify",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2015",
-    "thumbnail": "../public/img/thumbnails/Pebblify.png",
+    "thumbnail": "/img/thumbnails/Pebblify.png",
     "images": [
-      "../public/img/projects/Pebblify.png"
+      "/img/projects/Pebblify.png"
     ],
     "links": [
       {
@@ -177,9 +177,9 @@
     "name": "Collabify",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2014-2015",
-    "thumbnail": "../public/img/thumbnails/Collabify.png",
+    "thumbnail": "/img/thumbnails/Collabify.png",
     "images": [
-      "../public/img/projects/Collabify.png"
+      "/img/projects/Collabify.png"
     ],
     "links": [
       {
@@ -188,11 +188,11 @@
       },
       {
         "title": "Project Presentation",
-        "url": "../public/documents/Collabify_Presentation.pdf"
+        "url": "/documents/Collabify_Presentation.pdf"
       },
       {
         "title": "Project Manual",
-        "url": "../public/documents/Collabify_Manual.pdf"
+        "url": "/documents/Collabify_Manual.pdf"
       }
     ],
     "description": "For my last semester of school at the University of Wisconsin Madison, I enrolled in a software engineering course. In this class, we worked in groups and had the task of developing a new piece of software. Our team decided on making an Android app with a Python backend that would allow for the creation of dynamic Spotify playlists that could be collaborated and voted upon - the ultimate party playlist. In addition to a lot of code from Github, there is also a link to some of the documentation and presentation that we have from the final project."
@@ -201,9 +201,9 @@
     "name": "iParkMe",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2014-2015",
-    "thumbnail": "../public/img/thumbnails/iParkMe.png",
+    "thumbnail": "/img/thumbnails/iParkMe.png",
     "images": [
-      "../public/img/projects/iParkMe.png"
+      "/img/projects/iParkMe.png"
     ],
     "links": [
       {

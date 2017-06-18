@@ -5,7 +5,9 @@ link_name: Github
 permalink: /github/
 ---
 
-<script async src="../js/github.js" type="text/javascript"></script>
+<script type="text/javascript">
+  {% include js/github.js %}
+</script>
 
 <div class="spinner">
   <div class="double-bounce1"></div>
