@@ -1,9 +1,20 @@
 [
   {
+    "name": "New Project",
+    "section": "Perblue (2015-Present)",
+    "date": "2017-Present",
+    "thumbnail": "/img/thumbnails/Secret.png",
+    "links": [],
+    "images": [
+        "/img/projects/Secret.png"
+    ],
+    "description": "Since February 2017, I have been working on PerBlue's next game. This is a secret project with a very influential client. We have been working hard to build tools for our artists so that they can build dynamic parallax environments, author visual effects and make custom paths for projectiles to travel on. This tooling will provide artists with an experience similar to unity, while allowing us to use our game engine of choice - libgdx."
+  },
+  {
     "name": "Portal Quest",
     "section": "Perblue (2015-Present)",
-    "date": "2016-Present",
-    "thumbnail": "/img/thumbnails/Blockboss.png",
+    "date": "2016-2017",
+    "thumbnail": "/img/thumbnails/PortalQuest.png",
     "links": [
       {
         "title": "Google Play Store",
@@ -11,9 +22,9 @@
       }
     ],
     "images": [
-      "/img/projects/Blockboss.png"
+      "/img/projects/PortalQuest.png"
     ],
-    "description": "Since September 2016, I have been working on a new mobile RPG game from PerBlue called Portal Quest. I am currently working on hero implementations (similar to DragonSoul) and improving the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
+    "description": "From September 2016 through February 2017, I worked on a mobile RPG game from PerBlue called Portal Quest. I worked on hero implementations (similar to DragonSoul) and improved the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery system. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
   },
   {
     "name": "DragonSoul",
