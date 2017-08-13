@@ -21,7 +21,7 @@ gem "minima", "~> 2.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
 #   gem "jekyll-github-metadata", "~> 1.0"
-  gem "jekyll-minifier", "0.0.9"
+  gem "jekyll-minifier"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
 end

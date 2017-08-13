@@ -24,6 +24,7 @@
     "images": [
       "/img/projects/PortalQuest.png"
     ],
+    "video": "teTSK62yiug",
     "description": "From September 2016 through February 2017, I worked on a mobile RPG game from PerBlue called Portal Quest. I worked on hero implementations (similar to DragonSoul) and improved the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery system. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
   },
   {
