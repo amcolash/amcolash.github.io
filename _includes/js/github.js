@@ -15,6 +15,8 @@ var pathElement = document.createElementNS("http://www.w3.org/2000/svg", 'path')
 pathElement.setAttribute("d", forkIcon); //Set path's data
 svgElement.appendChild(pathElement);
 
+var lastShown = 0;
+
 // Start a new network request for github repos on page load
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange=function() {
@@ -25,15 +27,28 @@ xhttp.onreadystatechange=function() {
     // Uh-oh, something went wrong
     if (xhttp.status != 200) {
       // Fallback, just go to github page
-      window.location.assign("https://github.com/amcolash");
+      var error = document.createElement("h3");
+      var retry = document.createElement("span");
+
+      error.innerHTML = "Error fetching git repos. Try going to <a href='https://github.com/amcolash'>https://github.com/amcolash</a>.";
+      retry.innerHTML = "<a href='/github'>Retry</a>";
+      
+      var repos = document.getElementById("repositories");
+      repos.appendChild(error);
+      repos.appendChild(retry);
     } else {
       // Normal case of 200 status
       var data = JSON.parse(xhttp.responseText);
+
+      console.log(data);
+
       var repos = document.getElementById("repositories");
       var title = document.getElementsByClassName("post-title");
       title[0].innerHTML = "Github Repositories I Contribute To (" + data.length + ")";
 
       var date_options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric'};
+
+      lastShown = 0;
 
       for (var i = 0; i < data.length; i++) {
         var repo = data[i];
@@ -83,11 +98,52 @@ xhttp.onreadystatechange=function() {
           repoDiv.style.opacity = 0;
           repoDiv.style.animationName = 'fadein';
           repoDiv.style.animationDelay = (i * 0.1) + 's';
+
+          lastShown = i;
+        // } else if (i > (lastShown * 2)) {
+        } else {
+          repoDiv.style.display = "none";
         }
       }
+
+      var showContainer = document.createElement("div");
+      showContainer.classList += "padding-top";
+      showContainer.id = "showContainer";
+
+      var showMore = document.createElement("span");
+      showMore.innerText = "Show More";
+      showMore.classList += "btn";
+      showMore.addEventListener("click", function() { window.showMore(); }, false);
+      
+      showContainer.appendChild(showMore);
+      repos.appendChild(showContainer);
     }
   }
 };
 
-xhttp.open("GET", url, true);
-xhttp.send();
+
+var showMore = function () {
+  var offset = lastShown * 2;
+  var repos = document.getElementById("repositories");
+  for (var i = offset; i < repos.children.length; i++) {
+    var repoDiv = repos.children[i];
+    repoDiv.style.display = "inherit";
+    if (i < lastShown * 3) {
+      repoDiv.style.opacity = 0;
+      repoDiv.style.animationName = 'fadein';
+      repoDiv.style.animationDelay = ((i - offset) * 0.1) + 's';
+    }
+  }
+
+  var showContainer = document.getElementById("showContainer");
+  showContainer.hidden = true;
+};
+
+var init = function() {
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+
+
+// Start the scripts on this page.
+init();

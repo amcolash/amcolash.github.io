@@ -1,0 +1,32 @@
+@media print {
+    h1 { font-size: 28px !important; }
+    h2 { font-size: 24px !important; }
+    h3 { font-size: 20px !important; }
+
+   .repo {
+       border: none;
+       padding: 0;
+       display: inherit !important;
+       page-break-inside: avoid;
+
+       hr {
+           margin: -4px 0 2px !important;
+       }
+   }
+
+   #showContainer {
+       display: none !important;
+   }
+
+   .center-img {
+       text-align: left !important;
+   }
+
+   .page-content {
+       padding-bottom: 10px !important;
+   }
+
+   footer {
+       padding: 10px 0 !important;
+   }
+}

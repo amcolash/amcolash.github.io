@@ -3,6 +3,9 @@
   background-position: center center;
   background-repeat: no-repeat;
 
+  // Force to show in print
+  -webkit-print-color-adjust: exact;
+
   width: 100%;
   height: 350px;
 

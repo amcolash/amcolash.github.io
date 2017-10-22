@@ -20,6 +20,10 @@
   border-top: none;
 }
 
+.padding-top {
+  padding-top: 16px;
+}
+
 .padding-bottom {
   padding-bottom: 16px;
 }
@@ -27,4 +31,11 @@
 .icon > svg {
     width: 20px;
     height: 20px;
+}
+
+.btn {
+  border: 1px solid #ccc;
+  padding: 13px;
+  border-radius: 3px;
+  cursor: pointer;
 }
