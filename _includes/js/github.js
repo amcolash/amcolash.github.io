@@ -40,7 +40,7 @@ xhttp.onreadystatechange=function() {
       // Normal case of 200 status
       var data = JSON.parse(xhttp.responseText);
 
-      console.log(data);
+      // console.log(data);
 
       var repos = document.getElementById("repositories");
       var title = document.getElementsByClassName("post-title");
@@ -127,11 +127,14 @@ var showMore = function () {
   var repos = document.getElementById("repositories");
   for (var i = offset; i < repos.children.length; i++) {
     var repoDiv = repos.children[i];
-    repoDiv.style.display = "inherit";
-    if (i < lastShown * 3) {
-      repoDiv.style.opacity = 0;
-      repoDiv.style.animationName = 'fadein';
-      repoDiv.style.animationDelay = ((i - offset) * 0.1) + 's';
+
+    if (repoDiv.id !== "showContainer") {
+      repoDiv.style.display = "inherit";
+      if (i < lastShown * 3) {
+        repoDiv.style.opacity = 0;
+        repoDiv.style.animationName = 'fadein';
+        repoDiv.style.animationDelay = ((i - offset) * 0.1) + 's';
+      }
     }
   }
 
