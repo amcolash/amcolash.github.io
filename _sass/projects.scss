@@ -1,4 +1,5 @@
 $project-thumbnail-radius: 4px;
+$border-color: #ccc;
 
 h3.no-margin {
   margin-bottom: 0;
@@ -11,7 +12,7 @@ h3.no-margin {
 .project-thumbnail {
   margin-bottom: 16px;
   position: relative;
-  background-color: #333;
+  border: solid 1px $border-color;
   border-radius: $project-thumbnail-radius;
   height: 125px;
 
@@ -50,7 +51,11 @@ h3.no-margin {
 
 .project-image {
   width: 100%;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.border {
+  border: solid 1px $border-color;
 }
 
 .video-wrapper {

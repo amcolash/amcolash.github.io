@@ -32,7 +32,8 @@ exclude: true
       <div class="col-sm project-right">
         {% if page.images %}
           {% for image in page.images %}
-            <img class="project-image" src="{{ image }}" alt="{{ page.title }}">
+            <!-- Only add in a border if defined -->
+            <img class="project-image {{ page.imageClasses }}" src="{{ image }}" alt="{{ page.title }}">
           {% endfor %}
         {% endif %}
 

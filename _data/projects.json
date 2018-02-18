@@ -1,6 +1,6 @@
 [
   {
-    "name": "New Project",
+    "name": "Disney Heroes: Battle Mode",
     "section": "Perblue (2015-Present)",
     "date": "2017-Present",
     "thumbnail": "/img/thumbnails/Secret.png",
@@ -8,7 +8,7 @@
     "images": [
         "/img/projects/Secret.png"
     ],
-    "description": "Since February 2017, I have been working on PerBlue's next game. This is a secret project with a very influential client. We have been working hard to build tools for our artists so that they can build dynamic parallax environments, author visual effects and make custom paths for projectiles to travel on. This tooling will provide artists with an experience similar to unity, while allowing us to use our game engine of choice - libgdx."
+    "description": "Since February 2017, I have been working on PerBlue's next game in association with Disney. To make this game a reality, we had to build a new combat and engine system from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling will provide artists with an experience similar to unity, while allowing us to use our game engine of choice - libgdx."
   },
   {
     "name": "Portal Quest",
@@ -77,6 +77,7 @@
     "section": "Liberty Mutual (2014)",
     "date": "2014",
     "thumbnail": "/img/thumbnails/Careers.png",
+    "imageClasses": "border",
     "images": [
       "/img/projects/Careers.png"
     ],
@@ -89,10 +90,56 @@
     "description": "For my internship at Liberty Mutual, I worked on upgrading and maintaining the liberty mutual carrers website. This website provides basic information about potential career paths in the company. I personally worked on integrating social media into many of the areas of the website as well."
   },
   {
+    "name": "What's Up",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2017-2018",
+    "thumbnail": "/img/thumbnails/WhatsUp.png",
+    "images": [
+      "/img/projects/WhatsUp.png",
+      "/img/projects/WhatsUp2.png"
+    ],
+    "imageClasses": "border",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/WhatsUp"
+      },
+      {
+        "title": "Website",
+        "url": "https://whatsup-346bd.firebaseapp.com"
+      }
+    ],
+    "description": "What's Up is a project that was developed association with a colleague of mine. We wanted to build a social platform to see upcoming events happening in your area. It allows you to view events from Facebook, EventBrite and Meetup in your nearby area as well as creating your own custom events. The code was written with Ionic/Angular, uses the Google Maps API and has a FireBase backend (which helps with location queries and custom events)."
+  },
+  {
+    "name": "MMM-GoogleFit",
+    "section": "Personal and School Projects (2014-Present)",
+    "date": "2018",
+    "thumbnail": "/img/thumbnails/MMM-GoogleFit.png",
+    "images": [
+      "/img/projects/MMM-GoogleFit3.png",
+      "/img/projects/MMM-GoogleFit.png",
+      "/img/projects/MMM-GoogleFit2.png"
+    ],
+    "imageClasses": "border",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/MMM-GoogleFit"
+      },
+      {
+        "title": "MagicMirror",
+        "url": "https://github.com/MichMich/MagicMirror"
+      }
+    ],
+    "description": "MMM-GoogleFit is a personal project that I made for my MagicMirror (see link for more info). I developed this module using the GoogleFit API, HighCharts, node and the MagicMirror2 framework. This module shows distance walked (colored rings) and optionally shows recent weights saved to Google Fit. My favorite part of this project is the simple authentication flow which allows a user to log into google fit without supplying any credentials in the configuration file."
+  },
+  {
     "name": "GiffingAwesome",
     "section": "Personal and School Projects (2014-Present)",
     "date": "2016",
     "thumbnail": "/img/thumbnails/GiffingAwesome.png",
+    "imageClasses": "border",
     "images": [
       "/img/projects/GiffingAwesome.png"
     ],

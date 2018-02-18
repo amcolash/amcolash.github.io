@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://amcolash.com" # the base hostname & protocol for your site
 
 github_username: "amcolash"
-twitter_username: "amcolash"
+# twitter_username: "amcolash"
 linkedin_name: "Andrew McOlash"
 linkedin_username: "andrew-mcolash-66a03350"
 
