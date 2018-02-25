@@ -3,12 +3,14 @@
     "name": "Disney Heroes: Battle Mode",
     "section": "Perblue (2015-Present)",
     "date_range": "2017-Present",
-    "thumbnail": "/img/thumbnails/Secret.jpg",
+    "thumbnail": "/img/thumbnails/DisneyHeroes.jpg",
     "links": [],
     "images": [
-        "/img/projects/Secret.jpg"
+        "/img/projects/DisneyHeroes.jpg",
+        "/img/projects/DisneyHeroes2.jpg",
+        "/img/projects/DisneyHeroes3.jpg"
     ],
-    "description": "Since February 2017, I have been working on PerBlue's next game in association with Disney. To make this game a reality, we had to build a new combat and engine system from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling will provide artists with an experience similar to unity, while allowing us to use our game engine of choice - libgdx."
+    "description": "Since February 2017, I have been working on PerBlue's next game in association with Disney - Disney Heroes: Battle Mode. To make this game a reality, we needed to build a new combat and rendering engine from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling provides artists with an experience similar to unity, while allowing us to continue use our game engine of choice - libgdx."
   },
   {
     "name": "Portal Quest",
@@ -24,7 +26,7 @@
     "images": [
       "/img/projects/PortalQuest.jpg"
     ],
-    "video": "teTSK62yiug",
+    "video": "3SlXsszW8Bk",
     "description": "From September 2016 through February 2017, I worked on a mobile RPG game from PerBlue called Portal Quest. I worked on hero implementations (similar to DragonSoul) and improved the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery system. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
   },
   {
