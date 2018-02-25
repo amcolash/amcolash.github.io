@@ -3,10 +3,10 @@
     "name": "Disney Heroes: Battle Mode",
     "section": "Perblue (2015-Present)",
     "date_range": "2017-Present",
-    "thumbnail": "/img/thumbnails/Secret.png",
+    "thumbnail": "/img/thumbnails/Secret.jpg",
     "links": [],
     "images": [
-        "/img/projects/Secret.png"
+        "/img/projects/Secret.jpg"
     ],
     "description": "Since February 2017, I have been working on PerBlue's next game in association with Disney. To make this game a reality, we had to build a new combat and engine system from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling will provide artists with an experience similar to unity, while allowing us to use our game engine of choice - libgdx."
   },
@@ -14,7 +14,7 @@
     "name": "Portal Quest",
     "section": "Perblue (2015-Present)",
     "date_range": "2016-2017",
-    "thumbnail": "/img/thumbnails/PortalQuest.png",
+    "thumbnail": "/img/thumbnails/PortalQuest.jpg",
     "links": [
       {
         "title": "Google Play Store",
@@ -22,7 +22,7 @@
       }
     ],
     "images": [
-      "/img/projects/PortalQuest.png"
+      "/img/projects/PortalQuest.jpg"
     ],
     "video": "teTSK62yiug",
     "description": "From September 2016 through February 2017, I worked on a mobile RPG game from PerBlue called Portal Quest. I worked on hero implementations (similar to DragonSoul) and improved the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery system. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
@@ -31,7 +31,7 @@
     "name": "DragonSoul",
     "section": "Perblue (2015-Present)",
     "date_range": "2015-2016",
-    "thumbnail": "/img/thumbnails/Dragonsoul.png",
+    "thumbnail": "/img/thumbnails/Dragonsoul.jpg",
     "links": [
       {
         "title": "Website",
@@ -45,9 +45,9 @@
     "name": "WiscPortal",
     "section": "UW SHOW (2014-2015)",
     "date_range": "2014-2015",
-    "thumbnail": "/img/thumbnails/WiscPo.png",
+    "thumbnail": "/img/thumbnails/WiscPo.jpg",
     "images": [
-      "/img/projects/WiscPo.png"
+      "/img/projects/WiscPo.jpg"
     ],
     "links": [
       {
@@ -66,9 +66,9 @@
     "nice_name": "Mobile App Requets Webpage",
     "section": "Liberty Mutual (2014)",
     "date_range": "2014",
-    "thumbnail": "/img/thumbnails/ETS.png",
+    "thumbnail": "/img/thumbnails/ETS.jpg",
     "images": [
-      "/img/projects/ETS.png"
+      "/img/projects/ETS.jpg"
     ],
     "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved by various managers before actually being allowed into the app stores. This was a big upgrade from the email chains which were used prior to this."
   },
@@ -76,10 +76,10 @@
     "name": "Careers Website",
     "section": "Liberty Mutual (2014)",
     "date_range": "2014",
-    "thumbnail": "/img/thumbnails/Careers.png",
+    "thumbnail": "/img/thumbnails/Careers.jpg",
     "imageClasses": "border",
     "images": [
-      "/img/projects/Careers.png"
+      "/img/projects/Careers.jpg"
     ],
     "links": [
       {
@@ -93,10 +93,10 @@
     "name": "What's Up",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2017-2018",
-    "thumbnail": "/img/thumbnails/WhatsUp.png",
+    "thumbnail": "/img/thumbnails/WhatsUp.jpg",
     "images": [
-      "/img/projects/WhatsUp.png",
-      "/img/projects/WhatsUp2.png"
+      "/img/projects/WhatsUp.jpg",
+      "/img/projects/WhatsUp2.jpg"
     ],
     "imageClasses": "border",
     "links": [
@@ -105,7 +105,7 @@
         "url": "https://github.com/amcolash/WhatsUp"
       },
       {
-        "title": "Website",
+        "title": "Live Site",
         "url": "https://whatsup-346bd.firebaseapp.com"
       }
     ],
@@ -115,11 +115,11 @@
     "name": "MMM-GoogleFit",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2018",
-    "thumbnail": "/img/thumbnails/MMM-GoogleFit.png",
+    "thumbnail": "/img/thumbnails/MMM-GoogleFit.jpg",
     "images": [
-      "/img/projects/MMM-GoogleFit3.png",
-      "/img/projects/MMM-GoogleFit.png",
-      "/img/projects/MMM-GoogleFit2.png"
+      "/img/projects/MMM-GoogleFit3.jpg",
+      "/img/projects/MMM-GoogleFit.jpg",
+      "/img/projects/MMM-GoogleFit2.jpg"
     ],
     "imageClasses": "border",
     "links": [
@@ -138,10 +138,10 @@
     "name": "GiffingAwesome",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/GiffingAwesome.png",
+    "thumbnail": "/img/thumbnails/GiffingAwesome.jpg",
     "imageClasses": "border",
     "images": [
-      "/img/projects/GiffingAwesome.png"
+      "/img/projects/GiffingAwesome.jpg"
     ],
     "links": [
       {
@@ -149,7 +149,7 @@
         "url": "https://github.com/amcolash/GiffingAwesome"
       },
       {
-        "title": "Website",
+        "title": "Live Site",
         "url": "https://giffingawesome.firebaseapp.com"
       }
     ],
@@ -159,9 +159,9 @@
     "name": "AR Treasure Hunt Game",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/ARTreasureHunt.png",
+    "thumbnail": "/img/thumbnails/ARTreasureHunt.jpg",
     "images": [
-      "/img/projects/ARTreasureHunt.png"
+      "/img/projects/ARTreasureHunt.jpg"
     ],
     "links": [
       {
@@ -169,7 +169,7 @@
         "url": "https://github.com/amcolash/AR-Treasure-Hunt"
       },
       {
-        "title": "Website",
+        "title": "Live Site",
         "url": "https://ar-treasure-hunt.firebaseapp.com"
       }
     ],
@@ -179,10 +179,10 @@
     "name": "ScaleIoT",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/ScaleIoT.png",
+    "thumbnail": "/img/thumbnails/ScaleIoT.jpg",
     "images": [
       "/img/projects/ScaleIoT.gif",
-      "/img/projects/ScaleIoT.png"
+      "/img/projects/ScaleIoT.jpg"
     ],
     "links": [
       {
@@ -196,9 +196,9 @@
     "name": "IoTBuddy",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/IoTBuddy.png",
+    "thumbnail": "/img/thumbnails/IoTBuddy.jpg",
     "images": [
-      "/img/projects/IoTBuddy.png"
+      "/img/projects/IoTBuddy.jpg"
     ],
     "links": [
       {
@@ -216,9 +216,9 @@
     "name": "Pebblify",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2015",
-    "thumbnail": "/img/thumbnails/Pebblify.png",
+    "thumbnail": "/img/thumbnails/Pebblify.jpg",
     "images": [
-      "/img/projects/Pebblify.png"
+      "/img/projects/Pebblify.jpg"
     ],
     "links": [
       {
@@ -236,9 +236,9 @@
     "name": "Collabify",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2014-2015",
-    "thumbnail": "/img/thumbnails/Collabify.png",
+    "thumbnail": "/img/thumbnails/Collabify.jpg",
     "images": [
-      "/img/projects/Collabify.png"
+      "/img/projects/Collabify.jpg"
     ],
     "links": [
       {
@@ -260,9 +260,9 @@
     "name": "iParkMe",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2014-2015",
-    "thumbnail": "/img/thumbnails/iParkMe.png",
+    "thumbnail": "/img/thumbnails/iParkMe.jpg",
     "images": [
-      "/img/projects/iParkMe.png"
+      "/img/projects/iParkMe.jpg"
     ],
     "links": [
       {
@@ -270,7 +270,7 @@
         "url": "https://github.com/amcolash/iParkMe"
       },
       {
-        "title": "Mobile Site",
+        "title": "Live Site",
         "url": "http://amcolash-iparkme.appspot.com/"
       }
     ],
