@@ -49,7 +49,7 @@ exclude: [
   'resume/*.template'
 ]
 
-gems:
+plugins:
   - jekyll-minifier
   - jekyll-seo-tag
   - jekyll-sitemap

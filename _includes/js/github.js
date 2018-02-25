@@ -19,6 +19,7 @@ var lastShown = 0;
 
 // Start a new network request for github repos on page load
 var xhttp = new XMLHttpRequest();
+xhttp.timeout = 10000; // Timeout after 10 seconds, say something went wrong
 xhttp.onreadystatechange=function() {
   if (xhttp.readyState == 4) {
     var spinner = document.getElementsByClassName("spinner");

@@ -2,7 +2,7 @@
   {
     "name": "Disney Heroes: Battle Mode",
     "section": "Perblue (2015-Present)",
-    "date": "2017-Present",
+    "date_range": "2017-Present",
     "thumbnail": "/img/thumbnails/Secret.png",
     "links": [],
     "images": [
@@ -13,7 +13,7 @@
   {
     "name": "Portal Quest",
     "section": "Perblue (2015-Present)",
-    "date": "2016-2017",
+    "date_range": "2016-2017",
     "thumbnail": "/img/thumbnails/PortalQuest.png",
     "links": [
       {
@@ -30,7 +30,7 @@
   {
     "name": "DragonSoul",
     "section": "Perblue (2015-Present)",
-    "date": "2015-2016",
+    "date_range": "2015-2016",
     "thumbnail": "/img/thumbnails/Dragonsoul.png",
     "links": [
       {
@@ -44,7 +44,7 @@
   {
     "name": "WiscPortal",
     "section": "UW SHOW (2014-2015)",
-    "date": "2014-2015",
+    "date_range": "2014-2015",
     "thumbnail": "/img/thumbnails/WiscPo.png",
     "images": [
       "/img/projects/WiscPo.png"
@@ -65,7 +65,7 @@
     "name": "Mobile App Requests",
     "nice_name": "Mobile App Requets Webpage",
     "section": "Liberty Mutual (2014)",
-    "date": "2014",
+    "date_range": "2014",
     "thumbnail": "/img/thumbnails/ETS.png",
     "images": [
       "/img/projects/ETS.png"
@@ -75,7 +75,7 @@
   {
     "name": "Careers Website",
     "section": "Liberty Mutual (2014)",
-    "date": "2014",
+    "date_range": "2014",
     "thumbnail": "/img/thumbnails/Careers.png",
     "imageClasses": "border",
     "images": [
@@ -92,7 +92,7 @@
   {
     "name": "What's Up",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2017-2018",
+    "date_range": "2017-2018",
     "thumbnail": "/img/thumbnails/WhatsUp.png",
     "images": [
       "/img/projects/WhatsUp.png",
@@ -114,7 +114,7 @@
   {
     "name": "MMM-GoogleFit",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2018",
+    "date_range": "2018",
     "thumbnail": "/img/thumbnails/MMM-GoogleFit.png",
     "images": [
       "/img/projects/MMM-GoogleFit3.png",
@@ -137,7 +137,7 @@
   {
     "name": "GiffingAwesome",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2016",
+    "date_range": "2016",
     "thumbnail": "/img/thumbnails/GiffingAwesome.png",
     "imageClasses": "border",
     "images": [
@@ -158,7 +158,7 @@
   {
     "name": "AR Treasure Hunt Game",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2016",
+    "date_range": "2016",
     "thumbnail": "/img/thumbnails/ARTreasureHunt.png",
     "images": [
       "/img/projects/ARTreasureHunt.png"
@@ -178,7 +178,7 @@
   {
     "name": "ScaleIoT",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2016",
+    "date_range": "2016",
     "thumbnail": "/img/thumbnails/ScaleIoT.png",
     "images": [
       "/img/projects/ScaleIoT.gif",
@@ -190,12 +190,12 @@
         "url": "https://github.com/amcolash/ScaleIoT"
       }
     ],
-    "description": "ScaleIoT is another project from my large collection of IoT (Internet of Things) projects. In this project, I decided to make a smart scale that would record the weight of a user that stepped onto the scale and then display statistics on the users' weight over time on a web page. This project uses a raspberry pi and a webcam, along with a python-based OpenCV image processing component. I learned a lot about OpenCV and image processing through the course of this project and it is one of my most useful projects to date!"
+    "description": "ScaleIoT is another project from my large collection of IoT (Internet of Things) projects. In this project, I decided to make a smart scale that would record the weight of a user that stepped onto the scale and then display statistics on the users' weight over time on a web page. This project uses a raspberry pi and a webcam, along with a python-based OpenCV image processing component. I learned a lot about OpenCV and image processing through the course of this project and it is one of my most useful projects to date_range!"
   },
   {
     "name": "IoTBuddy",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2016",
+    "date_range": "2016",
     "thumbnail": "/img/thumbnails/IoTBuddy.png",
     "images": [
       "/img/projects/IoTBuddy.png"
@@ -215,7 +215,7 @@
   {
     "name": "Pebblify",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2015",
+    "date_range": "2015",
     "thumbnail": "/img/thumbnails/Pebblify.png",
     "images": [
       "/img/projects/Pebblify.png"
@@ -235,7 +235,7 @@
   {
     "name": "Collabify",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2014-2015",
+    "date_range": "2014-2015",
     "thumbnail": "/img/thumbnails/Collabify.png",
     "images": [
       "/img/projects/Collabify.png"
@@ -259,7 +259,7 @@
   {
     "name": "iParkMe",
     "section": "Personal and School Projects (2014-Present)",
-    "date": "2014-2015",
+    "date_range": "2014-2015",
     "thumbnail": "/img/thumbnails/iParkMe.png",
     "images": [
       "/img/projects/iParkMe.png"
