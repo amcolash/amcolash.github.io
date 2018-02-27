@@ -1,32 +1,56 @@
 @media print {
-    h1 { font-size: 28px !important; }
-    h2 { font-size: 24px !important; }
-    h3 { font-size: 20px !important; }
+    h1 { font-size: 24px !important; }
+    h2 { font-size: 20px !important; }
+    h3 { font-size: 16px !important; }
 
-   .repo {
-       border: none;
-       padding: 0;
-       display: inherit !important;
-       page-break-inside: avoid;
+    // Hidden Stuff
+    .video-wrapper, #showContainer, .footer-bottom {
+        display: none !important;
+    }
 
-       hr {
-           margin: -4px 0 2px !important;
-       }
-   }
+    // Show expanded urls
+    .project-links, .social-media-list {
+        a:after {
+            content:" (" attr(href) ") ";
+            font-size:0.8em;
+            font-weight:normal;
+        }
+    }
 
-   #showContainer {
-       display: none !important;
-   }
+    .repo {
+        border: none;
+        padding: 0;
+        display: inherit !important;
+        page-break-inside: avoid;
 
-   .center-img {
-       text-align: left !important;
-   }
+        hr {
+            margin: -4px 0 2px !important;
+        }
+    }
 
-   .page-content {
-       padding-bottom: 10px !important;
-   }
+    .project-thumbnail .title {
+        text-shadow: none;
+        color: #444;
+    }
 
-   footer {
-       padding: 10px 0 !important;
-   }
+    .project-row {
+        margin: 20px 0 5px !important;
+    }
+
+    .project-image {
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    .center-img {
+        text-align: left !important;
+    }
+
+    .page-content {
+        padding-bottom: 10px !important;
+    }
+
+    footer {
+        padding: 10px 0 !important;
+    }
 }
