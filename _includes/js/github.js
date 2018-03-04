@@ -1,3 +1,29 @@
+var init = function () {
+  xhttp.open("GET", url, true);
+  xhttp.send();
+
+  // Start the github calendar
+  new GitHubCalendar(".calendar", "amcolash", { responsive: true, global_stats: false });
+}
+
+var repos = false;
+var cal = false;
+var updateSpinner = function(personalRepos, calendar) {
+  repos |= personalRepos;
+  cal |= calendar;
+
+  console.log("spinner, repos: " + repos + ", cal: " + cal);
+
+  if (repos && cal) {
+    console.log("showing spinner")
+    var spinner = document.getElementsByClassName("spinner");
+    spinner[0].style.display = 'none';
+  }
+}
+
+// Start the scripts on this page.
+window.onload = init;
+
 // Github repo list
 var url = "https://api.github.com/users/amcolash/repos?type=all&sort=pushed&per_page=100";
 
@@ -22,9 +48,6 @@ var xhttp = new XMLHttpRequest();
 xhttp.timeout = 10000; // Timeout after 10 seconds, say something went wrong
 xhttp.onreadystatechange=function() {
   if (xhttp.readyState == 4) {
-    var spinner = document.getElementsByClassName("spinner");
-    spinner[0].style.display = 'none';
-
     // Uh-oh, something went wrong
     if (xhttp.status != 200) {
       // Fallback, just go to github page
@@ -95,7 +118,7 @@ xhttp.onreadystatechange=function() {
         repos.appendChild(repoDiv);
 
         var bounds = repoDiv.getBoundingClientRect();
-        if (bounds.top >= 0 && (bounds.bottom - bounds.height) <= (window.innerHeight || document.documentElement.clientHeight)) {
+        if (i > 4 && bounds.top >= 0 && (bounds.bottom - bounds.height) <= (window.innerHeight || document.documentElement.clientHeight)) {
           repoDiv.style.opacity = 0;
           repoDiv.style.animationName = 'fadein';
           repoDiv.style.animationDelay = (i * 0.1) + 's';
@@ -118,6 +141,8 @@ xhttp.onreadystatechange=function() {
       
       showContainer.appendChild(showMore);
       repos.appendChild(showContainer);
+
+      updateSpinner(true, false);
     }
   }
 };
@@ -142,12 +167,3 @@ var showMore = function () {
   var showContainer = document.getElementById("showContainer");
   showContainer.hidden = true;
 };
-
-var init = function() {
-  xhttp.open("GET", url, true);
-  xhttp.send();
-}
-
-
-// Start the scripts on this page.
-init();
