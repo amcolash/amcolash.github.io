@@ -100,12 +100,16 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 0;
 }
 
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+}
+
+.footer-bottom {
+    padding-top: $spacing-unit / 4;
 }
 
 .contact-list,
