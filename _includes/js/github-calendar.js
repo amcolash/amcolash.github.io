@@ -134,8 +134,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                             }
 
                             container.innerHTML = cal.innerHTML;
-
-                            updateSpinner(false, true);
                         }
                     }).catch(function (e) {
                         return console.error(e);

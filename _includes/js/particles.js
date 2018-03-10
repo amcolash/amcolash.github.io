@@ -44,17 +44,9 @@ particlesJS("particles-js", {
             }
         }
     },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-                "enable": false
-            },
-            "onclick": {
-                "enable": false
-            },
-            "resize": true
-        }
+    canvas: {
+        w: "100%",
+        h: "350px"
     },
     "retina_detect": true
 });

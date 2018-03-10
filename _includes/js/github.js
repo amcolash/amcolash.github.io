@@ -1,31 +1,39 @@
 var init = function () {
+  window.sr = ScrollReveal();
+  
+  // Github repo list
+  var url = "https://api.github.com/users/amcolash/repos?type=all&sort=pushed&per_page=100";
   xhttp.open("GET", url, true);
   xhttp.send();
 
   // Start the github calendar
-  new GitHubCalendar(".calendar", "amcolash", { responsive: true, global_stats: false });
-}
-
-var repos = false;
-var cal = false;
-var updateSpinner = function(personalRepos, calendar) {
-  repos |= personalRepos;
-  cal |= calendar;
-
-  console.log("spinner, repos: " + repos + ", cal: " + cal);
-
-  if (repos && cal) {
-    console.log("showing spinner")
-    var spinner = document.getElementsByClassName("spinner");
-    spinner[0].style.display = 'none';
-  }
+  new GitHubCalendar(".calendar", "amcolash", { responsive: true, global_stats: false }).then(function() {
+    updateSpinner(false, true);
+    initReveal('.calendar');
+  });
 }
 
 // Start the scripts on this page.
 window.onload = init;
 
-// Github repo list
-var url = "https://api.github.com/users/amcolash/repos?type=all&sort=pushed&per_page=100";
+var repos = false;
+var cal = false;
+// Should be using promises here, but meh
+var updateSpinner = function(personalRepos, calendar) {
+  repos |= personalRepos;
+  cal |= calendar;
+
+  if (repos && cal) {
+    var spinner = document.getElementsByClassName("spinner");
+    spinner[0].style.display = 'none';
+  }
+}
+
+var initReveal = function(element) {
+  sr.reveal(element, {
+    reset: true
+  });
+}
 
 // Make the actual svg element to attach
 var svgElement = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -41,8 +49,6 @@ var pathElement = document.createElementNS("http://www.w3.org/2000/svg", 'path')
 pathElement.setAttribute("d", forkIcon); //Set path's data
 svgElement.appendChild(pathElement);
 
-var lastShown = 0;
-
 // Start a new network request for github repos on page load
 var xhttp = new XMLHttpRequest();
 xhttp.timeout = 10000; // Timeout after 10 seconds, say something went wrong
@@ -54,8 +60,8 @@ xhttp.onreadystatechange=function() {
       var error = document.createElement("h3");
       var retry = document.createElement("span");
 
-      error.innerHTML = "Error fetching git repos. Try going to <a href='https://github.com/amcolash'>https://github.com/amcolash</a>.";
-      retry.innerHTML = "<a href='/github'>Retry</a>";
+      error.innerHTML = "Something went wrong fetching my git repos. Try going to <a href='https://github.com/amcolash'>https://github.com/amcolash</a>.";
+      retry.innerHTML = "<a href='/github'>Retry Loading</a>";
       
       var repos = document.getElementById("repositories");
       repos.appendChild(error);
@@ -71,8 +77,6 @@ xhttp.onreadystatechange=function() {
       title[0].innerHTML = "Github Repositories I Contribute To (" + data.length + ")";
 
       var date_options = { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric'};
-
-      lastShown = 0;
 
       for (var i = 0; i < data.length; i++) {
         var repo = data[i];
@@ -116,54 +120,10 @@ xhttp.onreadystatechange=function() {
         repoDiv.appendChild(hr);
         repoDiv.appendChild(grid);
         repos.appendChild(repoDiv);
-
-        var bounds = repoDiv.getBoundingClientRect();
-        if (i > 4 && bounds.top >= 0 && (bounds.bottom - bounds.height) <= (window.innerHeight || document.documentElement.clientHeight)) {
-          repoDiv.style.opacity = 0;
-          repoDiv.style.animationName = 'fadein';
-          repoDiv.style.animationDelay = (i * 0.1) + 's';
-
-          lastShown = i;
-        // } else if (i > (lastShown * 2)) {
-        } else {
-          repoDiv.style.display = "none";
-        }
-      }
-
-      var showContainer = document.createElement("div");
-      showContainer.classList += "padding-top";
-      showContainer.id = "showContainer";
-
-      var showMore = document.createElement("span");
-      showMore.innerText = "Show More";
-      showMore.classList += "btn";
-      showMore.addEventListener("click", function() { window.showMore(); }, false);
-      
-      showContainer.appendChild(showMore);
-      repos.appendChild(showContainer);
-
-      updateSpinner(true, false);
-    }
-  }
-};
-
-
-var showMore = function () {
-  var offset = lastShown * 2;
-  var repos = document.getElementById("repositories");
-  for (var i = offset; i < repos.children.length; i++) {
-    var repoDiv = repos.children[i];
-
-    if (repoDiv.id !== "showContainer") {
-      repoDiv.style.display = "inherit";
-      if (i < lastShown * 3) {
-        repoDiv.style.opacity = 0;
-        repoDiv.style.animationName = 'fadein';
-        repoDiv.style.animationDelay = ((i - offset) * 0.1) + 's';
       }
     }
+    
+    updateSpinner(true, false);
+    initReveal('.repo');
   }
-
-  var showContainer = document.getElementById("showContainer");
-  showContainer.hidden = true;
 };

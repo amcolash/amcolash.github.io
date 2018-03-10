@@ -11,15 +11,6 @@
   hr {
     margin-bottom: 8px;
   }
-
-  // Fancy fade in set up, actually starting set up in js
-  animation-fill-mode: forwards;
-  animation-duration: 0.5s;
-
-  @keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-  }
 }
 
 

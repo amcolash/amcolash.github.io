@@ -15,5 +15,6 @@ permalink: /github/
 <div id="repositories"></div>
 
 <!-- Load scripts last -->
+<script type="text/javascript">{% include js/scrollreveal.min.js %}</script>
 <script type="text/javascript">{% include js/github-calendar.js %}</script>
 <script type="text/javascript">{% include js/github.js %}</script>
