@@ -1,853 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Andrew McOlash</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,500,600,700|Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
-    <style>
-      .top-icons {
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:300,400,700|Noto+Serif:400" rel="stylesheet" type="text/css">
+	<style>
+	  /* Main components */
+
+body {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  background-color: #f6f6f6;
+  margin: 1.5em; /* Make sure to modify the top icon position too */
+}
+
+p {
+  display: inline;
+}
+
+a {
+  color: #4c92c1;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Top icons */
+
+.top-icons {
   position: fixed;
-  top: 14px;
+  top: 1.5em;
   text-align: center;
   line-height: 1;
 }
-.top-icons a:hover {
+
+.top-icons a, .top-icons a:hover {
   text-decoration: none;
 }
+
 .top-icons.left {
-  left: 16px;
+  left: 1.5em;
 }
+
 .top-icons.right {
-  right: 16px;
+  right: 1.5em;
 }
-.top-icons .fa {
+
+.top-icons .icon {
   font-size: 32px;
   cursor: pointer;
 }
-.top-icons .icon-label {
+
+.top-icons .label {
   padding-top: 3px;
   color: #777;
-}
-.top-icons span {
   font-size: 14px;
 }
+
+.top-icons .label.pad-extra {
+  padding-top: 6px;
+}
+
 .top-icons .border {
   border-bottom: 2px solid #555;
   padding-bottom: 14px;
   margin-bottom: 14px;
 }
-.clear-margin {
+
+/* Rest of styling */
+
+.email,.site,.github,.phone-number {
+  margin-bottom: .4em;
+  font-size: .9em;
+}
+
+.card {
+  background-color: #fefefe;
+  box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+.header.card {
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header.card .left {
+  flex: 325px;
+}
+
+.header.card .right {
+  /* flex: auto; */
+  padding-top: 0.75em;
+  margin-right: auto;
+}
+
+section.card {
+  padding: 15px 15px 22.5px 20px;
+}
+
+.skill {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  margin-bottom: .4em;
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.skills p {
+  font-size: .9em;
+}
+
+#name {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #555;
   margin: 0;
 }
-.space-top {
-  margin-top: 10px;
+
+#resume-container {
+  max-width: 950px;
+  margin: auto;
 }
-.space-right {
-  margin-right: 10px;
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: .4em;
+  padding-bottom: .2em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.2em;
 }
-.icon-left {
-  margin-right: 5px;
+
+.columns {
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
-.icon-right {
-  margin-left: 5px;
+
+.left-content {
+  flex: 250px;
 }
-.labels {
-  word-spacing: 5px;
-  line-height: 2;
+
+.left-content .section-header {
+  font-weight: 400;
 }
-hr {
-  margin-top: 16px;
-  margin-bottom: q6px;
+
+.left-content .section-content {
+  font-weight: 300;
 }
-.label-keyword {
+
+.left-content .title {
+  font-weight: 400;
+}
+
+.right-content {
+  flex: 500px;
+}
+
+.right-content, .left-content, .header.card {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.right-content .section-header {
+  color: #000;
+}
+
+.title {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .2em;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.duration {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  color: #777;
+  margin-top: .2em;
+  margin-bottom: .3em;
+}
+
+.occupation {
+  font-size: 1em;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+
+.list {
+  list-style-type: none;
+  font-size: .9em;
+}
+
+.location {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .1em;
+}
+
+ul.list {
+  list-style-type: circle;
+  padding-left: 1rem;
+}
+
+ul.list li {
+  line-height: 135%;
+  margin-bottom: .2em;
+}
+
+ul.list li:before {
   display: inline-block;
-  background: #7eb0db;
-  color: white;
-  font-size: 0.9em;
-  padding: 5px;
-  border: 1px solid #357ebd;
+  width: 0;
+  margin-left: 0;
 }
-.link-disguise {
-  color: inherit;
+
+.project,.employment,.education,.skills,.volunteer {
+  margin-bottom: .9em;
 }
-.link-disguise:hover {
-  color: inherit;
+
+.last {
+  margin-bottom: 0!important;
 }
-@media (max-width: 992px) {
-  .clear-margin-sm {
+
+.term {
+  font-size: 1.65em;
+  font-weight: 200;
+  color: #000;
+  line-height: 1.5em;
+}
+
+#skills-container,.contact {
+  margin-bottom: 0;
+}
+
+.interests,.subtitle {
+  font-size: .9em;
+  margin-bottom: .2em;
+}
+
+.title {
+  color: #555;
+  font-weight: 400;
+}
+
+.level {
+  line-height: 1.5em;
+}
+
+@media (max-width: 1090px) {
+  .top-icons {
+    display: none;
+  }
+
+  body {
+    margin: 0.5em;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.5cm;
+  }
+
+  .top-icons {
+    display: none;
+  }
+
+  body {
+    background-color: initial;
+    margin: 0;
+  }
+
+  .header.card {
+    margin-top: -3px;
+    padding-top: 0;
+  }
+
+  .header.card .left {
+    flex: 1;
+  }
+
+  .card {
+    box-shadow: none;
     margin-bottom: 0;
   }
-}
-body {
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #f0f0f0;
-  color: #333333;
-  font-size: 16px;
-}
-.text-bolder {
-  font-weight: bold;
-}
-@media only screen {
-  .container {
-    max-width: 50em;
+
+  .section-header {
+    border-bottom: solid 1px #ccc;
   }
-}
-@media (max-width: 480px) {
-  ul {
-    padding-left: 25px;
+
+  section.card {
+    padding: 5px 15px;
   }
-  /*
-        .mobile-title {
-            display: inline-block;
-            margin-left: 5px;
-            font-weight: bold;
-            text-transform: uppercase;
-            vertical-align: middle;
-        }
-*/
-  .background-details {
-    display: block;
+
+  .left-content {
+    flex: 225px;
   }
-  .background-details .icon {
-    max-width: inherit;
-    min-width: inherit;
-    text-align: left;
+
+  .right-content {
+    flex: 400px;
   }
-  .background-details .icon,
-  .background-details .info {
-    display: block;
-    padding: 10px 0;
-  }
-  .background-details .title {
-    display: none;
-  }
-  .card-nested {
-    padding: 5px 0;
-  }
-}
-.profile-card {
-  display: table;
-  width: 100%;
-}
-.profile-pic {
-  display: table-cell;
-  vertical-align: top;
-  padding: 1rem 4rem 0 0 ;
-}
-.profile-pic img {
-  width: 100px;
-  height: 100px;
-}
-.contact-details {
-  display: table-cell;
-}
-.contact-details .detail {
-  display: inline-block;
-  line-height: 2;
-  margin-right: 2rem;
-}
-.contact-details .detail .icon {
-  padding-right: 7px;
-  color: #888;
-}
-.contact-details .detail .info {
-  font-size: 0.8em;
-}
-.social-links {
-  line-height: 2.5;
-}
-.social-link {
-  display: block;
-}
-.social-link span {
-  display: inline-block;
-  vertical-align: middle;
-}
-.social-link:hover,
-.social-link:focus {
-  text-decoration: none;
-}
-.social-link .fa {
-  text-align: center;
-  width: 2em;
-}
-.fa-github {
-  color: #454545;
-}
-.fa-github:hover,
-.fa-github:focus {
-  text-decoration: none;
-  color: #2b2b2b;
-}
-.fa-twitter {
-  color: #33ccff;
-}
-.fa-twitter:hover,
-.fa-twitter:focus {
-  text-decoration: none;
-  color: #00bfff;
-}
-.fa-rss {
-  color: #f36f24;
-}
-.fa-rss:hover,
-.fa-rss:focus {
-  text-decoration: none;
-  color: #d8560c;
-}
-.fa-linkedin {
-  color: #007bb6;
-}
-.fa-linkedin:hover,
-.fa-linkedin:focus {
-  text-decoration: none;
-  color: #005983;
-}
-.fa-skype {
-  color: #12a5f4;
-}
-.fa-skype:hover,
-.fa-skype:focus {
-  text-decoration: none;
-  color: #0986ca;
-}
-.fa-stack-overflow {
-  color: #8e8e92;
-}
-.fa-stack-overflow:hover,
-.fa-stack-overflow:focus {
-  text-decoration: none;
-  color: #747479;
-}
-.fa-soundcloud {
-  color: #e8822d;
-}
-.fa-soundcloud:hover,
-.fa-soundcloud:focus {
-  text-decoration: none;
-  color: #cc6916;
-}
-.fa-pinterest {
-  color: #bd091f;
-}
-.fa-pinterest:hover,
-.fa-pinterest:focus {
-  text-decoration: none;
-  color: #8c0717;
-}
-.fa-vimeo {
-  color: #17b3e8;
-}
-.fa-vimeo:hover,
-.fa-vimeo:focus {
-  text-decoration: none;
-  color: #128fba;
-}
-.fa-behance {
-  color: #2c98cf;
-}
-.fa-behance:hover,
-.fa-behance:focus {
-  text-decoration: none;
-  color: #2379a5;
-}
-.fa-codepen {
-  color: #1c1c1c;
-}
-.fa-codepen:hover,
-.fa-codepen:focus {
-  text-decoration: none;
-  color: #020202;
-}
-.fa-foursquare {
-  color: #fa4778;
-}
-.fa-foursquare:hover,
-.fa-foursquare:focus {
-  text-decoration: none;
-  color: #f91554;
-}
-.fa-reddit {
-  color: #545454;
-}
-.fa-reddit:hover,
-.fa-reddit:focus {
-  text-decoration: none;
-  color: #3b3b3b;
-}
-.fa-spotify {
-  color: #acd200;
-}
-.fa-spotify:hover,
-.fa-spotify:focus {
-  text-decoration: none;
-  color: #829f00;
-}
-.fa-dribbble {
-  color: #ce366f;
-}
-.fa-dribbble:hover,
-.fa-dribbble:focus {
-  text-decoration: none;
-  color: #a82959;
-}
-.fa-facebook {
-  color: #4b6daa;
-}
-.fa-facebook:hover,
-.fa-facebook:focus {
-  text-decoration: none;
-  color: #3b5687;
-}
-.fa-angellist {
-  color: #000000;
-}
-.fa-angellist:hover,
-.fa-angellist:focus {
-  text-decoration: none;
-  color: #000000;
-}
-.fa-bitbucket {
-  color: #205081;
-}
-.fa-bitbucket:hover,
-.fa-bitbucket:focus {
-  text-decoration: none;
-  color: #163758;
-}
-.fa-google-plus {
-  color: #bf2a1d;
-}
-.fa-google-plus:hover,
-.fa-google-plus:focus {
-  text-decoration: none;
-  color: #932016;
-}
-.background-card h4 {
-  font-variant: small-caps;
-  color: #777777;
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  line-height: 1.2;
-}
-.background-card h4:not(:first-child) {
-  margin-top: 2em;
-}
-h4 > .fa,
-h4 > .title {
-  display: inline-block;
-  vertical-align: baseline;
-}
-h4 > .fa {
-  width: 4rem;
-}
-.content {
-  line-height: 1.5;
-}
-.card {
-  background: #ffffff;
-  border: 1px solid #e6e6e6;
-  border-radius: 5px;
-  padding: 2em 3.5em;
-}
-.card-nested {
-  padding: 1.5rem 0 1.5rem 4.2rem;
-  page-break-inside: avoid;
-}
-.card-wrapper {
-  padding: 10px 8px;
-}
-.enumeration:not(:last-child):after {
-  content: ", ";
-}
-.enumeration:last-child:after {
-  content: ".";
-}
-@media only screen and (max-width: 768px) {
-  .profile-card {
-    display: block;
-  }
-  .contact-details,
-  .profile-pic {
-    display: block;
-    text-align: center;
-  }
-  .card-nested {
-    padding-left: 0;
-  }
-  .card {
-    padding: 2em 2.5em;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .contact-details .detail {
-    display: block;
-  }
-  .card {
-    padding: 2em 1.5em;
-  }
-}
-.card-skills {
-  position: relative;
-}
-.skill-info {
-  margin-left: 20px;
-}
-@media only screen and (min-width: 768px) {
-  .skill {
-    border-left: 9px solid #555555;
-  }
-  .skill.beginner {
-    height: 50%;
-    border-color: #e74c3c;
-  }
-  .skill.intermediate {
-    height: 70%;
-    border-color: #f1c40f;
-  }
-  .skill.advanced {
-    border-color: #5cb85c;
-  }
-  .skill.master {
-    border-color: black;
-  }
-}
-@media (max-width: 868px) {
-  .quote {
-    font-size: inherit;
-  }
-  .top-icons {
-    display: none;
-  }
-}
-@media print {
-  body {
-    font-size: 10pt;
-  }
-  .social-link-text {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: none !important;
-  }
-  .background-card h4:not(:first-child) {
-    margin-top: 0 !important;
-  }
-  .card {
-    border: 0;
-    padding: 0;
-  }
-  .container {
-    max-width: 100%;
-    width: 100%;
-  }
-  .contact-details .detail .icon {
-    color: #888 !important;
-  }
-  .background-card h4 {
-    padding-bottom: 0.35em;
-    margin-bottom: 0.35em;
-    margin-top: 0.7em !important;
-  }
-  h4 > .fa {
-    display: none !important;
-  }
-  .card-nested {
-    padding: .5rem 0 .5rem 0;
-  }
-  .labels {
-    display: inline;
-  }
-  .skill-info {
-    margin-left: 0;
-  }
-  blockquote {
-    font-size: 100%;
-  }
-  .top-icons {
-    display: none;
+
+  .title a {
+    text-decoration: none;
+    color: #000;
   }
 }
 
-    </style>
+    @font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?cvdv43');
+  src:  url('fonts/icomoon.eot?cvdv43#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cvdv43') format('truetype'),
+    url('fonts/icomoon.woff?cvdv43') format('woff'),
+    url('fonts/icomoon.svg?cvdv43#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=UA-114681426-1'></script>
-<script>
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e902";
+}
+.icon-printer:before {
+  content: "\e954";
+}
+.icon-floppy-disk:before {
+  content: "\e962";
+}
+	</style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src='https://www.googletagmanager.com/gtag/js?id=UA-114681426-1'></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments); }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-114681426-1');
-</script>
+  </script>
+
   </head>
-
-  <body itemscope itemtype="http://schema.org/Person">
-
+  <body>
     <div class="top-icons left">
-      <div>
-        <a href="../" title="Home">
-          <i class="fa fa-angle-left" aria-hidden="true"></i>
-          <i class="fa fa-home" aria-hidden="true"></i>
-        </a>
-        <div class="icon-label">
-          <span>Home</span>
-        </div>
-      </div>
+      <a href="../" title="Home">
+        <i class="icon icon-home" aria-hidden="true"></i>
+      </a>
+      <div class="label">Home</div>
     </div>
 
     <div class="top-icons right">
       <div class="border">
-        <div>
-          <a href="#" title="Print Resume"><i class="fa fa-print" aria-hidden="true" onclick="window.print();"></i></a>
-        </div>
-        <div class="icon-label">
-          <span>Print</span>
-        </div>
+        <a href="#" class="hover" onclick="window.print();">
+          <i class="icon icon-printer" aria-hidden="true"></i>
+        </a>
+        <div class="label">Print</div>
       </div>
 
       <div>
-        <div>
-          <a href="Andrew McOlash.pdf" target="_blank" title="Download Resume" download>
-            <i class="fa fa-download" aria-hidden="true"></i>
-          </a>
+        <a href="Andrew McOlash.pdf" target="_blank" title="Download Resume" download>
+          <i class="icon icon-floppy-disk" aria-hidden="true"></i>
+        </a>
+        <div class="label pad-extra">PDF</div>
+      </div>
+    </div>
+
+    <div id='resume-container'>
+      <div class='header card'>
+        <div class="left">
+          <h1 id='name'>
+            Andrew McOlash
+          </h1>
+          <span class='term'>Software Engineer</span>
         </div>
-        <div class="icon-label">
-          <span>PDF</span>
+        <div class="right">
+          <div class='section-content' id='contact'>
+            <div class='contact'>
+              <div class='email'>
+                Email: <a href='mailto:amcolash@gmail.com'>amcolash@gmail.com</a>
+              </div>
+              <div class='phone-number'>
+                Phone: <a href="tel:(414) 745-2657">(414) 745-2657</a>
+              </div>
+                <div class='site'>
+                  Website: <a href="http://amcolash.com">http://amcolash.com</a>
+                </div>
+                
+              <div class='site'>
+                Github: <a href='https://github.com/amcolash'>https://github.com/amcolash</a>
+              </div>
+                
+            </div>
+          </div>
         </div>
       </div>
-
-      
-    </div>
-
-    <div class="container">
-      <section class="row">
-        <div class="card-wrapper">
-          <div class="card">
-            <div class="profile-card">
-                <div class="profile-pic">
-                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
-                    alt="Andrew McOlash" src="https://www.gravatar.com/avatar/a2821096114f7641f9a304453fa56137?s=250&amp;r=pg&amp;d=mm" itemprop="image">
+    <div class="columns">
+      <div class='left-content'>
+        <section class='card'>
+          <div class='section-header'>Education</div>
+          <div class='section-content' id='education'>
+            <div class='education last'>
+              <div class='education-info'>
+                <div class='title'>
+                  Bachelor of Science in Computer Science
+                  <br>at  UW Madison </div>
+                <div class='duration'>
+                   September 2011   - May 2015 
                 </div>
-                <div class="contact-details">
-                  <div class="name-and-profession">
-                    <h3 class="text-bolder name" itemprop="name"> Andrew McOlash</h3>
-                    <h5 class="text-muted" itemprop="jobTitle">Software Engineer</h5>
-                  </div>
-
-                    <div class="detail">
-                      <span class="icon">
-                        <i class="fa fa-lg fa-envelope"></i>
-                      </span>
-
-                      <span class="info">
-                        <a href="mailto:amcolash@gmail.com" class="link-disguise" itemprop="email">amcolash@gmail.com</a>
-                      </span>
-                    </div>
-
-                    <div class="detail">
-                      <span class="icon">
-                        <i class="fa fa-lg fa-phone"></i>
-                      </span>
-
-                      <a href="tel://(414) 745-2657" class="link-disguise info" itemprop="telephone">
-                        (414) 745-2657
-                      </a>
-                    </div>
-
-                    <div class="detail">
-                      <span class="icon">
-                        <i class="fa fa-lg fa-map-marker"></i>
-                      </span>
-
-                        <span class="info">
-                          Madison, Wisconsin,
-                          US
-                        </span>
-                    </div>
-
+                <div class='info'>
+                  <ul class="list">
+                    <li>Favorite Class: Computer Graphics</li>
+                    <li>Computer Engineering Project: Built an Android Spotify app for gatherings with a Reddit-like voting system for choosing upcoming songs</li>
+                  </ul>
                 </div>
-
-            </div>
-            <hr>
-
-            <div class="social-links">
-                <a class="social-link" href=http://amcolash.com target="_blank">
-                  <span class="fa fa-globe fa-2x"></span>
-                  <span class="social-link-text">http://amcolash.com</span>
-                </a>
-
-                <a class="social-link" href="https://github.com/amcolash" target="_blank">
-                  <span class="fa fa-github fa-2x"></span>
-                  <span class="social-link-text">https://github.com/amcolash</span>
-                </a>
-                <a class="social-link" href="https://www.linkedin.com/in/andrew-mcolash" target="_blank">
-                  <span class="fa fa-linkedin fa-2x"></span>
-                  <span class="social-link-text">https://www.linkedin.com/in/andrew-mcolash</span>
-                </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="card-wrapper">
-          <div class="card background-card">
-
-              <h4 id="about"> <span class="fa fa-lg fa-user"></span> <span class="title">About</span> </h4>
-              <div class="card-nested" itemprop="description">
-                <p> He is a Software Engineer at PerBlue. When not staring deeply into a text editor (usually vim, VS Code or Eclipse) and trying to solve all of the problems, he likes to bike and relax with video games. Making, developing, and hacking are his passions. </p>
               </div>
-
-            <h4 id="work-experience"> <span class="fa fa-lg fa-pencil-square-o"></span> <span class="title">Work Experience</span> </h4>
-            <ul class="list-unstyled">
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Software Engineer II</strong>,
-                      <a href="https://perblue.com" target="_blank">PerBlue</a>
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                        <span class="space-right date"> June 2015 -  Present  </span>
-                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 2 years 9 months </span> 
-                      </small>
-                    </p>
-                    <p>Worked on developing and implementing new content into the mobile role playing games Disney Heroes: Battle Mode, Portal Quest, and DragonSoul at PerBlue. Worked on implementing unique combat logic, content (new heroes, environments and game modes) and developing tooling for both the art team and quality assurance team.</p>
-                      <ul>
-                          <li> Continual improvement of game by working closely with multiple teams within the studio </li>
-                          <li> Develop tools for both the art teams and quality assurance teams to improve workflows </li>
-                          <li> Implement new types of combat logic and mechanics </li>
-                          <li> Refactor large sections of the codebase to improve and implement new systems to make development of new characters easier and faster </li>
-                      </ul>
+            </div>
+          </div>
+        </section>
+        <section class='card'>
+          <div class='section-header'>Projects</div>
+          <div class='section-content' id='projects'>
+            <div class='project '>
+              <div class='project-info'>
+                <div class='title'>
+                    <a href="https://github.com/amcolash/WhatsUp">What&#x27;s Up</a>
+                </div>
+                  <div class='duration'>
+                     November 2017   - January 2018 
                   </div>
-
-                </li>
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Web Developer</strong>,
-                      <a href="http://www.med.wisc.edu/show/survey-of-the-health-of-wisconsin/35828" target="_blank">Survey of the Heath of Wisconsin (SHOW)</a>
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                        <span class="space-right date"> November 2014 -  May 2015  </span>
-                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 5 months </span> 
-                      </small>
-                    </p>
-                    <p>Drafting and development for a new website/webapp that displays health statistics and public health information. This portal provides a simple way to quickly see public health information collected from SHOW.</p>
-                      <ul>
-                          <li> Used web technologies including Handlebars, Yeoman, Grunt and Bower </li>
-                          <li> Quick iterations of the website for both layout and functionality </li>
-                      </ul>
+                <div class='info'>
+                  <ul class="list">
+                    <li>Leverage multiple event apis including Facebook, EventBrite and Meetup to aggregate information about upcoming local events</li>
+                    <li>Implemented using Ionic (Angluar) and Firebase to provide real time updates to new events</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class='project last'>
+              <div class='project-info'>
+                <div class='title'>
+                    <a href="https://github.com/amcolash/GiffingAwesome">Giffing Awesome</a>
+                </div>
+                  <div class='duration'>
+                     April 2016   - June 2017 
                   </div>
-
-                </li>
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Web Development Internship</strong>,
-                      <a href="http://lmig.com" target="_blank">Liberty Mutual</a>
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                        <span class="space-right date"> May 2014 -  August 2014  </span>
-                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 3 months </span> 
-                      </small>
-                    </p>
-                    <p>Development of mobile responsive internal web applications. Worked on creating a simplified process for engaging the Mobile team using external APIs.</p>
-                      <ul>
-                          <li> Develop a greater understanding of web technologies </li>
-                          <li> Used web technologies including EmberJS, NodeJS, Twitter Bootstrap and Grunt </li>
-                          <li> Closely work with MVC pattern in multiple app environments </li>
-                      </ul>
+                <div class='info'>
+                  <ul class="list">
+                    <li>Mobile web app that allows for users to search image sites, save he share their favorite GIFs</li>
+                    <li>Devloped with the Ionic Framework and Firebase, and the APIs from Giphy, GifMe and Riffsy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <section class='card'>
+            <div class='section-header'>Technical Skills</div>
+            <div class='section-content' id='technical-skills'>
+              <div id='skills-container'>
+            <div class='skills '>
+                <div class='title'>Sotware Development</div>
+            <p>
+              Java,
+              Python,
+              C,
+              C++,
+              Bash Scripting
+            </p>
+            </div>
+            <div class='skills last'>
+                <div class='title'>Web Development</div>
+            <p>
+              HTML,
+              CSS,
+              SASS/LESS,
+              Javascript,
+              AngularJS,
+              Ionic Framework,
+              Twitter Bootstrap,
+              Jekyll,
+              NodeJS,
+              EmberJS
+            </p>
+            </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class='right-content'>
+          <section class='card'>
+            <div class='section-header'>Employment</div>
+            <div class='section-content' id='employment'>
+              <div class='employment '>
+                <div class='employment-info'>
+                  <div class='title'>
+                      <a href='https://perblue.com'>
+                        PerBlue
+                      </a>
+                      <span>Software Engineer II</span>
                   </div>
-
-                </li>
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Office Administrative Aide</strong>,
-                      <a href="https://www.housing.wisc.edu/" target="_blank">University of Wisconsin Madison</a>
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                        <span class="space-right date"> August 2012 -  November 2014  </span>
-                         <span class="duration"> <i class="fa fa-clock-o icon-left"></i> 2 years 3 months </span> 
-                      </small>
-                    </p>
-                    <p>Work with students and office staff to organize and coordinate residence hall activities as well as designing publicity for the events. Provide tours for perspective students and provide information about the residence hall.</p>
-                      <ul>
-                          <li> Create event publicity for residence hall events and gatherings </li>
-                          <li> Work with students and faculty to coordinate events </li>
-                      </ul>
+                  <div class='duration'>
+                  June 2015
+                  - Present
                   </div>
+                </div>
+                <div class='info'>
+              <ul class="list">
+                <li>Collaborate with a small team to develop software infrastructure for the mobile games &quot;Disney Heroes: Battle Mode&quot;, &quot;Portal Quest&quot; and &quot;DragonSoul&quot;</li>
+                <li>Implement new content, combat logic, mechanics, asset management system and rendering pipline</li>
+                <li>Create tooling for both the art and quality assurance teams to improve their workflows</li>
+                <li>Refactor large sections of the codebase to make development of new characters and mechanics easier and faster</li>
+              </ul>
+                </div>
+              </div>
+              <div class='employment '>
+                <div class='employment-info'>
+                  <div class='title'>
+                      <a href='http://www.med.wisc.edu/show/survey-of-the-health-of-wisconsin/35828'>
+                        Survey of the Heath of Wisconsin (SHOW)
+                      </a>
+                      <span>Web Developer</span>
+                  </div>
+                  <div class='duration'>
+                  November 2014
+                  - May 2015
+                  </div>
+                </div>
+                <div class='info'>
+              <ul class="list">
+                <li>Developed a public health statistics web portal from scratch</li>
+                <li>Used web frameworks including Handlebars and HighCharts to deliver fast, reusable and mobile responsive pages</li>
+                <li>Provided quick iterations of the website to tailor specifically to feature requests</li>
+              </ul>
+                </div>
+              </div>
+              <div class='employment last'>
+                <div class='employment-info'>
+                  <div class='title'>
+                      <a href='http://lmig.com'>
+                        Liberty Mutual
+                      </a>
+                      <span>Web Development Internship</span>
+                  </div>
+                  <div class='duration'>
+                  May 2014
+                  - August 2014
+                  </div>
+                </div>
+                <div class='info'>
+              <ul class="list">
+                <li>Developed mobile responsive internal web applications</li>
+                <li>Utilized web technologies including EmberJS, Angular, NodeJS and Grunt</li>
+                <li>Closely worked with MVC patterns and architeched internal APIs</li>
+              </ul>
+                </div>
+              </div>
+            </div>
+          </section>
 
-                </li>
-            </ul>
-
-            <h4 id="skills"> <span class="fa fa-lg fa-code"></span> <span class="title">Skills</span> </h4>
-            <ul class="list-unstyled">
-                <li class="card-nested advanced">
-                  <strong>Sotware Development (advanced):</strong>
-                   <span class="enumeration">Java</span>  <span class="enumeration">Python</span>  <span class="enumeration">C</span>  <span class="enumeration">C++</span>  <span class="enumeration">Bash Scripting</span> 
-              </li>
-                <li class="card-nested intermediate">
-                  <strong>Web Development (intermediate):</strong>
-                   <span class="enumeration">HTML</span>  <span class="enumeration">CSS</span>  <span class="enumeration">SASS/LESS</span>  <span class="enumeration">Javascript</span>  <span class="enumeration">AngularJS</span>  <span class="enumeration">Ionic Framework</span>  <span class="enumeration">Twitter Bootstrap</span>  <span class="enumeration">Jekyll</span>  <span class="enumeration">NodeJS</span>  <span class="enumeration">EmberJS</span> 
-              </li>
-            </ul>
-
-            <h4 id="education"><span class="fa fa-lg fa-mortar-board"></span> <span class="title">Education</span></h4>
-
-            <ul class="list-unstyled">
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Computer Science, Bachelor of Science</strong>,&nbsp;
-                      University of Wisconsin Madison
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                        September 2011 -  May 2015 
-                      </small>
-                    </p>
-                    <i>GPA: 3.1</i>
-                    <div class="space-top labels">
-                      
+          <section class='card last'>
+            <div class='section-header'>Volunteering</div>
+            <div class='section-content' id='voulnteering'>
+                <div class='volunteer '>
+                  <div class='volunteer-info'>
+                    <div class='title'>
+                          <a href='http://www.litnetwork.org/'>
+                            Literacy Network
+                          </a>
+                        <span>Math Tutoring</span>
+                    </div>
+                    <div class='duration'>
+                       August 2017   - Present 
                     </div>
                   </div>
-                </li>
-            </ul>
-
-
-            <h4 id="volunteer-work"><span class="fa fa-lg fa-child"></span> <span class="title">Volunteer Work</span> </h4>
-            <ul class="list-unstyled">
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Math Tutoring</strong>,&nbsp;
-                        <a href=http://www.litnetwork.org/>Literacy Network</a>
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                          August 2017 -  Present 
-                      </small>
-                    </p>
-                    <p>Help to tutor GED students with algebra, geometry and statistics. Provide personalized learning plans as well as recording progress each week. Use different techniques based on each students needs to help with retention of materials.</p>
-                    <ul>
+                  <div class='info'>
+                    <ul class="list">
+                      <li>Provide 1 on 1 tutoring sessions for GED students in the subjects of algebra, geometry and statistics</li>
+                      <li>Personalize individual learning plans for each student</li>
+                      <li>Utilize different teaching techniques based on student needs</li>
                     </ul>
                   </div>
-                </li>
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Teaching Assistant</strong>,&nbsp;
-                        <a href=http://adorable.io/post/kids-get-it>Kids Get IT</a>
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                          May 2016 -  November 2016 
-                      </small>
-                    </p>
-                    <p>Worked with young children to help them learn about technology. Assisted children making music with SonicPi - an open source live coding music synthesizer, as well as Bitsbox - a service which allows users to learn to write real code and make games.</p>
-                    <ul>
+                </div>
+                <div class='volunteer last'>
+                  <div class='volunteer-info'>
+                    <div class='title'>
+                          Kids Get IT
+                        <span>Teaching Assistant</span>
+                    </div>
+                    <div class='duration'>
+                       May 2016   - November 2016 
+                    </div>
+                  </div>
+                  <div class='info'>
+                    <ul class="list">
+                      <li>Instruct and mentor children to teach them about technology</li>
+                      <li>Assist children in making music with SonicPi - an open souce live coding music synthesizer</li>
+                      <li>Help kids learn and write real code with the service Bitsbox</li>
                     </ul>
                   </div>
-                </li>
-                <li class="card-nested">
-                  <div class="content has-sidebar">
-                    <p class="clear-margin-sm">
-                      <strong>Eagle Scout</strong>,&nbsp;
-                        <a href=http://www.scouting.org/>Boy Scouts of America</a>
-                    </p>
-                    <p class="text-muted">
-                      <small>
-                          January 2005 -  January 2011 
-                      </small>
-                    </p>
-                    <p>Held several leadership positions, led activities, taught skills to scouts, organized food drives, fund raised, and assisted in planning troop projects. Led a middle-school FIRST Lego League team as head coach for Eagle project.</p>
-                    <ul>
-                    </ul>
-                  </div>
-                </li>
-            </ul>
-
-
-            <h4 id="interests"> <span class="fa fa-lg fa-heart"></span> <span class="title">Interests</span> </h4>
-            <ul class="list-unstyled">
-                <li class="card-nested">
-                  <p>
-                    <strong>Software Development Experience</strong>
-                  </p>
-
-                  <div class="space-top labels">
-                      <span class="label label-keyword">Video Games</span>
-                      <span class="label label-keyword">Web Applications</span>
-                      <span class="label label-keyword">Mobile Applications</span>
-                      <span class="label label-keyword">Microcontrollers</span>
-                      <span class="label label-keyword">Wearable Technology</span>
-                  </div>
-                </li>
-                <li class="card-nested">
-                  <p>
-                    <strong>Hobbies</strong>
-                  </p>
-
-                  <div class="space-top labels">
-                      <span class="label label-keyword">Biking</span>
-                      <span class="label label-keyword">Cooking</span>
-                      <span class="label label-keyword">Learning</span>
-                      <span class="label label-keyword">Running</span>
-                      <span class="label label-keyword">Photography</span>
-                      <span class="label label-keyword">Video Games</span>
-                  </div>
-                </li>
-            </ul>
-
-
-
-          </div>
+                </div>
+            </div>
+          </section>
+          
         </div>
-      </section>
+      </div>
     </div>
-
-    <script>
-      function timeSince(date) {
-  var seconds = Math.floor((new Date() - date) / 1000);
-
-  var years = Math.floor(seconds / 31536000);
-  var months = Math.floor(seconds / 2592000) - (years * 12);
-
-  if (years >= 1) {
-    years = years + (years > 1 ? " years " : " year ");
-  } else {
-    years = "";
-  }
-
-  if (months >= 1) {
-    months = months + (months > 1 ? " months " : " month ");
-  } else {
-    months = "";
-  }
-
-  return years + months;
-};
-
-var items = document.getElementsByClassName('text-muted');
-for (var i = 0; i < items.length; i++) {
-	if (items[i].innerHTML.toLowerCase().includes('present')) {
-		var start = new Date(items[i].getElementsByClassName('date')[0].innerHTML.replace(/\s*-\s*Present/, '').trim());
-		var since = timeSince(start);
-		items[i].getElementsByClassName('duration')[0].innerHTML = '<i class="fa fa-clock-o icon-left"></i> ' + since;
-	}
-}
-
-    </script>
   </body>
 </html>

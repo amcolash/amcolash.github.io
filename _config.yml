@@ -41,12 +41,9 @@ exclude: [
   'README.md',
   'Gemfile*',
   'feed.xml',
-  'resume/assets/',
-  'resume/node_modules/',
-  'resume/*.js',
-  'resume/*.md',
-  'resume/*.json',
-  'resume/*.template'
+  # We will copy resume on build
+  'resume/*',
+  '*.sh'
 ]
 
 plugins:

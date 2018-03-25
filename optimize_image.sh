@@ -10,14 +10,16 @@ for f in "$@"; do
     # If the file/folder exists
     if [ -n $f ]; then
         if [ -d $f ]; then
-            # If a directory, only process jpgs
+            # If a directory, only process pngs
             for i in $f/*.png; do
                 [ -f "$i" ] || break
                 $($COMMAND $i ${i%.*}.jpg)
+                rm $f
             done
         else
             # If a file
             $($COMMAND $f ${f%.*}.jpg)
+            rm $f
         fi
     fi
 done
