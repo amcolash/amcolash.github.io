@@ -41,8 +41,6 @@ exclude: [
   'README.md',
   'Gemfile*',
   'feed.xml',
-  # We will copy resume on build
-  'resume/*',
   '*.sh'
 ]
 
