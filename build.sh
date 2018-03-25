@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run new build of resume
-pushd resume
+pushd _resume
     ./index.js
 popd
 
