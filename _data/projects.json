@@ -1,8 +1,8 @@
 [
   {
     "name": "Disney Heroes: Battle Mode",
-    "section": "Perblue (2015-Present)",
-    "date_range": "2017-Present",
+    "section": "Perblue (2015-2018)",
+    "date_range": "2017-2018",
     "thumbnail": "/img/thumbnails/DisneyHeroes.jpg",
     "links": [],
     "images": [
@@ -10,11 +10,11 @@
         "/img/projects/DisneyHeroes2.jpg",
         "/img/projects/DisneyHeroes3.jpg"
     ],
-    "description": "Since February 2017, I have been working on PerBlue's next game in association with Disney - Disney Heroes: Battle Mode. To make this game a reality, we needed to build a new combat and rendering engine from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling provides artists with an experience similar to unity, while allowing us to continue use our game engine of choice - libgdx."
+    "description": "From February 2017 through April 2018, I worked on PerBlue's next game in association with Disney - Disney Heroes: Battle Mode. To make this game a reality, we needed to build a new combat and rendering engine from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling provides artists with an experience similar to unity, while allowing us to continue use our game engine of choice - libgdx."
   },
   {
     "name": "Portal Quest",
-    "section": "Perblue (2015-Present)",
+    "section": "Perblue (2015-2018)",
     "date_range": "2016-2017",
     "thumbnail": "/img/thumbnails/PortalQuest.jpg",
     "links": [
@@ -31,7 +31,7 @@
   },
   {
     "name": "DragonSoul",
-    "section": "Perblue (2015-Present)",
+    "section": "Perblue (2015-2018)",
     "date_range": "2015-2016",
     "thumbnail": "/img/thumbnails/Dragonsoul.jpg",
     "links": [

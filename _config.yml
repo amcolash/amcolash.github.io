@@ -19,7 +19,7 @@ email: amcolash@gmail.com
 
 main_header: "Developer, Maker, Hacker"
 description: > # this means to ignore newlines until next variable
-  The personal website of Andrew McOlash, web developer and creator
+  The personal website of Andrew McOlash, developer and creator
   of cool things!
 
 resume: "/resume"
