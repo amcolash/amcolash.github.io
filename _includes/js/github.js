@@ -9,6 +9,7 @@ var init = function () {
   // Start the github calendar
   new GitHubCalendar(".calendar", "amcolash", { responsive: true, global_stats: false }).then(function() {
     updateSpinner(false, true);
+    document.getElementsByClassName('calendar')[0].style.display = "block";
     initReveal('.calendar');
   });
 }

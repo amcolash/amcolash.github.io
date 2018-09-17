@@ -8,7 +8,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     } else if (typeof define === "function" && define.amd) {
         define([], f);
     } else {
-        var g;if (typeof window !== "undefined") {
+        var g; if (typeof window !== "undefined") {
             g = window;
         } else if (typeof global !== "undefined") {
             g = global;
@@ -16,24 +16,25 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             g = self;
         } else {
             g = this;
-        }g.GitHubCalendar = f();
+        } g.GitHubCalendar = f();
     }
 })(function () {
-    var define, module, exports;return function () {
-        function e(t, n, r) {
-            function s(o, u) {
-                if (!n[o]) {
-                    if (!t[o]) {
-                        var a = typeof require == "function" && require;if (!u && a) return a(o, !0);if (i) return i(o, !0);var f = new Error("Cannot find module '" + o + "'");throw f.code = "MODULE_NOT_FOUND", f;
-                    }var l = n[o] = { exports: {} };t[o][0].call(l.exports, function (e) {
-                        var n = t[o][1][e];return s(n ? n : e);
-                    }, l, l.exports, e, t, n, r);
-                }return n[o].exports;
-            }var i = typeof require == "function" && require;for (var o = 0; o < r.length; o++) {
-                s(r[o]);
-            }return s;
-        }return e;
-    }()({ 1: [function (require, module, exports) {
+    var define, module, exports; return function () {
+        function r(e, n, t) {
+            function o(i, f) {
+                if (!n[i]) {
+                    if (!e[i]) {
+                        var c = "function" == typeof require && require; if (!f && c) return c(i, !0); if (u) return u(i, !0); var a = new Error("Cannot find module '" + i + "'"); throw a.code = "MODULE_NOT_FOUND", a;
+                    } var p = n[i] = { exports: {} }; e[i][0].call(p.exports, function (r) {
+                        var n = e[i][1][r]; return o(n || r);
+                    }, p, p.exports, r, e, n, t);
+                } return n[i].exports;
+            } for (var u = "function" == typeof require && require, i = 0; i < t.length; i++) {
+                o(t[i]);
+            } return o;
+        } return r;
+    }()({
+        1: [function (require, module, exports) {
             "use strict";
 
             var parse = require("github-calendar-parser"),
@@ -70,6 +71,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 options = options || {};
                 options.summary_text = options.summary_text || "Summary of pull requests, issues opened, and commits made by <a href=\"https://github.com/" + username + "\" target=\"blank\">@" + username + "</a>";
 
+                if (options.global_stats === false) {
+                    container.style.minHeight = "175px";
+                }
+
                 // We need a proxy for CORS
                 // Thanks, @izuzak (https://github.com/izuzak/urlreq)
                 options.proxy = options.proxy || function (url) {
@@ -80,18 +85,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                     return fetch(options.proxy("https://github.com/" + username)).then(function (response) {
                         return response.text();
                     }).then(function (body) {
-                        container.style.visibility = "visible";
                         container.style.opacity = "1";
-
                         var div = document.createElement("div");
                         div.innerHTML = body;
-                        var cal = div.querySelector(".js-contribution-graph");
+                        var cal = div.querySelector(".js-yearly-contributions");
                         cal.querySelector(".float-left.text-gray").innerHTML = options.summary_text;
-
-
-                        var clear = document.createElement("div");
-                        clear.style = "clear: both";
-                        div.querySelector(".contrib-footer").appendChild(clear);
 
                         // If 'include-fragment' with spinner img loads instead of the svg, fetchCalendar again
                         if (cal.querySelector("include-fragment")) {
@@ -116,17 +114,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                                     currentStreakInfo = parsed.current_streak ? formatoid(parsed.current_streak_range[0], DATE_FORMAT2) + " \u2013 " + formatoid(parsed.current_streak_range[1], DATE_FORMAT2) : parsed.last_contributed ? "Last contributed in " + formatoid(parsed.last_contributed, DATE_FORMAT2) + "." : "Rock - Hard Place",
                                     longestStreakInfo = parsed.longest_streak ? formatoid(parsed.longest_streak_range[0], DATE_FORMAT2) + " \u2013 " + formatoid(parsed.longest_streak_range[1], DATE_FORMAT2) : parsed.last_contributed ? "Last contributed in " + formatoid(parsed.last_contributed, DATE_FORMAT2) + "." : "Rock - Hard Place",
                                     firstCol = $("<div>", {
-                                    "class": "contrib-column contrib-column-first table-column",
-                                    html: "<span class=\"text-muted\">Contributions in the last year</span>\n                               <span class=\"contrib-number\">" + parsed.last_year + " total</span>\n                               <span class=\"text-muted\">" + formatoid(addSubtractDate.subtract(new Date(), 1, "year"), DATE_FORMAT1) + " \u2013 " + formatoid(new Date(), DATE_FORMAT1) + "</span>"
-                                }),
+                                        "class": "contrib-column contrib-column-first table-column",
+                                        html: "<span class=\"text-muted\">Contributions in the last year</span>\n                               <span class=\"contrib-number\">" + parsed.last_year + " total</span>\n                               <span class=\"text-muted\">" + formatoid(addSubtractDate.subtract(new Date(), 1, "year"), DATE_FORMAT1) + " \u2013 " + formatoid(new Date(), DATE_FORMAT1) + "</span>"
+                                    }),
                                     secondCol = $("<div>", {
-                                    "class": "contrib-column table-column",
-                                    html: "<span class=\"text-muted\">Longest streak</span>\n                               <span class=\"contrib-number\">" + parsed.longest_streak + " days</span>\n                               <span class=\"text-muted\">" + longestStreakInfo + "</span>"
-                                }),
+                                        "class": "contrib-column table-column",
+                                        html: "<span class=\"text-muted\">Longest streak</span>\n                               <span class=\"contrib-number\">" + parsed.longest_streak + " days</span>\n                               <span class=\"text-muted\">" + longestStreakInfo + "</span>"
+                                    }),
                                     thirdCol = $("<div>", {
-                                    "class": "contrib-column table-column",
-                                    html: "<span class=\"text-muted\">Current streak</span>\n                               <span class=\"contrib-number\">" + parsed.current_streak + " days</span>\n                               <span class=\"text-muted\">" + currentStreakInfo + "</span>"
-                                });
+                                        "class": "contrib-column table-column",
+                                        html: "<span class=\"text-muted\">Current streak</span>\n                               <span class=\"contrib-number\">" + parsed.current_streak + " days</span>\n                               <span class=\"text-muted\">" + currentStreakInfo + "</span>"
+                                    });
 
                                 cal.appendChild(firstCol);
                                 cal.appendChild(secondCol);
@@ -613,12 +611,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 },
                     lastWeek = [],
                     updateLongestStreak = function updateLongestStreak() {
-                    if (data.current_streak > data.longest_streak) {
-                        data.longest_streak = data.current_streak;
-                        data.longest_streak_range[0] = data.current_streak_range[0];
-                        data.longest_streak_range[1] = data.current_streak_range[1];
-                    }
-                };
+                        if (data.current_streak > data.longest_streak) {
+                            data.longest_streak = data.current_streak;
+                            data.longest_streak_range[0] = data.current_streak_range[0];
+                            data.longest_streak_range[1] = data.current_streak_range[1];
+                        }
+                    };
 
                 input.split("\n").slice(2).map(function (c) {
                     return c.trim();
@@ -726,10 +724,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             var _createClass = function () {
                 function defineProperties(target, props) {
                     for (var i = 0; i < props.length; i++) {
-                        var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+                        var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor);
                     }
-                }return function (Constructor, protoProps, staticProps) {
-                    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+                } return function (Constructor, protoProps, staticProps) {
+                    if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor;
                 };
             }();
 
@@ -876,5 +874,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
                 return ret;
             };
-        }, {}] }, {}, [1])(1);
+        }, {}]
+    }, {}, [1])(1);
 });

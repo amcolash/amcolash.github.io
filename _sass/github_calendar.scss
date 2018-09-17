@@ -1,9 +1,11 @@
 .calendar {
+    height: 205px;
     font-family: Helvetica, arial;
     border: 1px solid #ccc;
     border-radius: 3px;
     text-align: center;
     margin: 0 auto;
+    display: none;
     visibility: hidden; // only show once loaded
     opacity: 0;
 
