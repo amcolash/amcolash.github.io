@@ -1,10 +1,11 @@
 .main-header {
   // Color until image loads
-  background-color: #444;
+  background-color: #252525;
 
   background-image: url("../img/banner.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   // Force to show in print
   -webkit-print-color-adjust: exact;
