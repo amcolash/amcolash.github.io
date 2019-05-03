@@ -3,10 +3,15 @@ layout: clean
 ---
 
 <div class="main-header">
+  
+  <!-- code container -->
+  <pre><code class="language-js" id="bottom">{% include js/code.js %}</code></pre>
+  <pre><code class="language-js" id="top">{% include js/code.js %}</code></pre>
+  <!-- code syntax highlighting -->
+  <script type="text/javascript">{% include js/prism.min.js %}</script>
 
   <!-- particles.js container -->
   <div id="particles-js"></div>
-  
   <!-- Particle Library -->
   <script type="text/javascript">{% include js/particles.min.js %}</script>
   <!-- Particle Setup -->

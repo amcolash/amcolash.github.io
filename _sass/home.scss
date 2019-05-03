@@ -2,9 +2,9 @@
   // Color until image loads
   background-color: #252525;
 
-  background-image: url("../img/banner.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
+  // background-image: url("../img/banner.jpg");
+  // background-position: center center;
+  // background-repeat: no-repeat;
   overflow: hidden;
 
   // Force to show in print
@@ -17,6 +17,29 @@
 
   @media (max-height: 425px) {
     height: 200px;
+  }
+  
+  pre {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  pre .language-js {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-55.5%) rotate(-90deg);
+    font-size: 1.5em;
+    pointer-events: none;
+  }
+
+  pre #top {
+    opacity: 0.5;
+  }
+
+  pre #bottom {
+    filter: blur(7px);
   }
   
   h1 {
