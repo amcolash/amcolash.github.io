@@ -244,4 +244,22 @@
             font-size: 18px;
         }
     }
+
+    .postList {
+        list-style: none;
+        margin-left: 0;
+        
+        .post {
+            padding: 1em 0;
+            
+            .title {
+                font-size: 1.4em;
+            }
+            
+            .date {
+                font-size: 0.9em;
+                color: #333;
+            }
+        }
+    }
 }
