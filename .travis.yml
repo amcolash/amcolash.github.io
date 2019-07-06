@@ -27,3 +27,14 @@ exclude: [vendor] # Travis bundles all gems in the vendor directory on its build
 sudo: false # route your build to the container-based infrastructure for a faster build
 
 cache: bundler # caching bundler gem packages will speed up build
+
+
+############### Git Submodule (Resume) ###############
+
+# Handle git submodules yourself, based off of https://github.com/algolia/examples/issues/24
+git:
+    submodules: false
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    - git submodule update --init --recursive
