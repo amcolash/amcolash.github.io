@@ -2,4 +2,4 @@ _site
 .tmp
 .sass-cache
 .jekyll-metadata
-docs
+docs/

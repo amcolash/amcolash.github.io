@@ -3,12 +3,12 @@
     "name": "Disney Heroes: Battle Mode",
     "section": "Perblue (2015-2018)",
     "date_range": "2017-2018",
-    "thumbnail": "/img/thumbnails/DisneyHeroes.jpg",
+    "thumbnail": "/assets/img/thumbnails/DisneyHeroes.jpg",
     "links": [],
     "images": [
-        "/img/projects/DisneyHeroes.jpg",
-        "/img/projects/DisneyHeroes2.jpg",
-        "/img/projects/DisneyHeroes3.jpg"
+        "/assets/img/projects/DisneyHeroes.jpg",
+        "/assets/img/projects/DisneyHeroes2.jpg",
+        "/assets/img/projects/DisneyHeroes3.jpg"
     ],
     "description": "From February 2017 through April 2018, I worked on PerBlue's next game in association with Disney - Disney Heroes: Battle Mode. To make this game a reality, we needed to build a new combat and rendering engine from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling provides artists with an experience similar to unity, while allowing us to continue use our game engine of choice - libgdx."
   },
@@ -16,7 +16,7 @@
     "name": "Portal Quest",
     "section": "Perblue (2015-2018)",
     "date_range": "2016-2017",
-    "thumbnail": "/img/thumbnails/PortalQuest.jpg",
+    "thumbnail": "/assets/img/thumbnails/PortalQuest.jpg",
     "links": [
       {
         "title": "Google Play Store",
@@ -24,7 +24,7 @@
       }
     ],
     "images": [
-      "/img/projects/PortalQuest.jpg"
+      "/assets/img/projects/PortalQuest.jpg"
     ],
     "video": "3SlXsszW8Bk",
     "description": "From September 2016 through February 2017, I worked on a mobile RPG game from PerBlue called Portal Quest. I worked on hero implementations (similar to DragonSoul) and improved the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery system. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
@@ -33,7 +33,7 @@
     "name": "DragonSoul",
     "section": "Perblue (2015-2018)",
     "date_range": "2015-2016",
-    "thumbnail": "/img/thumbnails/Dragonsoul.jpg",
+    "thumbnail": "/assets/img/thumbnails/Dragonsoul.jpg",
     "links": [
       {
         "title": "Website",
@@ -47,9 +47,9 @@
     "name": "WiscPortal",
     "section": "UW SHOW (2014-2015)",
     "date_range": "2014-2015",
-    "thumbnail": "/img/thumbnails/WiscPo.jpg",
+    "thumbnail": "/assets/img/thumbnails/WiscPo.jpg",
     "images": [
-      "/img/projects/WiscPo.jpg"
+      "/assets/img/projects/WiscPo.jpg"
     ],
     "links": [
       {
@@ -68,9 +68,9 @@
     "nice_name": "Mobile App Requets Webpage",
     "section": "Liberty Mutual (2014)",
     "date_range": "2014",
-    "thumbnail": "/img/thumbnails/ETS.jpg",
+    "thumbnail": "/assets/img/thumbnails/ETS.jpg",
     "images": [
-      "/img/projects/ETS.jpg"
+      "/assets/img/projects/ETS.jpg"
     ],
     "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved by various managers before actually being allowed into the app stores. This was a big upgrade from the email chains which were used prior to this."
   },
@@ -78,10 +78,10 @@
     "name": "Careers Website",
     "section": "Liberty Mutual (2014)",
     "date_range": "2014",
-    "thumbnail": "/img/thumbnails/Careers.jpg",
+    "thumbnail": "/assets/img/thumbnails/Careers.jpg",
     "imageClasses": "border",
     "images": [
-      "/img/projects/Careers.jpg"
+      "/assets/img/projects/Careers.jpg"
     ],
     "links": [
       {
@@ -95,10 +95,10 @@
     "name": "What's Up",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2017-2018",
-    "thumbnail": "/img/thumbnails/WhatsUp.jpg",
+    "thumbnail": "/assets/img/thumbnails/WhatsUp.jpg",
     "images": [
-      "/img/projects/WhatsUp.jpg",
-      "/img/projects/WhatsUp2.jpg"
+      "/assets/img/projects/WhatsUp.jpg",
+      "/assets/img/projects/WhatsUp2.jpg"
     ],
     "imageClasses": "border",
     "links": [
@@ -117,11 +117,11 @@
     "name": "MMM-GoogleFit",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2018",
-    "thumbnail": "/img/thumbnails/MMM-GoogleFit.jpg",
+    "thumbnail": "/assets/img/thumbnails/MMM-GoogleFit.jpg",
     "images": [
-      "/img/projects/MMM-GoogleFit3.jpg",
-      "/img/projects/MMM-GoogleFit.jpg",
-      "/img/projects/MMM-GoogleFit2.jpg"
+      "/assets/img/projects/MMM-GoogleFit3.jpg",
+      "/assets/img/projects/MMM-GoogleFit.jpg",
+      "/assets/img/projects/MMM-GoogleFit2.jpg"
     ],
     "imageClasses": "border",
     "links": [
@@ -140,10 +140,10 @@
     "name": "GiffingAwesome",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/GiffingAwesome.jpg",
+    "thumbnail": "/assets/img/thumbnails/GiffingAwesome.jpg",
     "imageClasses": "border",
     "images": [
-      "/img/projects/GiffingAwesome.jpg"
+      "/assets/img/projects/GiffingAwesome.jpg"
     ],
     "links": [
       {
@@ -161,9 +161,9 @@
     "name": "AR Treasure Hunt Game",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/ARTreasureHunt.jpg",
+    "thumbnail": "/assets/img/thumbnails/ARTreasureHunt.jpg",
     "images": [
-      "/img/projects/ARTreasureHunt.jpg"
+      "/assets/img/projects/ARTreasureHunt.jpg"
     ],
     "links": [
       {
@@ -181,10 +181,10 @@
     "name": "ScaleIoT",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/ScaleIoT.jpg",
+    "thumbnail": "/assets/img/thumbnails/ScaleIoT.jpg",
     "images": [
-      "/img/projects/ScaleIoT.gif",
-      "/img/projects/ScaleIoT.jpg"
+      "/assets/img/projects/ScaleIoT.gif",
+      "/assets/img/projects/ScaleIoT.jpg"
     ],
     "links": [
       {
@@ -198,9 +198,9 @@
     "name": "IoTBuddy",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
-    "thumbnail": "/img/thumbnails/IoTBuddy.jpg",
+    "thumbnail": "/assets/img/thumbnails/IoTBuddy.jpg",
     "images": [
-      "/img/projects/IoTBuddy.jpg"
+      "/assets/img/projects/IoTBuddy.jpg"
     ],
     "links": [
       {
@@ -218,9 +218,9 @@
     "name": "Pebblify",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2015",
-    "thumbnail": "/img/thumbnails/Pebblify.jpg",
+    "thumbnail": "/assets/img/thumbnails/Pebblify.jpg",
     "images": [
-      "/img/projects/Pebblify.jpg"
+      "/assets/img/projects/Pebblify.jpg"
     ],
     "links": [
       {
@@ -238,9 +238,9 @@
     "name": "Collabify",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2014-2015",
-    "thumbnail": "/img/thumbnails/Collabify.jpg",
+    "thumbnail": "/assets/img/thumbnails/Collabify.jpg",
     "images": [
-      "/img/projects/Collabify.jpg"
+      "/assets/img/projects/Collabify.jpg"
     ],
     "links": [
       {
@@ -249,11 +249,11 @@
       },
       {
         "title": "Project Presentation",
-        "url": "/documents/Collabify_Presentation.pdf"
+        "url": "/assets/documents/Collabify_Presentation.pdf"
       },
       {
         "title": "Project Manual",
-        "url": "/documents/Collabify_Manual.pdf"
+        "url": "/assets/documents/Collabify_Manual.pdf"
       }
     ],
     "description": "For my last semester of school at the University of Wisconsin Madison, I enrolled in a software engineering course. In this class, we worked in groups and had the task of developing a new piece of software. Our team decided on making an Android app with a Python backend that would allow for the creation of dynamic Spotify playlists that could be collaborated and voted upon - the ultimate party playlist. In addition to a lot of code from Github, there is also a link to some of the documentation and presentation that we have from the final project."
@@ -262,9 +262,9 @@
     "name": "iParkMe",
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2014-2015",
-    "thumbnail": "/img/thumbnails/iParkMe.jpg",
+    "thumbnail": "/assets/img/thumbnails/iParkMe.jpg",
     "images": [
-      "/img/projects/iParkMe.jpg"
+      "/assets/img/projects/iParkMe.jpg"
     ],
     "links": [
       {
