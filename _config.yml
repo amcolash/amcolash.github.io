@@ -37,20 +37,29 @@ markdown: kramdown
 theme: minima
 destination: docs
 
-exclude: [
-  'README.md',
-  'Gemfile*',
-  'feed.xml',
-  'scripts/',
-  '.vscode',
-  '.travis.yml'
-]
+exclude:
+  - 'README.md'
+  - 'Gemfile*'
+  - 'feed.xml'
+  - 'scripts/'
+  - '.vscode'
+  - '.travis.yml'
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 plugins:
   - jekyll-minifier
   - jekyll-seo-tag
   - jekyll-sitemap
 
+plugins_dir: ./_plugins
 page_gen:
   - data: 'projects'
     template: 'project'
