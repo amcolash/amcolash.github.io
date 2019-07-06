@@ -1,0 +1,32 @@
+language: ruby
+rvm:
+  - 2.5.1
+
+branches:
+  only:
+  - master
+
+script:
+  - JEKYLL_ENV=production bundle exec jekyll build --destination docs
+
+deploy:
+  provider: pages
+  local-dir: ./docs
+  target-branch: gh-pages
+  email: 
+deploy@travis-ci.org  name: Deployment Bot
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+exclude: [vendor] # Travis bundles all gems in the vendor directory on its build servers, which Jekyll will mistakenly read and explode on.
+
+sudo: false # route your build to the container-based infrastructure for a faster build
+
+cache: bundler # caching bundler gem packages will speed up build

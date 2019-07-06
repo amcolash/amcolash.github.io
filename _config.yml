@@ -41,7 +41,9 @@ exclude: [
   'README.md',
   'Gemfile*',
   'feed.xml',
-  '*.sh'
+  'scripts/',
+  '.vscode',
+  '.travis.yml'
 ]
 
 plugins:
