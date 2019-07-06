@@ -32,9 +32,7 @@ exclude:
   - README.md
   - feed.xml
   - scripts/
-  - .vscode
   - .travis.yml
-  - '*.sh'
 
 # Plugins
 plugins:
