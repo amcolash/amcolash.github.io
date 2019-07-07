@@ -25,3 +25,12 @@ Onto `optional`! I only tried to update and build some of the packages here sinc
 Overall things went pretty smoothly! Now I have an up-to-date little machine. There are some individual patches I think I may need to apply to get `retroarch` working exactly how I want but I was happy at just how painless things were on the whole. I also will be unpacking the configurations from SupremeRetrostone on top of the device so that it is pre-optimized.
 
 Until next time, happy gaming!
+
+# Update 07/07/2019
+I had some issues with a broken audio setup in `EmulationStation` where the audio menu did not work and I kept getting errors logged to the console. I followed the directions from the [retropie wiki](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues).
+
+I needed to edit the file `/opt/retropie/configs/all/emulationstation/es_settings.cfg` to properly set up the audio card / device (mixer).
+```
+<string name="AudioCard" value="sysdefault" />
+<string name="AudioDevice" value="Lineout volume control" />
+```
