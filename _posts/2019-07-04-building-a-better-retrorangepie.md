@@ -27,10 +27,18 @@ Overall things went pretty smoothly! Now I have an up-to-date little machine. Th
 Until next time, happy gaming!
 
 # Update 07/07/2019
-I had some issues with a broken audio setup in `EmulationStation` where the audio menu did not work and I kept getting errors logged to the console. I followed the directions from the [retropie wiki](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues).
+I had some issues with a broken audio setup in `EmulationStation` where the audio menu did not work and I kept getting the error  `VolumeControl::init() - Failed to find mixer elements!` logged to my console. I followed the directions from the [retropie wiki](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues).
 
 I needed to edit the file `/opt/retropie/configs/all/emulationstation/es_settings.cfg` to properly set up the audio card / device (mixer).
 ```
 <string name="AudioCard" value="sysdefault" />
 <string name="AudioDevice" value="Lineout volume control" />
+```
+
+Soon after changing that value, I started seeing another error `ALSA lib pcm.c:7843:(snd_pcm_recover) underrun occurred`. Following advice from the reddit post [here](https://www.reddit.com/r/RetroPie/comments/5lo9jj/sound_issues_alsa_underrun_with_usb_audio/dbx6ox6?utm_source=share&utm_medium=web2x), I got more issues ironed out with audio and emulation station.
+
+I simply had to edit `/etc/asound.conf` and change the sound buffer settings:
+```
+period_size = 4096
+buffer_size = 32768
 ```
