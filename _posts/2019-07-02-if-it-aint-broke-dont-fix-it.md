@@ -13,12 +13,12 @@ A bit ago, I wrote about looking into new ways to build my website and which fan
 I realized that adding in a static blog with markdown files was going to be a bit more work than initially planned on. I spun in circles until tonight when I realized there is no point at all to rewrite the site just yet. I am already using jekyll which is designed specifically for static blogs with markdown. Here is the entire markdown for a blog page with jekyll:
 
 ```
+{% raw %}
 ---
 layout: page
 title: Blog
 permalink: /blog/
 ---
-{% raw %}
 <ul class="postList">
   {% for post in site.posts %}
     <li class="post">

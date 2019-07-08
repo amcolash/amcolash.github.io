@@ -24,4 +24,4 @@ Our web is constantly evolving. Our content changes daily and yet can usually be
 
 The web never sleeps, but maybe it is time for me to call it a night.
 
-UPDATE 06/28/2019: I decided to go with [Next.js](https://nextjs.org/) instead. It seems much more mature than react-static and there are some nice plugins in place that make using `.mdx` files simple to do. So alas, the cycle of finding better and better things continues. I am so close to just ripping it all apart and wiring out the HTML by hand now.
+UPDATE 06/28/2019: I decided to go with [Next.js](https://nextjs.org/) instead. It seems much more mature than react-static and there are some nice plugins in place that make using `.mdx` files simple to do. So alas, the cycle of finding better and better things continues. I am so close to just ripping it all apart and writing out the HTML by hand now.
