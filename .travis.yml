@@ -1,7 +1,11 @@
 language: ruby
-cache: bundler # caching bundler gem packages will speed up build
-sudo: false # route your build to the container-based infrastructure for a faster build
-# exclude: [vendor] # Travis bundles all gems in the vendor directory on its build servers, which Jekyll will mistakenly read and explode on.
+cache:
+  bundler
+  directories:
+  - _resume/node_modules
+
+sudo: false
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
@@ -20,8 +24,6 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  # on:
-  #   branch: master
 
 ############### Git Submodule (for resume) Hack ###############
 
