@@ -18,7 +18,7 @@ layout: page
 title: Blog
 permalink: /blog/
 ---
-
+{% raw %}
 <ul class="postList">
   {% for post in site.posts %}
     <li class="post">
@@ -28,6 +28,7 @@ permalink: /blog/
     </li>
   {% endfor %}
 </ul>
+{% endraw %}
 ```
 
 I am going to stick with what I have for now. There are some quirks and not everything is quite how I would prefer it. Even so, it is so much simpler than re-writing for very little (arguably no) benefits. Sure I could use node instead of ruby, but at the end of the day this static site doesn't need react to function or routes or anything fancy. The bundle download includes all css + js in the initial html (which for most pages clocks in around 20-50kb). I am already kicking ass at the page optimization, so why make it more complicated than it needs to be.
