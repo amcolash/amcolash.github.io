@@ -17,11 +17,17 @@
         }
     }
 
+    .calendar {
+        height: 200px;
+    }
+
     .repo {
         border: none;
         padding: 0;
         display: inherit !important;
         page-break-inside: avoid;
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
 
         hr {
             margin: -4px 0 2px !important;
@@ -35,6 +41,10 @@
 
     .project-row {
         margin: 20px 0 5px !important;
+    }
+
+    .project-right {
+        border-right: none;
     }
 
     .project-image {
