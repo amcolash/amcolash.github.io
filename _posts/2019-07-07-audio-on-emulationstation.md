@@ -4,7 +4,7 @@ title: "Fixing Audio on EmulationStation"
 date: 2019-07-04 23:45:06
 ---
 
-A few days ago, I went over the steps to getting updated software onto my [RetroStone](https://www.8bcraft.com/product/retrostone/) retro gaming device. It is linux-based and has internals similar to an OrangePi. Fortunately there is a big open source community for emulating old games and there is some great software called [RetroPie](https://retropie.org.uk/)) and [EmulationStation](https://emulationstation.org/) which set everything up for you.
+A few days ago, I went over the steps to getting updated software onto my [RetroStone](https://www.8bcraft.com/product/retrostone/) retro gaming device. It is linux-based and has internals similar to an OrangePi. Fortunately there is a big open source community for emulating old games and there is some great software called [RetroPie](https://retropie.org.uk/) and [EmulationStation](https://emulationstation.org/) which set everything up for you.
 
 After the update, I had a handful of issues and needed to tweak some configurations to get things functioning again. One of my big issues was with a broken audio setup in `EmulationStation`. The audio menu did not work properly and I kept getting on the error  `VolumeControl::init() - Failed to find mixer elements!` logged to my console. After a lot of searching and trial and error I found directions on the [retropie wiki](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues) which explain how to get the audio set up.
 
