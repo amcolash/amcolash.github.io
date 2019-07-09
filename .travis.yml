@@ -1,8 +1,10 @@
 language: ruby
 cache:
   bundler: true
-  directories:
-    - _resume/node_modules
+  # Looks like I can't cache node_modules since _resume is a git submodule :'(
+  # In the future, I could look into temporarily moving the folder out, then back after init
+  # directories:
+  #  - _resume/node_modules
 
 sudo: false
 
