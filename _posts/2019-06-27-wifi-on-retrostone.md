@@ -17,7 +17,7 @@ I started by installing headers for my kernel (3.4.113-sun8i a very old kernel a
 
 Next, I decided to read through the logs from `dmesg` and here things got more interesting. Here is what happened after I plugged the device in
 
-```
+```accesslog
 [  843.112752] ehci_irq: highspeed device connect
 [  843.380223] usb 3-1: new high-speed USB device number 2 using sunxi-ehci
 [  843.532354] usb 3-1: New USB device found, idVendor=0bda, idProduct=8179
@@ -44,7 +44,7 @@ I changed the line `wifi_usbc_id =` to `wifi_usbc_id = 1` based off of a post [h
 
 The final step was to configure wifi on the device. This is pretty simple using the built in command `sudo nmtui-connect`. I connected to wifi with `wlan3` since this seemed to work out better than `wlan1`. After connected to wifi things seemed to be working - that is until I tried to ssh over wifi when I unplugged the ethernet cable while it was turned on. For some reason or another, it seems that having both network interfaces enabled at the same time confuses something (though I have never had an issue on other similar linux devices). My solution to this problem is to choose a method of connection when the device is off and then to only switch from wifi/ethernet after a reboot.
 
-UPDATE 06/30/2019:
+**UPDATE 06/30/2019**:
 I ended up editing up `/etc/network/interfaces` to try and get things working better. I was able to turn off power management on the wifi device which really helped the reliability of the connection. (Just uncommented from the existing file)
 
 ## Wrapping Up

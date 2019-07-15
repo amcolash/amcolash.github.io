@@ -11,7 +11,7 @@ After the update, I had a handful of issues and needed to tweak some configurati
 Unfortunately the update had introduced a new feature that I was not aware of. It now broke up audio devices into devices and mixers - instead of previously just devices. The upgrade did its best effort to get it configured, but the RetroStone apparently has a non-standard audio device setup.
 
 I needed to edit the file `/opt/retropie/configs/all/emulationstation/es_settings.cfg` to properly set up the audio card / device (mixer).
-```
+```xml
 <string name="AudioCard" value="sysdefault" />
 <string name="AudioDevice" value="Lineout volume control" />
 ```
@@ -19,7 +19,7 @@ I needed to edit the file `/opt/retropie/configs/all/emulationstation/es_setting
 Now that audio was again working in `EmulationStation`, I thought my work was done. Soon after changing that value however, I started seeing another error `ALSA lib pcm.c:7843:(snd_pcm_recover) underrun occurred`. Following advice from the reddit post [here](https://www.reddit.com/r/RetroPie/comments/5lo9jj/sound_issues_alsa_underrun_with_usb_audio/dbx6ox6?utm_source=share&utm_medium=web2x), I got more issues ironed out with audio and emulation station.
 
 I simply had to edit `/etc/asound.conf` and change the sound buffer settings:
-```
+```properties
 period_size = 4096
 buffer_size = 32768
 ```
