@@ -39,6 +39,7 @@ plugins:
   - jekyll-minifier
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
 
 plugins_dir: ./_plugins
 page_gen:
