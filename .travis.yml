@@ -3,9 +3,10 @@ cache: bundler # caching bundler gem packages will speed up build
 
 branches:
   only:
-  - master
+    - master
 
 script:
+  - pushd _resume && node ./index.js && popd
   - JEKYLL_ENV=production bundle exec jekyll build --destination docs
 
 deploy:
@@ -22,5 +23,6 @@ git:
     submodules: false
 # Use sed to replace the SSH URL with the public URL, then initialize submodules
 before_install:
-    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-    - git submodule update --init --recursive
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
+  - pushd _resume && npm install && popd
