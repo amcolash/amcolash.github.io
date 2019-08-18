@@ -33,6 +33,7 @@ exclude:
   - feed.xml
   - scripts/
   - .travis.yml
+  - _resume/
 
 # Plugins
 plugins:

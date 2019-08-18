@@ -3,7 +3,8 @@
 COMMAND="convert -background #fdfdfd -alpha remove -strip -interlace Plane -quality 90"
 
 if [ "$#" -lt 1 ]; then
-    echo "Usage: optimize_image.sh [file|folder]"
+    echo "Usage: optimize_png.sh [file|folder]"
+    exit 1
 fi
 
 for f in "$@"; do
