@@ -20,10 +20,15 @@ To combat this I needed to add in my own little step up converter. I used [this 
 I stuck the pot on a piece of perf board that I cut to fit near the battery. Using some hot glue and magic, I got it to stay in place and cut an opening for the dial to fit through. Additionally, I glued the step up converter directly above the L1/L2/R1/R2 button board. Below are a bunch of photos that I took that may help you do something similar! Hopefully this can help and inspire some other makers to follow suit.
 
 # Images
-<div class="image-grid" markdown="1">
-  [![Potentiometer Rig](/assets/img/blog/retrostone-brightness/IMG_20190810_230641.jpg)](/assets/img/blog/retrostone-brightness/IMG_20190810_230641.jpg)
-  [![Attached Potentiometer Rig](/assets/img/blog/retrostone-brightness/IMG_20190810_231450.jpg)](/assets/img/blog/retrostone-brightness/IMG_20190810_231450.jpg)
-  [![Step Up Converter](/assets/img/blog/retrostone-brightness/IMG_20190811_002407.jpg)](/assets/img/blog/retrostone-brightness/IMG_20190811_002407.jpg)
-  [![LCD Modifications](/assets/img/blog/retrostone-brightness/IMG_20190811_183824.jpg)](/assets/img/blog/retrostone-brightness/IMG_20190811_183824.jpg)
-  [![Final Product](/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg)](/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg)
-</div>
+<div id="grid" class="image-grid"></div>
+
+<script type="text/javascript">
+  {% include js/imagegrid.js %}
+  window.onload = initGrid('grid', [
+    '/assets/img/blog/retrostone-brightness/IMG_20190810_230641.jpg', 'Potentiometer Rig',
+    '/assets/img/blog/retrostone-brightness/IMG_20190810_231450.jpg', 'Attached Potentiometer Rig',
+    '/assets/img/blog/retrostone-brightness/IMG_20190811_002407.jpg', 'Step Up Converter',
+    '/assets/img/blog/retrostone-brightness/IMG_20190811_183824.jpg', 'LCD Modifications',
+    '/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg', 'Final Brightness Mod'
+  ]);
+</script>

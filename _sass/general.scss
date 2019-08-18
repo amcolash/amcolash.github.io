@@ -43,11 +43,31 @@
 
 .image-grid {
   text-align: center;
+
+  .wrap {
+    display: inline-block;
+    margin: 10px;
+    width: 375px;
+  }
+
+  .image {
+    overflow: hidden;
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
+
+  .image, img {
+    width: 375px;
+    height: 375px;
+  }
   
   img {
-    width: 374px;
-    height: 375px;
     object-fit: cover;
-    padding: 10px;
+    transform-origin: 50% 50%;
+    transition: transform .25s, visibility .25s ease-in;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
   }
 }
