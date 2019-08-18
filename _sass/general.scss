@@ -40,3 +40,14 @@
   border-radius: 3px;
   cursor: pointer;
 }
+
+.image-grid {
+  text-align: center;
+  
+  img {
+    width: 374px;
+    height: 375px;
+    object-fit: cover;
+    padding: 10px;
+  }
+}
