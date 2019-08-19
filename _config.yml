@@ -48,3 +48,8 @@ page_gen:
     template: 'project'
     name: 'name'
     dir: 'projects'
+
+# Enable ES6 for minifier
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
