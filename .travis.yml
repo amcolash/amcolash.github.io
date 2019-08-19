@@ -1,6 +1,10 @@
 language: ruby
 cache: bundler # caching bundler gem packages will speed up build
 
+env:
+  # Try to speed up ruby gem install
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=1
+
 branches:
   only:
     - master
