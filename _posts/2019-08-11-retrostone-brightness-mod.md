@@ -22,10 +22,11 @@ I stuck the pot on a piece of perf board that I cut to fit near the battery. Usi
 <script type="text/javascript">
   {% include js/imagegrid.js %}
   window.onload = initGrid('grid', [
+    '/assets/img/blog/retrostone-brightness/IMG_5369.jpg', 'Final Result of Brightness vs. Darkness',
     '/assets/img/blog/retrostone-brightness/IMG_20190810_230641.jpg', 'Potentiometer Rig',
     '/assets/img/blog/retrostone-brightness/IMG_20190810_231450.jpg', 'Attached Potentiometer Rig',
     '/assets/img/blog/retrostone-brightness/IMG_20190811_002407.jpg', 'Step Up Converter',
     '/assets/img/blog/retrostone-brightness/IMG_20190811_183824.jpg', 'LCD Modifications',
-    '/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg', 'Final Brightness Mod'
+    '/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg', 'Final Brightness Mod',
   ]);
 </script>
