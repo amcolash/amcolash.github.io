@@ -9,3 +9,6 @@ for f in `find $1 -name "*.jpg"`
 do
     convert $f -resize 1000x1000 $f
 done
+
+# Bake in rotation from exif data
+exiftran -ai $1/*.jpg
