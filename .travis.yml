@@ -27,9 +27,9 @@ git:
     submodules: false
 # Use sed to replace the SSH URL with the public URL, then initialize submodules
 before_install:
-  - nvm install 12.18.2 # Force a version of node
+  - nvm install lts # Force a version of node
   - gem install bundler # It seems bundler isn't installed for some reason
-  
+
   - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - git submodule update --init --recursive
   - pushd _resume && node --version && npm install && popd
