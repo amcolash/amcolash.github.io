@@ -1,8 +1,7 @@
 language: ruby
 cache: bundler # caching bundler gem packages will speed up build
 
-node_js:
-  - lts
+node_js: lts
 
 env:
   # Try to speed up ruby gem install
