@@ -30,4 +30,4 @@ before_install:
   - gem install bundler # It seems bundler isn't installed for some reason
   - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - git submodule update --init --recursive
-  - pushd _resume && npm install && popd
+  - pushd _resume && node --version && npm install && popd
