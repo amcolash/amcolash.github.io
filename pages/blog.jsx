@@ -3,7 +3,7 @@ import { getAllPosts } from '../lib/api';
 export default function Blog({ allPosts }) {
   return (
     <>
-      <h1>Projects</h1>
+      <h1>Blog</h1>
       <div>{JSON.stringify(allPosts)}</div>
     </>
   );
