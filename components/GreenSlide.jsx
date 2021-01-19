@@ -1,10 +1,14 @@
 import { motion } from 'framer-motion';
+import useDarkMode from 'use-dark-mode';
 
 import { Colors } from '../lib/constants';
 
 export function GreenSlide() {
+  const darkMode = useDarkMode();
+  const borderColor = darkMode.value ? Colors.Black : Colors.White;
+
   return (
-    <div style={{ overflow: 'hidden', position: 'absolute', top: 0, left: 0, width: '100vw', height: '100vh' }}>
+    <div className="greenSlide" style={{ overflow: 'hidden', position: 'absolute', top: 0, left: 0, width: '100vw', height: '100vh' }}>
       <motion.div
         initial={{ x: '-200vw' }}
         animate={{ x: '-50vw', transition: { duration: 1 } }}
@@ -38,7 +42,10 @@ export function GreenSlide() {
           key="face"
           style={{
             borderRadius: '100%',
-            border: `7px solid ${Colors.Black}`,
+            borderWidth: '7px',
+            borderStyle: 'solid',
+            borderTopColor: borderColor,
+            borderLeftColor: borderColor,
             borderBottomColor: Colors.Green,
             borderRightColor: Colors.Green,
           }}

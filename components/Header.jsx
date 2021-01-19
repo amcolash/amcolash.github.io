@@ -1,9 +1,10 @@
-import Link from 'next/link';
 import { cssRule } from 'typestyle';
 import { OuterPadding } from '../lib/constants';
 import { DarkMode } from './DarkMode';
 
-cssRule('header a', {
+import { Link } from './Link';
+
+cssRule('header .link', {
   marginRight: `calc(${OuterPadding} / 2)`,
 });
 
@@ -16,21 +17,11 @@ export function Header() {
         </Link>
         <div style={{ flex: 1 }} />
 
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
-        <Link href="/github">
-          <a>Github</a>
-        </Link>
-        <Link href="/projects">
-          <a>Projects</a>
-        </Link>
-        <Link href="/resume">
-          <a>Resume</a>
-        </Link>
+        <Link href="/about">About</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/github">Github</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/resume">Resume</Link>
 
         <DarkMode />
       </nav>

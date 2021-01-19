@@ -1,26 +1,18 @@
 import { Moon, Sun } from 'react-feather';
 import useDarkMode from 'use-dark-mode';
 
-import { Colors, OuterPadding } from '../lib/constants';
+import { OuterPadding } from '../lib/constants';
+import { Button } from './Button';
 
 export function DarkMode() {
   const darkMode = useDarkMode(false);
 
   return (
-    <div>
-      <button
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          background: darkMode.value ? Colors.White : Colors.Black,
-          color: darkMode.value ? Colors.Black : Colors.White,
-          marginLeft: `calc(${OuterPadding} / 3)`,
-        }}
-        onClick={darkMode.toggle}
-      >
+    <div className="darkMode">
+      <Button style={{ display: 'flex', marginLeft: `calc(${OuterPadding} / 3)` }} onClick={darkMode.toggle}>
         {darkMode.value && <Sun />}
         {!darkMode.value && <Moon />}
-      </button>
+      </Button>
     </div>
   );
 }
