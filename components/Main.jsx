@@ -1,10 +1,11 @@
+import { OuterPadding } from '../lib/constants';
+
 export function Main(props) {
   return (
     <div
       style={{
         flex: 1,
-        paddingTop: '1rem',
-        padding: '1rem',
+        padding: OuterPadding,
       }}
     >
       {props.children}
