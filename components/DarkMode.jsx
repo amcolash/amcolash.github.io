@@ -15,9 +15,6 @@ export function DarkMode() {
           background: darkMode.value ? Colors.White : Colors.Black,
           color: darkMode.value ? Colors.Black : Colors.White,
           marginLeft: `calc(${OuterPadding} / 3)`,
-          border: 'none',
-          padding: '0.35rem',
-          borderRadius: '0.25rem',
         }}
         onClick={darkMode.toggle}
       >
