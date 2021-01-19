@@ -4,7 +4,7 @@ import { OuterPadding } from '../lib/constants';
 import { DarkMode } from './DarkMode';
 
 cssRule('header a', {
-  paddingLeft: `calc(${OuterPadding} / 2)`,
+  paddingRight: `calc(${OuterPadding} / 2)`,
 });
 
 export function Header() {
@@ -12,7 +12,7 @@ export function Header() {
     <header style={{ width: '100%' }}>
       <nav style={{ display: 'flex', alignItems: 'center', padding: OuterPadding }}>
         <Link href="/">
-          <a style={{ fontSize: '1.75rem', paddingLeft: 0 }}>Andrew McOlash</a>
+          <a style={{ fontSize: '1.75rem', paddingRight: 0 }}>Andrew McOlash</a>
         </Link>
         <div style={{ flex: 1 }} />
 

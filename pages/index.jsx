@@ -1,3 +1,8 @@
 export default function Index() {
-  return 'Hi There, this is the main page';
+  return (
+    <div>
+      {/* <motion.div></motion.div> */}
+      This is a home page
+    </div>
+  );
 }
