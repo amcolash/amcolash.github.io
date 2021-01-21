@@ -1,29 +1,32 @@
-import { cssRule } from 'typestyle';
-import { OuterPadding } from '../lib/constants';
+import { useRouter } from 'next/router';
+import useDarkMode from 'use-dark-mode';
+
+import { Colors, OuterPadding } from '../lib/constants';
 import { DarkMode } from './DarkMode';
 
 import { Link } from './Link';
-
-cssRule('header .link', {
-  marginRight: `calc(${OuterPadding} / 2)`,
-});
+import { NavMenu } from './NavMenu';
 
 export function Header() {
+  const router = useRouter();
+  const darkMode = useDarkMode();
+
   return (
     <header style={{ width: '100%' }}>
       <nav style={{ display: 'flex', alignItems: 'center', padding: OuterPadding }}>
-        <Link href="/">
-          <a style={{ fontSize: '1.75rem', marginRight: 0 }}>Andrew McOlash</a>
-        </Link>
+        {/* Show text on the main page and a link back to home on other pages */}
+        {router.pathname === '/' ? (
+          <div style={{ fontSize: '1.75rem', textShadow: `1px 1px 1px ${darkMode.value ? Colors.Black : Colors.White}` }}>
+            Andrew McOlash
+          </div>
+        ) : (
+          <Link href="/" style={{ fontSize: '1.75rem' }}>
+            Andrew McOlash
+          </Link>
+        )}
         <div style={{ flex: 1 }} />
-
-        <Link href="/about">About</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/github">Github</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/resume">Resume</Link>
-
-        <DarkMode />
+        <DarkMode style={{ marginRight: `calc(${OuterPadding} / 2)` }} />
+        <NavMenu />
       </nav>
     </header>
   );

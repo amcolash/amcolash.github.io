@@ -4,12 +4,12 @@ import useDarkMode from 'use-dark-mode';
 import { OuterPadding } from '../lib/constants';
 import { Button } from './Button';
 
-export function DarkMode() {
+export function DarkMode(props) {
   const darkMode = useDarkMode(false);
 
   return (
-    <div className="darkMode">
-      <Button style={{ display: 'flex', marginLeft: `calc(${OuterPadding} / 3)` }} onClick={darkMode.toggle}>
+    <div className="darkMode" style={{ ...props.style }}>
+      <Button style={{ display: 'flex' }} onClick={darkMode.toggle}>
         {darkMode.value && <Sun />}
         {!darkMode.value && <Moon />}
       </Button>
