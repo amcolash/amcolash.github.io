@@ -1,10 +1,19 @@
+import { Link } from '../components/Link';
+
 import { getAllPosts } from '../lib/api';
 
 export default function Blog({ allPosts }) {
   return (
     <>
       <h1>Blog</h1>
-      <div>{JSON.stringify(allPosts)}</div>
+
+      {allPosts.map((p) => {
+        return (
+          <div>
+            <Link href={'/posts/' + p.slug}>{p.title}</Link>
+          </div>
+        );
+      })}
     </>
   );
 }
