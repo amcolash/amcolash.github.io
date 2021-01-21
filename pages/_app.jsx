@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5, delay: 1 } }}
         key="initialFade"
-        style={{ display: 'flex', flexDirection: 'column', width: '100vw', height: '100vh', zIndex: 1, position: 'relative' }}
+        style={{ display: 'flex', flexDirection: 'column', height: '100vh', zIndex: 1, position: 'relative' }}
       >
         <Header />
         <Main>
