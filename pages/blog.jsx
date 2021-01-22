@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { Link } from '../components/Link';
 
 import { getAllPosts } from '../lib/api';
@@ -19,14 +20,14 @@ export default function Blog({ allPosts }) {
         }
 
         return (
-          <>
+          <Fragment key={p.slug}>
             {header}
             <div style={{ marginBottom: `calc(${OuterPadding} / 1.75)` }}>
               <Link href={'/posts/' + p.slug}>{p.title}</Link>
               <br />
               <span style={{ fontSize: 16 }}>{new Date(p.date).toLocaleString()}</span>
             </div>
-          </>
+          </Fragment>
         );
       })}
     </>

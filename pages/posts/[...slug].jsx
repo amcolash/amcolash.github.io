@@ -1,8 +1,13 @@
-import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
-import { getPostBySlug, getAllPosts } from '../../lib/api';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { ArrowLeftCircle } from 'react-feather';
+
+import { getPostBySlug, getAllPosts } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
+
+import { Button } from '../../components/Button';
+import { OuterPadding } from '../../lib/constants';
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
@@ -14,7 +19,15 @@ export default function Post({ post, morePosts, preview }) {
       <Head>
         <title>{post.title}</title>
       </Head>
-      {router.isFallback ? 'Loading…' : JSON.stringify(post)}
+
+      <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center' }}>
+        <ArrowLeftCircle style={{ marginRight: 10 }} />
+        Back to Blog
+      </Button>
+
+      <h1>{post.title}</h1>
+      <h4 style={{ marginBottom: `calc(${OuterPadding} * 3)` }}>{new Date(post.date).toLocaleString()}</h4>
+      {router.isFallback ? 'Loading…' : <div dangerouslySetInnerHTML={{ __html: post.content }} />}
     </>
   );
 }

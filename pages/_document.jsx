@@ -19,9 +19,11 @@ class MyDocument extends Document {
             body.light-mode { background: ${Colors.White}; color: ${Colors.Black}; }
             .light-mode :focus { outline: 3px solid ${Colors.Black}; }
             .dark-mode :focus { outline: 3px solid ${Colors.White}; }
+            * { transition: background 0.25s; }
+            a { transition: color 0.25s; }
           `}</style>
         </Head>
-        <body style={{ margin: 0, fontFamily: 'Rubik, sans-serif', fontSize: '1.25rem', transition: 'all 0.25s' }}>
+        <body style={{ margin: 0, fontFamily: 'Rubik, sans-serif', fontSize: '1.25rem' }}>
           <script src="noflash.js" />
           <Main />
           <NextScript />

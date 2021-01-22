@@ -1,11 +1,12 @@
 import useDarkMode from 'use-dark-mode';
-import React from 'react';
-import { Wrapper, Button, Menu } from 'react-aria-menubutton';
+import React, { useEffect } from 'react';
+import { Wrapper, Button, Menu, closeMenu } from 'react-aria-menubutton';
 import { Menu as Burger } from 'react-feather';
 import { cssRule, style } from 'typestyle';
 
 import { Colors, interactiveStyle, OuterPadding } from '../lib/constants';
 import { Link } from './Link';
+import { useRouter } from 'next/router';
 
 const menuButtonClass = style(interactiveStyle);
 
@@ -15,14 +16,24 @@ cssRule('.MyMenuButton-menu li', {
 
 export const NavMenu = () => {
   const darkMode = useDarkMode();
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = () => closeMenu('MyMenuButton');
+
+    router.events.on('routeChangeStart', handleRouteChange);
+
+    // If the component is unmounted, unsubscribe from the event with the `off` method:
+    return () => router.events.off('routeChangeStart', handleRouteChange);
+  }, []);
 
   return (
-    <Wrapper className="MyMenuButton" style={{ position: 'relative' }}>
-      <Button className={`MyMenuButton-button ${menuButtonClass}`} style={{ display: 'flex', color: Colors.Black }}>
+    <Wrapper id="MyMenuButton" style={{ position: 'relative' }}>
+      <Button id="MyMenuButton-button" className={`${menuButtonClass}`} style={{ display: 'flex', color: Colors.Black }}>
         <Burger />
       </Button>
       <Menu
-        className="MyMenuButton-menu"
+        id="MyMenuButton-menu"
         style={{
           position: 'absolute',
           top: '100%',

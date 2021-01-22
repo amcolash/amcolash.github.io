@@ -1,22 +1,24 @@
 import NextLink from 'next/link';
 import { cssRule, style } from 'typestyle';
-import useDarkMode from 'use-dark-mode';
 import { Colors, interactiveStyle } from '../lib/constants';
 
-cssRule('a:hover', {
+cssRule('.dark-mode a', {
+  textShadow: `1px 1px 1px ${Colors.Black}`,
+  color: Colors.White,
+});
+
+cssRule('.light-mode a', {
+  textShadow: `1px 1px 1px ${Colors.White}`,
+  color: Colors.Black,
+});
+
+cssRule('.dark-mode a:hover, .light-mode a:hover', {
   color: Colors.Green,
 });
 
 const buttonLinkClass = style({ ...interactiveStyle });
 
 export function Link(props) {
-  const darkMode = useDarkMode();
-
-  const linkClass = style({
-    textShadow: `1px 1px 1px ${darkMode.value ? Colors.Black : Colors.White}`,
-    color: darkMode.value ? Colors.White : Colors.Black,
-  });
-
   return props.external ? (
     <a
       className={`link ${buttonLinkClass} abutton`}
@@ -28,9 +30,7 @@ export function Link(props) {
     </a>
   ) : (
     <NextLink href={props.href}>
-      <a className={linkClass} style={{ ...props.style }}>
-        {props.children}
-      </a>
+      <a style={{ ...props.style }}>{props.children}</a>
     </NextLink>
   );
 }
