@@ -1,12 +1,7 @@
 import { getAllPosts } from '../lib/api';
 
 export default function Projects({ allPosts }) {
-  return (
-    <>
-      <h1>Projects</h1>
-      <div>{JSON.stringify(allPosts)}</div>
-    </>
-  );
+  return <div>{JSON.stringify(allPosts)}</div>;
 }
 
 export async function getStaticProps() {
