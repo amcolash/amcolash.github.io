@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { Link } from '../components/Link';
 
-import { getAllPosts } from '../lib/api';
+import { getAllData, postsDirectory } from '../lib/api';
 import { OuterPadding } from '../lib/constants';
 
 export default function Blog({ allPosts }) {
@@ -29,7 +29,7 @@ export default function Blog({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt']);
+  const allPosts = getAllData(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt'], postsDirectory);
 
   return {
     props: { allPosts },

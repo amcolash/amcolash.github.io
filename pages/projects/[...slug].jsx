@@ -3,21 +3,21 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ArrowLeftCircle } from 'react-feather';
 
-import { getDataBySlug, getAllData, postsDirectory } from '../../lib/api';
+import { getDataBySlug, getAllData, projectsDirectory, getAllData } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
 
 import { Button } from '../../components/Button';
 import { OuterPadding } from '../../lib/constants';
 
-export default function Post({ post }) {
+export default function Project({ project }) {
   const router = useRouter();
-  if (!router.isFallback && !post?.slug) {
+  if (!router.isFallback && !project?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
     <>
       <Head>
-        <title>{post.title}</title>
+        <title>{project.title}</title>
       </Head>
 
       <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center' }}>
@@ -25,21 +25,21 @@ export default function Post({ post }) {
         Back to Blog
       </Button>
 
-      <h1>{post.title}</h1>
-      <h4 style={{ marginBottom: `calc(${OuterPadding} * 3)` }}>{new Date(post.date).toLocaleString()}</h4>
-      {router.isFallback ? 'Loading…' : <div dangerouslySetInnerHTML={{ __html: post.content }} />}
+      <h1>{project.title}</h1>
+      <h4 style={{ marginBottom: `calc(${OuterPadding} * 3)` }}>{new Date(project.date).toLocaleString()}</h4>
+      {router.isFallback ? 'Loading…' : <div dangerouslySetInnerHTML={{ __html: project.content }} />}
     </>
   );
 }
 
 export async function getStaticProps({ params }) {
-  const post = getDataBySlug(params.slug, postsDirectory, ['title', 'date', 'slug', 'author', 'content', 'ogImage', 'coverImage']);
-  const content = await markdownToHtml(post.content || '');
+  const project = getDataBySlug(params.slug, ['title', 'date', 'slug', 'author', 'content', 'ogImage', 'coverImage'], projectsDirectory);
+  const content = await markdownToHtml(project.content || '');
 
   return {
     props: {
-      post: {
-        ...post,
+      project: {
+        ...project,
         content,
       },
     },
@@ -47,13 +47,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getAllData(['slug'], postsDirectory);
+  const projects = await getAllData(['slug'], projectsDirectory);
 
   return {
-    paths: posts.map((post) => {
+    paths: projects.map((project) => {
       return {
         params: {
-          slug: post.slug.split('/'),
+          slug: project.slug.split('/'),
         },
       };
     }),
