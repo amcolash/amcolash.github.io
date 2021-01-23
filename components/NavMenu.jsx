@@ -10,8 +10,8 @@ import { useRouter } from 'next/router';
 
 const menuButtonClass = style(interactiveStyle);
 
-cssRule('.MyMenuButton-menu li', {
-  margin: '10px 3px',
+cssRule('#MyMenuButton-menu li', {
+  margin: 4,
 });
 
 export const NavMenu = () => {

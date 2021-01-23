@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+import { SWRConfig } from 'swr';
 
 import { useEffect, useRef } from 'react';
 
@@ -13,43 +14,33 @@ function SafeHydrate({ children }) {
   return <div suppressHydrationWarning>{typeof window === 'undefined' ? null : children}</div>;
 }
 
-// Clever bit of code from: https://stackoverflow.com/a/53446665/2303432
-function usePrevious(value) {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
-}
-
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const prevRoute = usePrevious(router.pathname);
 
   return (
     <SafeHydrate>
-      <AnimatePresence>{router.pathname === '/' && <GreenSlide />}</AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.5, delay: 1 } }}
-        key="initialFade"
-        style={{ display: 'flex', flexDirection: 'column', height: '100vh', zIndex: 1, position: 'relative' }}
+      <SWRConfig
+        value={{
+          fetcher: (resource, init) => fetch(resource, init).then((res) => res.json()),
+          onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+            if (retryCount > 1) return;
+          },
+        }}
       >
-        <Header />
-        <Main>
-          <AnimatePresence exitBeforeEnter>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 0.25, delay: prevRoute === '/' ? 0.75 : undefined } }}
-              exit={{ opacity: 0, transition: { duration: 0.15 } }}
-              key={router.route}
-            >
-              <Component {...pageProps} />
-            </motion.div>
-          </AnimatePresence>
-        </Main>
-        <Footer />
-      </motion.div>
+        <AnimatePresence>{router.pathname === '/' && <GreenSlide />}</AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 0.5, delay: 1 } }}
+          key="initialFade"
+          style={{ display: 'flex', flexDirection: 'column', height: '100vh', zIndex: 1, position: 'relative' }}
+        >
+          <Header />
+          <Main>
+            <Component {...pageProps} />
+          </Main>
+          <Footer />
+        </motion.div>
+      </SWRConfig>
     </SafeHydrate>
   );
 }
