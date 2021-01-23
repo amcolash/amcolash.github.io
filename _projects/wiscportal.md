@@ -1,6 +1,6 @@
 ---
 title: 'WiscPortal'
-data: 2014-2015
+date: 2014-2015
 section: UW SHOW (2014-2015)
 thumbnail: /assets/img/thumbnails/WiscPo.jpg
 links:

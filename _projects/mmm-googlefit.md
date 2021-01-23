@@ -1,6 +1,6 @@
 ---
 title: 'MMM-GoogleFit'
-data: 2018
+date: 2018
 section: Personal and School Projects (2014-Present)
 thumbnail: /assets/img/thumbnails/MMM-GoogleFit.jpg
 links:

@@ -33,7 +33,7 @@ export default function Post({ post }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getDataBySlug(params.slug, postsDirectory, ['title', 'date', 'slug', 'author', 'content', 'ogImage', 'coverImage']);
+  const post = getDataBySlug(params.slug, postsDirectory, ['title', 'date', 'slug', 'content']);
   const content = await markdownToHtml(post.content || '');
 
   return {

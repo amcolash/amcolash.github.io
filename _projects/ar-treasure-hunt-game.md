@@ -1,6 +1,6 @@
 ---
 title: 'AR Treasure Hunt Game'
-data: 2016
+date: 2016
 section: Personal and School Projects (2014-Present)
 thumbnail: /assets/img/thumbnails/ARTreasureHunt.jpg
 links:

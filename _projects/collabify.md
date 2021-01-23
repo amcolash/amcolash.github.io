@@ -1,6 +1,6 @@
 ---
 title: 'Collabify'
-data: 2014-2015
+date: 2014-2015
 section: Personal and School Projects (2014-Present)
 thumbnail: /assets/img/thumbnails/Collabify.jpg
 links:

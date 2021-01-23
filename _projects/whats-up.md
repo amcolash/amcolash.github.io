@@ -1,6 +1,6 @@
 ---
 title: "What's Up"
-data: 2017-2018
+date: 2017-2018
 section: Personal and School Projects (2014-Present)
 thumbnail: /assets/img/thumbnails/WhatsUp.jpg
 links:

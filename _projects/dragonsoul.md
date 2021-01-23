@@ -1,6 +1,6 @@
 ---
 title: 'DragonSoul'
-data: 2015-2016
+date: 2015-2016
 section: Perblue (2015-2018)
 thumbnail: /assets/img/thumbnails/Dragonsoul.jpg
 links:

@@ -1,0 +1,265 @@
+[
+  {
+    "name": "Disney Heroes: Battle Mode",
+    "section": "Perblue (2015-2018)",
+    "date_range": "2017-2018",
+    "thumbnail": "/assets/img/thumbnails/DisneyHeroes.jpg",
+    "links": [
+      {
+        "title": "Google Play Store",
+        "url": "https://play.google.com/store/apps/details?id=com.perblue.disneyheroes&hl=en_US"
+      },
+      {
+        "title": "Apple App Store",
+        "url": "https://apps.apple.com/us/app/disney-heroes-battle-mode/id1327925104"
+      }
+    ],
+    "images": ["/assets/img/projects/DisneyHeroes.jpg", "/assets/img/projects/DisneyHeroes2.jpg"],
+    "video": "bWLKJ_G2AZs",
+    "description": "From February 2017 through April 2018, I worked on PerBlue's next game in association with Disney - Disney Heroes: Battle Mode. To make this game a reality, we needed to build a new combat and rendering engine from the ground-up. In addition to the new systems, we also built tools for our artists so that they can build dynamic parallax environments, author visual effects, make custom paths and trails for projectiles to travel on as well as run a live version of combat with their changes in real time. This tooling provides artists with an experience similar to unity, while allowing us to continue use our game engine of choice - libgdx."
+  },
+  {
+    "name": "Portal Quest",
+    "section": "Perblue (2015-2018)",
+    "date_range": "2016-2017",
+    "thumbnail": "/assets/img/thumbnails/PortalQuest.jpg",
+    "links": [
+      {
+        "title": "Google Play Store",
+        "url": "https://play.google.com/store/apps/details?id=com.perblue.portalquest&hl=en"
+      },
+      {
+        "title": "Apple App Store",
+        "url": "https://apps.apple.com/us/app/portal-quest/id1194050611"
+      }
+    ],
+    "images": ["/assets/img/projects/PortalQuest.jpg"],
+    "video": "3SlXsszW8Bk",
+    "description": "From September 2016 through February 2017, I worked on a mobile RPG game from PerBlue called Portal Quest. I worked on hero implementations (similar to DragonSoul) and improved the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery system. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
+  },
+  {
+    "name": "DragonSoul",
+    "section": "Perblue (2015-2018)",
+    "date_range": "2015-2016",
+    "thumbnail": "/assets/img/thumbnails/Dragonsoul.jpg",
+    "links": [
+      {
+        "title": "Website",
+        "url": "http://dragonsoulgame.com/"
+      }
+    ],
+    "video": "lhneHPxP9kg",
+    "description": "From the summer of 2015 through September 2016, I worked on developing and implementing new content into the mobile role playing game - DragonSoul by PerBlue. The game focuses on collecting heroes to fight against the forces of evil. On the technical side of things, I have worked on implementing unique combat logic, content (new heroes, npcs and game modes) and developing tooling for both our art team and quality assurance team."
+  },
+  {
+    "name": "WiscPortal",
+    "section": "UW SHOW (2014-2015)",
+    "date_range": "2014-2015",
+    "thumbnail": "/assets/img/thumbnails/WiscPo.jpg",
+    "images": ["/assets/img/projects/WiscPo.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/uw-madison-show/wisc-po"
+      },
+      {
+        "title": "Live Site",
+        "url": "https://show.wisc.edu/data/charts/"
+      }
+    ],
+    "description": "During the end of the fall semester and all of spring semester, I was employed by the Survey of the Health of Wisconsin (SHOW). As a web developer, I was in charge of a new system to disseminate data for both public health officials as well as the common public. In the course of this position, I took a concept and transformed it into a fully functioning and mobile responsive HTML5 website. In addition to being responsive to different screen sizes for mobile by using Twitter Bootstrap, the page also is fully touch capable and dynamically draws charts and graphs using HighCharts."
+  },
+  {
+    "name": "Mobile App Requests",
+    "nice_name": "Mobile App Requets Webpage",
+    "section": "Liberty Mutual (2014)",
+    "date_range": "2014",
+    "thumbnail": "/assets/img/thumbnails/ETS.jpg",
+    "images": ["/assets/img/projects/ETS.jpg"],
+    "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved by various managers before actually being allowed into the app stores. This was a big upgrade from the email chains which were used prior to this."
+  },
+  {
+    "name": "Careers Website",
+    "section": "Liberty Mutual (2014)",
+    "date_range": "2014",
+    "thumbnail": "/assets/img/thumbnails/Careers.jpg",
+    "imageClasses": "border",
+    "images": ["/assets/img/projects/Careers.jpg"],
+    "links": [
+      {
+        "title": "Live Site",
+        "url": "http://www.careers.libertymutualgroup.com/"
+      }
+    ],
+    "description": "For my internship at Liberty Mutual, I worked on upgrading and maintaining the liberty mutual carrers website. This website provides basic information about potential career paths in the company. I personally worked on integrating social media into many of the areas of the website as well."
+  },
+  {
+    "name": "What's Up",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2017-2018",
+    "thumbnail": "/assets/img/thumbnails/WhatsUp.jpg",
+    "images": ["/assets/img/projects/WhatsUp.jpg", "/assets/img/projects/WhatsUp2.jpg"],
+    "imageClasses": "border",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/WhatsUp"
+      },
+      {
+        "title": "Live Site",
+        "url": "https://whatsup-346bd.firebaseapp.com"
+      }
+    ],
+    "description": "What's Up is a project that was developed association with a colleague of mine. We wanted to build a social platform to see upcoming events happening in your area. It allows you to view events from Facebook, EventBrite and Meetup in your nearby area as well as creating your own custom events. The code was written with Ionic/Angular, uses the Google Maps API and has a FireBase backend (which helps with location queries and custom events)."
+  },
+  {
+    "name": "MMM-GoogleFit",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2018",
+    "thumbnail": "/assets/img/thumbnails/MMM-GoogleFit.jpg",
+    "images": [
+      "/assets/img/projects/MMM-GoogleFit3.jpg",
+      "/assets/img/projects/MMM-GoogleFit.jpg",
+      "/assets/img/projects/MMM-GoogleFit2.jpg"
+    ],
+    "imageClasses": "border",
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/MMM-GoogleFit"
+      },
+      {
+        "title": "MagicMirror",
+        "url": "https://github.com/MichMich/MagicMirror"
+      }
+    ],
+    "description": "MMM-GoogleFit is a personal project that I made for my MagicMirror (see link for more info). I developed this module using the GoogleFit API, HighCharts, node and the MagicMirror2 framework. This module shows distance walked (colored rings) and optionally shows recent weights saved to Google Fit. My favorite part of this project is the simple authentication flow which allows a user to log into google fit without supplying any credentials in the configuration file."
+  },
+  {
+    "name": "GiffingAwesome",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2016",
+    "thumbnail": "/assets/img/thumbnails/GiffingAwesome.jpg",
+    "imageClasses": "border",
+    "images": ["/assets/img/projects/GiffingAwesome.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/GiffingAwesome"
+      },
+      {
+        "title": "Live Site",
+        "url": "https://giffingawesome.firebaseapp.com"
+      }
+    ],
+    "description": "GiffingAwesome is a simple site that allows you to keep track of your favorite GIF images. I personally love to share these animated images with friends, but it was more difficult than necessary to save and share from a library of my favorites. I had to either locally save all of the files, or keep a list of links. GiffingAwesome was a simple idea that turned into much more. I was interested in learning about the service Firebase for my next side project. I was particularly interested in catching up on my Angular skills (the last time I had used it was in 2014). The project taught me about not only Angular but also about the Ionic and Corvoda frameworks which were the stars of this project."
+  },
+  {
+    "name": "AR Treasure Hunt Game",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2016",
+    "thumbnail": "/assets/img/thumbnails/ARTreasureHunt.jpg",
+    "images": ["/assets/img/projects/ARTreasureHunt.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/AR-Treasure-Hunt"
+      },
+      {
+        "title": "Live Site",
+        "url": "https://ar-treasure-hunt.firebaseapp.com"
+      }
+    ],
+    "description": "AR Treasure Hunt was a hackaton game that I completed in about 24 hours. The game has a simple premise - solve riddles and navigate your city to find the prize. It had opportunities for monetization and sponsorship as well as the perk of being an augmented reality game. I worked with 2 other developers that mostly intrepreted the design requirements of our 2 designers. I wrote the code for the site and later one of the other developers started to implement his own unique software into my code. I wrote the game with Firebase and Ionic. A mostly functioning game is availible at the website listed above."
+  },
+  {
+    "name": "ScaleIoT",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2016",
+    "thumbnail": "/assets/img/thumbnails/ScaleIoT.jpg",
+    "images": ["/assets/img/projects/ScaleIoT.gif", "/assets/img/projects/ScaleIoT.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/ScaleIoT"
+      }
+    ],
+    "description": "ScaleIoT is another project from my large collection of IoT (Internet of Things) projects. In this project, I decided to make a smart scale that would record the weight of a user that stepped onto the scale and then display statistics on the users' weight over time on a web page. This project uses a raspberry pi and a webcam, along with a python-based OpenCV image processing component. I learned a lot about OpenCV and image processing through the course of this project and it is one of my most useful projects to date_range!"
+  },
+  {
+    "name": "IoTBuddy",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2016",
+    "thumbnail": "/assets/img/thumbnails/IoTBuddy.jpg",
+    "images": ["/assets/img/projects/IoTBuddy.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/IoT-Buddy"
+      },
+      {
+        "title": "Pebble App Store",
+        "url": "https://apps.getpebble.com/en_US/application/568f550d05f633c62800003d"
+      }
+    ],
+    "description": "For a gift, I had recieved an internet enabled outlet strip. Not knowing quite what to do with it, I decided to make a simple application for my Pebble Time smartwatch. This smartwatch app then interfaced with the popular web service <a href='http://ifttt.com'>IFTTT</a>. This service lets you link different other web services, such as Twitter, Facebook, Gmail or in my case a smart outlet strip together. IoTBuddy allows users to trigger an IFTTT event from anywhere in the world without needing to use a phone or web browser."
+  },
+  {
+    "name": "Pebblify",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2015",
+    "thumbnail": "/assets/img/thumbnails/Pebblify.jpg",
+    "images": ["/assets/img/projects/Pebblify.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/pebblify"
+      },
+      {
+        "title": "Project Submission",
+        "url": "http://devpost.com/software/pebblify"
+      }
+    ],
+    "description": "In the spring of 2015, I signed up to take part in UW Madison's first ever hackathon entitled MadHacks. This hackathon was very open and had many different types of possibilities available. Since Pebble was a sponsor at the event and had some staff on hand, our group decided to make a Pebble watch application that could control Spotify and display album artwork on your wrist from another device. This app, while not polished and not completely finished was a proof of concept and helped to open the road for me to continue developing other Pebble app projects. Our group won the \"Best Pebble Hack\" award, which made the experience even more rewarding!"
+  },
+  {
+    "name": "Collabify",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2014-2015",
+    "thumbnail": "/assets/img/thumbnails/Collabify.jpg",
+    "images": ["/assets/img/projects/Collabify.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/Collabify"
+      },
+      {
+        "title": "Project Presentation",
+        "url": "/assets/documents/Collabify_Presentation.pdf"
+      },
+      {
+        "title": "Project Manual",
+        "url": "/assets/documents/Collabify_Manual.pdf"
+      }
+    ],
+    "description": "For my last semester of school at the University of Wisconsin Madison, I enrolled in a software engineering course. In this class, we worked in groups and had the task of developing a new piece of software. Our team decided on making an Android app with a Python backend that would allow for the creation of dynamic Spotify playlists that could be collaborated and voted upon - the ultimate party playlist. In addition to a lot of code from Github, there is also a link to some of the documentation and presentation that we have from the final project."
+  },
+  {
+    "name": "iParkMe",
+    "section": "Personal and School Projects (2014-Present)",
+    "date_range": "2014-2015",
+    "thumbnail": "/assets/img/thumbnails/iParkMe.jpg",
+    "images": ["/assets/img/projects/iParkMe.jpg"],
+    "links": [
+      {
+        "title": "Github",
+        "url": "https://github.com/amcolash/iParkMe"
+      },
+      {
+        "title": "Live Site",
+        "url": "http://amcolash-iparkme.appspot.com/"
+      }
+    ],
+    "description": "This simple web app happened after I got lost in a large parking lot for almost 15 minutes. I decided that I needed a better way to keep track of where I parked - whether it was in my car, or on my bike. In a few hours, I whipped up this simple site which will show you where you parked."
+  }
+]

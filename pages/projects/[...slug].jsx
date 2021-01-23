@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ArrowLeftCircle } from 'react-feather';
 
-import { getDataBySlug, getAllData, projectsDirectory, getAllData } from '../../lib/api';
+import { getDataBySlug, getAllData, projectsDirectory } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
 
 import { Button } from '../../components/Button';
@@ -33,7 +33,7 @@ export default function Project({ project }) {
 }
 
 export async function getStaticProps({ params }) {
-  const project = getDataBySlug(params.slug, ['title', 'date', 'slug', 'author', 'content', 'ogImage', 'coverImage'], projectsDirectory);
+  const project = getDataBySlug(params.slug, projectsDirectory, ['title', 'date', 'slug', 'content']);
   const content = await markdownToHtml(project.content || '');
 
   return {

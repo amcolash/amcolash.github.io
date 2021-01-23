@@ -1,6 +1,6 @@
 ---
 title: 'Pebblify'
-data: 2015
+date: 2015
 section: Personal and School Projects (2014-Present)
 thumbnail: /assets/img/thumbnails/Pebblify.jpg
 links:

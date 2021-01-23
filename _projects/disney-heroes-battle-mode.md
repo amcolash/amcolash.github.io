@@ -1,6 +1,6 @@
 ---
 title: 'Disney Heroes: Battle Mode'
-data: 2017-2018
+date: 2017-2018
 section: Perblue (2015-2018)
 thumbnail: /assets/img/thumbnails/DisneyHeroes.jpg
 links:

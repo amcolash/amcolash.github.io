@@ -1,6 +1,6 @@
 ---
 title: 'Portal Quest'
-data: 2016-2017
+date: 2016-2017
 section: Perblue (2015-2018)
 thumbnail: /assets/img/thumbnails/PortalQuest.jpg
 links:
