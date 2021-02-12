@@ -20,7 +20,7 @@ export function Main(props) {
         exit={{ opacity: 0, transition: { duration: prevRoute === '/' ? 0 : 0.15 } }}
         key={router.route}
         className="main"
-        style={{ flex: 1, padding: OuterPadding }}
+        style={{ flex: 1, padding: OuterPadding, width: `calc(100% - ${OuterPadding * 2})` }}
       >
         {title && <h1 style={{ textTransform: 'capitalize', marginTop: '-1rem', marginBottom: '3rem' }}>{title}</h1>}
         {props.children}
