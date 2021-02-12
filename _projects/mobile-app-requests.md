@@ -4,7 +4,7 @@ date: 2014
 section: Liberty Mutual (2014)
 thumbnail: /assets/img/thumbnails/ETS.jpg
 images:
-- /assets/img/projects/ETS.jpg
+- /assets/img/projects/ETS.png
 
 ---
 

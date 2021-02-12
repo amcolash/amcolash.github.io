@@ -2,12 +2,13 @@ import ErrorPage from 'next/error';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ArrowLeftCircle } from 'react-feather';
+import ReactPlayer from 'react-player/youtube';
 
 import { getDataBySlug, getAllData, projectsDirectory } from '../../lib/api';
+import { OuterPadding } from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
 
 import { Button } from '../../components/Button';
-import { OuterPadding } from '../../lib/constants';
 
 export default function Project({ project }) {
   const router = useRouter();
@@ -15,25 +16,56 @@ export default function Project({ project }) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <>
-      <Head>
-        <title>{project.title}</title>
-      </Head>
-
-      <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center' }}>
-        <ArrowLeftCircle style={{ marginRight: 10 }} />
-        Back to Blog
+    <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center', marginRight: 'auto' }}>
+        <ArrowLeftCircle style={{ marginRight: `calc(${OuterPadding} / 2)` }} />
+        Back to Projects
       </Button>
 
-      <h1>{project.title}</h1>
-      <h4 style={{ marginBottom: `calc(${OuterPadding} * 3)` }}>{new Date(project.date).toLocaleString()}</h4>
-      {router.isFallback ? 'Loading…' : <div dangerouslySetInnerHTML={{ __html: project.content }} />}
-    </>
+      <div style={{ width: '100%', maxWidth: 960 }}>
+        <Head>
+          <title>{project.title}</title>
+        </Head>
+
+        <h1>{project.title}</h1>
+
+        {project.links && (
+          <div style={{ disply: 'flex', flexDirection: 'column', marginBottom: '1rem' }}>
+            {project.links.map((l) => (
+              <div>
+                <a href={l.url}>{l.title}</a>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex' }}>
+            {project.images &&
+              project.images.map((i) => (
+                <div>
+                  <a href={i} target="_blank">
+                    <img src={i} style={{ maxHeight: '30rem', maxWidth: '30rem', margin: '1rem' }} />
+                  </a>
+                </div>
+              ))}
+            <div>
+              {project.video && <ReactPlayer width="100%" height="16.8rem" url={`https://www.youtube.com/watch?v=${project.video}`} />}
+            </div>
+          </div>
+          {router.isFallback ? (
+            'Loading…'
+          ) : (
+            <div style={{ marginTop: '1rem', minWidth: '20rem' }} dangerouslySetInnerHTML={{ __html: project.content }} />
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 
 export async function getStaticProps({ params }) {
-  const project = getDataBySlug(params.slug, projectsDirectory, ['title', 'date', 'slug', 'content']);
+  const project = getDataBySlug(params.slug, projectsDirectory, ['title', 'slug', 'content', 'links', 'images', 'video']);
   const content = await markdownToHtml(project.content || '');
 
   return {

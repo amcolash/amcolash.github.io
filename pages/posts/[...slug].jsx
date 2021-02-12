@@ -15,20 +15,22 @@ export default function Post({ post }) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <>
-      <Head>
-        <title>{post.title}</title>
-      </Head>
-
-      <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center' }}>
-        <ArrowLeftCircle style={{ marginRight: 10 }} />
+    <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center', marginRight: 'auto' }}>
+        <ArrowLeftCircle style={{ marginRight: `calc(${OuterPadding} / 2)` }} />
         Back to Blog
       </Button>
 
-      <h1>{post.title}</h1>
-      <h4 style={{ marginBottom: `calc(${OuterPadding} * 3)` }}>{new Date(post.date).toLocaleString()}</h4>
-      {router.isFallback ? 'Loading…' : <div dangerouslySetInnerHTML={{ __html: post.content }} />}
-    </>
+      <div style={{ width: '100%', maxWidth: 960 }}>
+        <Head>
+          <title>{post.title}</title>
+        </Head>
+
+        <h1 style={{ marginBottom: `calc(${OuterPadding} / 2)` }}>{post.title}</h1>
+        <h4 style={{ marginTop: 0, marginBottom: `calc(${OuterPadding} * 2)` }}>{new Date(post.date).toLocaleString()}</h4>
+        {router.isFallback ? 'Loading…' : <div dangerouslySetInnerHTML={{ __html: post.content }} />}
+      </div>
+    </div>
   );
 }
 

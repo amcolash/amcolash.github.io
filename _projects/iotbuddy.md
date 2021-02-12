@@ -11,7 +11,7 @@ links:
   title: Pebble App Store
   url: https://apps.getpebble.com/en_US/application/568f550d05f633c62800003d
 images:
-- /assets/img/projects/IoTBuddy.jpg
+- /assets/img/projects/IoTBuddy.png
 
 ---
 

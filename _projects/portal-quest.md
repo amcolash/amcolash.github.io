@@ -11,7 +11,7 @@ links:
   title: Apple App Store
   url: https://apps.apple.com/us/app/portal-quest/id1194050611
 images:
-- /assets/img/projects/PortalQuest.jpg
+- /assets/img/projects/PortalQuest.png
 
 video: 3SlXsszW8Bk
 ---

@@ -22,7 +22,7 @@ export function Main(props) {
         className="main"
         style={{ flex: 1, padding: OuterPadding }}
       >
-        <h1 style={{ textTransform: 'capitalize', marginTop: '-1rem', marginBottom: '3rem' }}>{title}</h1>
+        {title && <h1 style={{ textTransform: 'capitalize', marginTop: '-1rem', marginBottom: '3rem' }}>{title}</h1>}
         {props.children}
       </motion.div>
     </AnimatePresence>

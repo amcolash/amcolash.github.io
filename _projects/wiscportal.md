@@ -11,7 +11,7 @@ links:
   title: Live Site
   url: https://show.wisc.edu/data/charts/
 images:
-- /assets/img/projects/WiscPo.jpg
+- /assets/img/projects/WiscPo.png
 
 ---
 

@@ -33,7 +33,7 @@
         "url": "https://apps.apple.com/us/app/portal-quest/id1194050611"
       }
     ],
-    "images": ["/assets/img/projects/PortalQuest.jpg"],
+    "images": ["/assets/img/projects/PortalQuest.png"],
     "video": "3SlXsszW8Bk",
     "description": "From September 2016 through February 2017, I worked on a mobile RPG game from PerBlue called Portal Quest. I worked on hero implementations (similar to DragonSoul) and improved the game engine itself. This includes adding in new functionality into the particle system engine, combat engine and external content delivery system. Additionally, I also worked on creating tooling for VFX artists to preview their effects on heroes in a 1:1 replica of real combat in-game."
   },
@@ -56,7 +56,7 @@
     "section": "UW SHOW (2014-2015)",
     "date_range": "2014-2015",
     "thumbnail": "/assets/img/thumbnails/WiscPo.jpg",
-    "images": ["/assets/img/projects/WiscPo.jpg"],
+    "images": ["/assets/img/projects/WiscPo.png"],
     "links": [
       {
         "title": "Github",
@@ -75,7 +75,7 @@
     "section": "Liberty Mutual (2014)",
     "date_range": "2014",
     "thumbnail": "/assets/img/thumbnails/ETS.jpg",
-    "images": ["/assets/img/projects/ETS.jpg"],
+    "images": ["/assets/img/projects/ETS.png"],
     "description": "For my internship at Liberty Mutual, I worked on a mobile responsive website/webapp that acted as a pre-approval for the various app stores. It allowed for adding content to a ticket, which would then be approved by various managers before actually being allowed into the app stores. This was a big upgrade from the email chains which were used prior to this."
   },
   {
@@ -191,7 +191,7 @@
     "section": "Personal and School Projects (2014-Present)",
     "date_range": "2016",
     "thumbnail": "/assets/img/thumbnails/IoTBuddy.jpg",
-    "images": ["/assets/img/projects/IoTBuddy.jpg"],
+    "images": ["/assets/img/projects/IoTBuddy.png"],
     "links": [
       {
         "title": "Github",
