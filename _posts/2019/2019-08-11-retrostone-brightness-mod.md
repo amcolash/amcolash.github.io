@@ -1,6 +1,26 @@
 ---
 title: 'RetroStone Brightness Mod'
 date: 2019-08-11T08:24:19.000Z
+
+images:
+  - _target:
+    url: '/assets/img/blog/retrostone-brightness/IMG_5369.jpg'
+    alt: 'Final Result of Brightness vs. Darkness'
+  - _target:
+    url: '/assets/img/blog/retrostone-brightness/IMG_20190810_230641.jpg'
+    alt: 'Potentiometer Rig'
+  - _target:
+    url: '/assets/img/blog/retrostone-brightness/IMG_20190810_231450.jpg'
+    alt: 'Attached Potentiometer Rig'
+  - _target:
+    url: '/assets/img/blog/retrostone-brightness/IMG_20190811_002407.jpg'
+    alt: 'Step Up Converter'
+  - _target:
+    url: '/assets/img/blog/retrostone-brightness/IMG_20190811_183824.jpg'
+    alt: 'LCD Modifications'
+  - _target:
+    url: '/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg'
+    alt: 'Final Brightness Mod'
 ---
 
 ## The Problem
@@ -16,19 +36,3 @@ After some research, one person on sudomod came up with a [clever solution](http
 To combat this I needed to add in my own little step up converter. I used [this one](https://www.amazon.com/gp/product/B01N9ZVXTR) due to its small form factor. I hooked up the VIN + GND to some of the power holes on the retrostone. Attaching the 10k potentiometer in line with this step up converter and the output to the backlight did the trick! Now the hard part was getting everything to fit inside, since there is not a ton of space inside the shell for oddly shaped things.
 
 I stuck the pot on a piece of perf board that I cut to fit near the battery. Using some hot glue and magic, I got it to stay in place and cut an opening for the dial to fit through. Additionally, I glued the step up converter directly above the L1/L2/R1/R2 button board. Below are a bunch of photos that I took that may help you do something similar! Hopefully this can help and inspire some other makers to follow suit.
-
-## Images
-
-<div id="grid" class="image-grid"></div>
-
-<script type="text/javascript">
-  {% include js/imagegrid.js %}
-  window.onload = initGrid('grid', [
-    '/assets/img/blog/retrostone-brightness/IMG_5369.jpg', 'Final Result of Brightness vs. Darkness',
-    '/assets/img/blog/retrostone-brightness/IMG_20190810_230641.jpg', 'Potentiometer Rig',
-    '/assets/img/blog/retrostone-brightness/IMG_20190810_231450.jpg', 'Attached Potentiometer Rig',
-    '/assets/img/blog/retrostone-brightness/IMG_20190811_002407.jpg', 'Step Up Converter',
-    '/assets/img/blog/retrostone-brightness/IMG_20190811_183824.jpg', 'LCD Modifications',
-    '/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg', 'Final Brightness Mod',
-  ]);
-</script>

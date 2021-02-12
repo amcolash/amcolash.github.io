@@ -9,7 +9,7 @@ Note: This post mentions the paid service flowkey, it is not sponsored in any wa
 
 Recently, I got a piano to play as a new hobby. It has been great learning to play and having a new creative outlet for when I need it. Since it had been about 15 years since I last played, I needed a way to learn. Luckily, I found a site/app called [flowkey](https://flowkey.com/).
 
-![flowkey](/assets/img/blog/flowkey/flowkey.jpg)
+![flowkey](/assets/img/blog/flowkey/flowkey.png)
 
 Flowkey works by connecting a computer or mobile device via MIDI or listening with a microphone. As you play the different notes, it moves along the sheet music. Until you correctly play the right notes, it will not continue moving along the music. If you are learning piano, definitely take a look at it - it's quite reasonable. There are a whole bunch of songs to learn at your own pace and they also have some lessons as well.
 

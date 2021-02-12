@@ -8,6 +8,11 @@ import markdownToHtml from '../../lib/markdownToHtml';
 
 import { Button } from '../../components/Button';
 import { OuterPadding } from '../../lib/constants';
+import { cssRule } from 'typestyle';
+
+cssRule('.post img', {
+  maxWidth: '100%',
+});
 
 export default function Post({ post }) {
   const router = useRouter();
@@ -16,12 +21,12 @@ export default function Post({ post }) {
   }
   return (
     <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center', marginRight: 'auto' }}>
+      <Button onClick={() => router.push('/blog')} style={{ display: 'inline-flex', alignItems: 'center', marginRight: 'auto' }}>
         <ArrowLeftCircle style={{ marginRight: `calc(${OuterPadding} / 2)` }} />
         Back to Blog
       </Button>
 
-      <div style={{ width: '100%', maxWidth: 960 }}>
+      <div className="post" style={{ width: '100%', maxWidth: 960, overflow: 'hidden' }}>
         <Head>
           <title>{post.title}</title>
         </Head>

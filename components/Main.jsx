@@ -8,7 +8,7 @@ export function Main(props) {
   const router = useRouter();
   const prevRoute = usePrevious(router.pathname);
   const title =
-    router.pathname !== '/' && router.pathname.indexOf('/posts') === -1 && router.pathname.indexOf('/projects') === -1
+    router.pathname !== '/' && router.pathname.indexOf('/blog') === -1 && router.pathname.indexOf('/projects') === -1
       ? router.route.replace('/', '')
       : '';
 

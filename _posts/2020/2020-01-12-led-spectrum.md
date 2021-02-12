@@ -1,6 +1,26 @@
 ---
 title: 'LED Spectrum Clock'
 date: 2020-01-12T19:42:10.000Z
+
+images:
+  - _target:
+    url: '/assets/img/blog/led-spectrum/IMG_20191101_224504_01.jpg'
+    alt: 'ESP8266 w/ header connection for LED Matrix'
+  - _target:
+    url: '/assets/img/blog/led-spectrum/IMG_20191109_203726.jpg'
+    alt: 'Audio amplifier module and back of board'
+  - _target:
+    url: '/assets/img/blog/led-spectrum/MVIMG_20191103_111655_01.jpg'
+    alt: 'Testing on breadboard with oscilloscope'
+  - _target:
+    url: '/assets/img/blog/led-spectrum/IMG_20200223_223522.jpg'
+    alt: 'Final module with ATTiny85 and ambient light sensor'
+  - _target:
+    url: '/assets/img/blog/led-spectrum/IMG_20200223_223530.jpg'
+    alt: 'Ambient light sensor'
+  - _target:
+    url: '/assets/img/blog/led-spectrum/MVIMG_20200218_091417.jpg'
+    alt: 'Final Spectrum with Spotify song display'
 ---
 
 I was looking around on [aliexpress](https://aliexpress.com/) recently for interesting parts and saw a ton of cheap LED matrix displays selling for very cheap. I quickly found a very cheap 64x32 LED matrix for $13 + $10 shipping for a total of \$23 - a great deal for 2048 bright rgb leds. Since I have really been into the ESP8266 board lately, I chose to use one of them in my project so it could grab info from the internet if needed. My living room has been in need of a clock as it is, so I decided to make a nice clock display for the room.
@@ -45,19 +65,3 @@ There was a ton of software that I wrote for this project to make things talk to
 The hardest parts of this project were getting a fast FFT (visualization) of the audio data. At first, I was using the ESP with the built-in ADC to record audio data. Unfortunately, this was slow and caused a lot of flickers on the display as it blocked the processor as the sampling happened. I decided to change my approach and offload that work to the ATTiny85. This made things much quicker and only required the ESP to poll over I2C for data as necessary and freed up resources to keep the display smooth and flicker-free. I based a lot of my code off of the work done Emmanuel Odunlade in his OLED ATTiny85 spectrum analyzer [project](https://www.electronics-lab.com/project/32-band-audio-spectrum-analyzer-using-oled-display-and-attiny85/).
 
 Getting Spotify data to the ESP was a bit tricky. To only update when needed and to reduce the amount of work that the ESP needed to do (to reduce flicker), I needed to offload this to a different device. I then poll the [Spotify Connect Web API](https://developer.spotify.com/documentation/web-api/guides/using-connect-web-api/) on my personal server and when I notice a song change, I POST that data to the ESP. The ESP then has a small function to scroll the text across the screen, but never has to deal with OAUTH2 or polling.
-
-## Images
-
-<div id="grid" class="image-grid"></div>
-
-<script type="text/javascript">
-  {% include js/imagegrid.js %}
-  window.onload = initGrid('grid', [
-    '/assets/img/blog/led-spectrum/IMG_20191101_224504_01.jpg', 'ESP8266 w/ header connection for LED Matrix',
-    '/assets/img/blog/led-spectrum/IMG_20191109_203726.jpg', 'Audio amplifier module and back of board',
-    '/assets/img/blog/led-spectrum/MVIMG_20191103_111655_01.jpg', 'Testing on breadboard with oscilloscope',
-    '/assets/img/blog/led-spectrum/IMG_20200223_223522.jpg', 'Final module with ATTiny85 and ambient light sensor',
-    '/assets/img/blog/led-spectrum/IMG_20200223_223530.jpg', 'Ambient light sensor',
-    '/assets/img/blog/led-spectrum/MVIMG_20200218_091417.jpg', 'Final Spectrum with Spotify song display',
-  ]);
-</script>

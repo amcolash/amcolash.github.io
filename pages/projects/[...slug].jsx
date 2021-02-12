@@ -2,13 +2,13 @@ import ErrorPage from 'next/error';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ArrowLeftCircle } from 'react-feather';
-import ReactPlayer from 'react-player/youtube';
 
 import { getDataBySlug, getAllData, projectsDirectory } from '../../lib/api';
 import { OuterPadding } from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
 
 import { Button } from '../../components/Button';
+import { Media } from '../../components/Media';
 
 export default function Project({ project }) {
   const router = useRouter();
@@ -17,12 +17,12 @@ export default function Project({ project }) {
   }
   return (
     <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Button onClick={() => router.back()} style={{ display: 'inline-flex', alignItems: 'center', marginRight: 'auto' }}>
+      <Button onClick={() => router.push('/projects')} style={{ display: 'inline-flex', alignItems: 'center', marginRight: 'auto' }}>
         <ArrowLeftCircle style={{ marginRight: `calc(${OuterPadding} / 2)` }} />
         Back to Projects
       </Button>
 
-      <div style={{ width: '100%', maxWidth: 960 }}>
+      <div className="project" style={{ width: '100%', maxWidth: 960, overflow: 'hidden' }}>
         <Head>
           <title>{project.title}</title>
         </Head>
@@ -40,19 +40,7 @@ export default function Project({ project }) {
         )}
 
         <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-          <div style={{ display: 'flex' }}>
-            {project.images &&
-              project.images.map((i) => (
-                <div>
-                  <a href={i} target="_blank">
-                    <img src={i} style={{ maxHeight: '30rem', maxWidth: '30rem', margin: '1rem' }} />
-                  </a>
-                </div>
-              ))}
-            <div>
-              {project.video && <ReactPlayer width="100%" height="16.8rem" url={`https://www.youtube.com/watch?v=${project.video}`} />}
-            </div>
-          </div>
+          <Media images={project.images} video={project.video} />
           {router.isFallback ? (
             'Loading…'
           ) : (
