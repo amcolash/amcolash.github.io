@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { cssRaw } from 'typestyle';
 import useDarkMode from 'use-dark-mode';
 
 import { Colors, OuterPadding } from '../lib/constants';
@@ -6,6 +7,10 @@ import { DarkMode } from './DarkMode';
 
 import { Link } from './Link';
 import { NavMenu } from './NavMenu';
+
+cssRaw(`@media print {
+  header { display: none; }
+}`);
 
 export function Header() {
   const router = useRouter();

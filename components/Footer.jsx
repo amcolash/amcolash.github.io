@@ -1,7 +1,12 @@
 import { GitHub, Linkedin, Mail } from 'react-feather';
+import { cssRaw } from 'typestyle';
 
 import { Link } from '../components/Link';
 import { OuterPadding } from '../lib/constants';
+
+cssRaw(`@media print {
+  footer { display: none !important; }
+}`);
 
 export function Footer() {
   return (

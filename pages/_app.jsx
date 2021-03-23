@@ -2,8 +2,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { SWRConfig } from 'swr';
 
-import { useEffect, useRef } from 'react';
-
 import { GreenSlide } from '../components/GreenSlide';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
