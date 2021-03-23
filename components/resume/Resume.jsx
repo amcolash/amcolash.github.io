@@ -23,6 +23,18 @@ cssRule('@media print', {
   },
 });
 
+cssRule('@media screen and (max-width: 800px)', {
+  '.resume .main, .resume .header': {
+    flexWrap: 'wrap',
+  },
+  '.resume .left, .resume .right': {
+    width: '100% !important',
+  },
+  '.resume .right': {
+    paddingLeft: '0 !important',
+  },
+});
+
 export function Resume(props) {
   return (
     <div
