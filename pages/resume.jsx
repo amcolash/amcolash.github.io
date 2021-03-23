@@ -1,3 +1,6 @@
-export default function Resume() {
-  return 'This is my resume';
+import resumeData from '../lib/resume.json';
+import { Resume } from '../components/resume/Resume';
+
+export default function ResumePage() {
+  return <Resume {...resumeData} />;
 }

@@ -1,0 +1,201 @@
+{
+  "basics": {
+    "name": "Andrew McOlash",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "amcolash@gmail.com",
+    "phone": "(414) 745-2657",
+    "website": "https://amcolash.com",
+    "summary": "Curious, creative and passionate software engineer. Seeking to leverage skills by solving problems with code.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Seattle",
+      "countryCode": "US",
+      "region": "Washington"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "amcolash",
+        "url": "https://github.com/amcolash"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Tableau Software",
+      "position": "Senior Software Engineer",
+      "website": "https://tableau.com",
+      "startDate": "2018-05-21",
+      "endDate": "",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "PerBlue",
+      "position": "Software Engineer II",
+      "website": "https://perblue.com",
+      "startDate": "2015-06-01",
+      "endDate": "2018-04-23",
+      "summary": "",
+      "highlights": [
+        "Collaborate with a small team to develop software infrastructure for the mobile games \"Disney Heroes: Battle Mode\", \"Portal Quest\" and \"DragonSoul\"",
+        "Implement new content, combat logic, mechanics, asset management system and rendering pipline",
+        "Create tooling for both the art and quality assurance teams to improve their workflows",
+        "Refactor large sections of the codebase to make development of new characters and mechanics easier and faster"
+      ]
+    },
+    {
+      "company": "Survey of the Heath of Wisconsin (SHOW)",
+      "position": "Web Developer",
+      "website": "http://www.med.wisc.edu/show/survey-of-the-health-of-wisconsin/35828",
+      "startDate": "2014-11-01",
+      "endDate": "2015-05-01",
+      "summary": "Drafting and development for a new website/webapp that displays health statistics and public health information. This portal provides a simple way to quickly see public health information collected from SHOW.",
+      "highlights": [
+        "Developed a public health statistics web portal from scratch",
+        "Used web frameworks including Handlebars and HighCharts to deliver fast, reusable and mobile responsive pages",
+        "Provided quick iterations of the website to tailor specifically to feature requests"
+      ]
+    },
+    {
+      "company": "Liberty Mutual",
+      "position": "Web Development Internship",
+      "website": "http://lmig.com",
+      "startDate": "2014-05-01",
+      "endDate": "2014-08-01",
+      "summary": "Development of mobile responsive internal web applications. Worked on creating a simplified process for engaging the Mobile team using external APIs.",
+      "highlights": [
+        "Developed mobile responsive internal web applications",
+        "Utilized web technologies including EmberJS, Angular, NodeJS and Grunt",
+        "Closely worked with MVC patterns and architeched internal APIs"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "TEALS",
+      "position": "High School Coding Instructor",
+      "website": "https://www.microsoft.com/en-us/teals",
+      "startDate": "2019-08-01",
+      "endDate": "2020-03-01",
+      "summary": "",
+      "highlights": [
+        "Teach high school students about coding in 2 different sections: block based coding and python",
+        "Co-taught with 4 other volunteers for 1st semester and a portion of the 2nd semester before COVID-19"
+      ]
+    },
+    {
+      "organization": "Literacy Network",
+      "position": "Math Tutoring",
+      "website": "http://www.litnetwork.org/",
+      "startDate": "2017-08-01",
+      "endDate": "2018-04-01",
+      "summary": "",
+      "highlights": [
+        "Provide 1:1 tutoring sessions for GED students in the subjects of algebra, geometry and statistics",
+        "Personalize individual learning plans for each student",
+        "Utilize different teaching techniques based on student needs"
+      ]
+    },
+    {
+      "organization": "Kids Get IT",
+      "position": "Teaching Assistant",
+      "website": "",
+      "startDate": "2016-05-01",
+      "endDate": "2016-11-01",
+      "summary": "",
+      "highlights": [
+        "Instruct and mentor children to teach them about technology",
+        "Assist children in making music with SonicPi - an open souce live coding music synthesizer",
+        "Help kids learn and write real code with the service Bitsbox"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UW Madison",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2011-09-01",
+      "endDate": "2015-05-01",
+      "gpa": "3.1",
+      "courses": [],
+      "highlights": [
+        "Favorite Class: Computer Graphics",
+        "Computer Engineering Project: Built an Android Spotify app for gatherings with a Reddit-like voting system for choosing upcoming songs"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "What's Up",
+      "startDate": "2017-11-01",
+      "endDate": "2018-01-01",
+      "url": "https://github.com/amcolash/WhatsUp",
+      "highlights": [
+        "Leverage multiple event apis including Facebook, EventBrite and Meetup to aggregate information about upcoming local events",
+        "Implemented using Ionic (Angluar) and Firebase to provide real time updates to new events"
+      ]
+    },
+    {
+      "title": "Giffing Awesome",
+      "startDate": "2016-04-01",
+      "endDate": "2017-06-01",
+      "url": "https://github.com/amcolash/GiffingAwesome",
+      "highlights": [
+        "Mobile web app that allows users to search image sites, save, and share their favorite GIFs",
+        "Devloped with the Ionic Framework and Firebase, and the APIs from Giphy, GifMe and Riffsy"
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": ["HTML", "CSS", "Javascript", "Typescript", "React", "Webpack", "NodeJS"]
+    },
+    {
+      "name": "Sotware Development",
+      "level": "",
+      "keywords": ["Java", "Python", "C", "C++", "Bash", "CI / CD Pipelines"]
+    }
+  ],
+  "languages": [],
+  "interests": [
+    {
+      "name": "Software Development Experience",
+      "keywords": ["Video Games", "Web Applications", "Mobile Applications", "Microcontrollers", "Wearable Technology"]
+    },
+    {
+      "name": "Hobbies",
+      "keywords": ["Biking", "Cooking", "Learning", "Running", "Photography", "Video Games"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Colin Juillard",
+      "phone": "608-448-6074",
+      "email": "colin.juillard@gmail.com",
+      "company": "PerBlue",
+      "title": "Game Engine Team Lead"
+    },
+    {
+      "name": "Caleb Strobel",
+      "phone": "414-702-5767",
+      "email": "calebstrob@gmail.com",
+      "company": "PerBlue",
+      "title": "QA Engineer"
+    },
+    {
+      "name": "Michael Radloff",
+      "phone": "608-408-0373",
+      "email": "mradloff@gmail.com",
+      "company": "Badgerland Counseling",
+      "title": "Private Business Owner"
+    }
+  ]
+}

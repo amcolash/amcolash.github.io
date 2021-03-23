@@ -7,7 +7,7 @@ cssRule('.dark-mode a', {
   color: Colors.White,
 });
 
-cssRule('.light-mode a', {
+cssRule('.light-mode a, .dark-mode .resume a', {
   textShadow: `1px 1px 1px ${Colors.White}`,
   color: Colors.Black,
 });
