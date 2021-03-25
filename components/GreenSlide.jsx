@@ -69,13 +69,25 @@ export function GreenSlide() {
           }}
         />
         <div className={tags}>
-          <motion.h3 initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.5 } }}>
+          <motion.h3
+            initial={{ y: -30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.5 } }}
+            exit={{ opacity: 0, transition: { duration: 0.25 } }}
+          >
             Developer
           </motion.h3>
-          <motion.h3 initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.75 } }}>
+          <motion.h3
+            initial={{ y: -30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.75 } }}
+            exit={{ opacity: 0, transition: { duration: 0.25 } }}
+          >
             Maker
           </motion.h3>
-          <motion.h3 initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 2 } }}>
+          <motion.h3
+            initial={{ y: -30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 2 } }}
+            exit={{ opacity: 0, transition: { duration: 0.25 } }}
+          >
             Hacker
           </motion.h3>
         </div>
