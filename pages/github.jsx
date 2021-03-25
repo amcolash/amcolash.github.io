@@ -4,14 +4,15 @@ import useSWR from 'swr';
 
 import { Colors, OuterPadding } from '../lib/constants';
 import useDarkMode from 'use-dark-mode';
+import { formatDistance } from 'date-fns';
 
 function Repo(props) {
   return (
-    <div style={{ marginBottom: `calc(${OuterPadding} / 1.25)` }} key={props.data.id}>
-      <div style={{ display: 'flex' }}>
+    <div style={{ marginBottom: `calc(${OuterPadding} / 1.25)` }}>
+      <div style={{ display: 'flex', alignItems: 'flex-end' }}>
         <a href={props.data.html_url}>{props.data.name}</a>
         {props.data.fork && <GitBranch alt="fork" style={{ marginLeft: 8 }} />}
-        <span style={{ marginLeft: 8 }}>(Last Push: {new Date(props.data.pushed_at).toLocaleString()})</span>
+        <span style={{ marginLeft: 8, fontSize: '0.7em' }}>(Pushed {formatDistance(new Date(props.data.pushed_at), new Date())} ago)</span>
       </div>
       <div>{props.data.description}</div>
     </div>
@@ -29,7 +30,7 @@ function Repos({ page }) {
     ) : null;
   if (!data) return page === 1 ? <div>Loading...</div> : null;
 
-  return data.map((r) => <Repo data={r} />);
+  return data.map((r) => <Repo data={r} key={r.id} />);
 }
 
 function RepoHeader() {
