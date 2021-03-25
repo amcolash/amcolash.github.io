@@ -1,7 +1,22 @@
 import { motion } from 'framer-motion';
+import { media, style } from 'typestyle';
 import useDarkMode from 'use-dark-mode';
 
 import { Colors } from '../lib/constants';
+
+const tags = style(
+  {
+    position: 'absolute',
+
+    $nest: {
+      h3: {
+        margin: '0 0 8px',
+      },
+    },
+  },
+  media({ maxHeight: 600 }, { marginLeft: 'calc(min(50vw, 50vh, 300px) + 200px)' }),
+  media({ minHeight: 601 }, { marginTop: 'calc(min(50vw, 50vh, 300px) + 170px)' })
+);
 
 export function GreenSlide() {
   const darkMode = useDarkMode();
@@ -29,6 +44,7 @@ export function GreenSlide() {
           width: '100vw',
           height: '100vh',
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
           pointerEvents: 'none',
@@ -48,8 +64,21 @@ export function GreenSlide() {
             borderLeftColor: borderColor,
             borderBottomColor: Colors.Green,
             borderRightColor: Colors.Green,
+            maxHeight: '50vh',
+            maxWidth: '50vw',
           }}
         />
+        <div className={tags}>
+          <motion.h3 initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.5 } }}>
+            Developer
+          </motion.h3>
+          <motion.h3 initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.75 } }}>
+            Maker
+          </motion.h3>
+          <motion.h3 initial={{ y: -30, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 2 } }}>
+            Hacker
+          </motion.h3>
+        </div>
       </div>
     </div>
   );
