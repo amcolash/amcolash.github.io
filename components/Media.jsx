@@ -34,8 +34,21 @@ export function Media(props) {
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
       {props.video && (
-        <div style={{ display: 'flex', justifyContent: 'center', flex: '0 0 100%', margin: '1rem' }}>
-          <ReactPlayer width="100%" style={{ maxWidth: '25rem' }} url={`https://www.youtube.com/watch?v=${props.video}`} />
+        <div
+          style={{
+            display: 'flex',
+            flex: '0 0 100%',
+            margin: '1rem',
+            position: 'relative',
+            paddingTop: '56.25%',
+          }}
+        >
+          <ReactPlayer
+            width="100%"
+            height="100%"
+            style={{ position: 'absolute', top: 0, left: 0 }}
+            url={`https://www.youtube.com/watch?v=${props.video}`}
+          />
         </div>
       )}
       {props.images &&

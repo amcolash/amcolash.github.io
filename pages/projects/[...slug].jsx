@@ -32,7 +32,7 @@ export default function Project({ project }) {
         {project.links && (
           <div style={{ disply: 'flex', flexDirection: 'column', marginBottom: '1rem' }}>
             {project.links.map((l) => (
-              <div>
+              <div key={l.url}>
                 <a href={l.url}>{l.title}</a>
               </div>
             ))}

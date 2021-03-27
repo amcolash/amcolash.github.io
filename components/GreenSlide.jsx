@@ -12,6 +12,9 @@ const tags = style(
       h3: {
         margin: '0 0 8px',
       },
+      'h3:last-child': {
+        margin: 0,
+      },
     },
   },
   media({ maxHeight: 600 }, { marginLeft: 'calc(min(50vw, 50vh, 300px) + 200px)' }),
@@ -71,21 +74,21 @@ export function GreenSlide() {
         <div className={tags}>
           <motion.h3
             initial={{ y: -30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.5 } }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.35 } }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
           >
             Developer
           </motion.h3>
           <motion.h3
             initial={{ y: -30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.75 } }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.6 } }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
           >
             Maker
           </motion.h3>
           <motion.h3
             initial={{ y: -30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 2 } }}
+            animate={{ y: 0, opacity: 1, transition: { duration: 0.35, delay: 1.85 } }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
           >
             Hacker
