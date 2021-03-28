@@ -29,7 +29,7 @@ export default function Post({ post }) {
         </Head>
 
         <h1 style={{ marginBottom: `calc(${OuterPadding} / 2)` }}>{post.title}</h1>
-        <h4 style={{ marginTop: 0, marginBottom: `calc(${OuterPadding} * 2)` }}>{new Date(post.date).toLocaleString()}</h4>
+        <h4 style={{ marginTop: 0, marginBottom: `calc(${OuterPadding} * 2)` }}>{new Date(post.date).toLocaleDateString()}</h4>
         {router.isFallback ? 'Loading…' : <div dangerouslySetInnerHTML={{ __html: post.content }} />}
         <Media images={post.images} video={post.video} square />
       </div>

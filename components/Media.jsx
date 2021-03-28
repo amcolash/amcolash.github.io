@@ -1,4 +1,5 @@
 import ReactPlayer from 'react-player';
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import { cssRule } from 'typestyle';
 
 import { Colors } from '../lib/constants';
@@ -51,12 +52,28 @@ export function Media(props) {
           />
         </div>
       )}
-      {props.images &&
-        props.images.map((i) => (
-          <a href={i.url || i} target="_blank" className="mediaImg" key={i.url || i}>
-            <img src={i.url || i} alt={i.alt} className={props.square ? 'square' : ''} />
-          </a>
-        ))}
+      {props.images && (
+        <SimpleReactLightbox>
+          <SRLWrapper
+            options={{
+              buttons: {
+                showAutoplayButton: false,
+                showDownloadButton: false,
+                showFullscreenButton: false,
+                showThumbnailsButton: false,
+              },
+            }}
+          >
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {props.images.map((i) => (
+                <a href={i.url || i} className="mediaImg" key={i.url || i}>
+                  <img src={i.url || i} alt={i.alt} className={props.square ? 'square' : ''} />
+                </a>
+              ))}
+            </div>
+          </SRLWrapper>
+        </SimpleReactLightbox>
+      )}
     </div>
   );
 }

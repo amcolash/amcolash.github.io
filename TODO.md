@@ -1,7 +1,7 @@
 # TODO
 
-- [ ] Responsive video players
-- [ ] Lightbox Image Viewer
+- [x] Responsive video players
+- [x] Lightbox Image Viewer
 - [ ] Replace in Repo
 - [x] Render resume w/ react
 - [ ] Github CI

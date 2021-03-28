@@ -19,6 +19,7 @@
     "react-player": "^2.9.0",
     "remark": "13.0.0",
     "remark-html": "13.0.1",
+    "simple-react-lightbox": "^3.6.4",
     "swr": "^0.5.4",
     "typestyle": "^2.1.0",
     "use-dark-mode": "^2.3.1"

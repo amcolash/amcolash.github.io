@@ -21,7 +21,7 @@ export default function Blog({ allPosts }) {
         <div style={{ marginBottom: `calc(${OuterPadding} / 1.75)` }}>
           <Link href={'/blog/' + p.slug}>{p.title}</Link>
           <br />
-          <span style={{ fontSize: 16 }}>{new Date(p.date).toLocaleString()}</span>
+          <span style={{ fontSize: 16 }}>{new Date(p.date).toLocaleDateString()}</span>
         </div>
       </Fragment>
     );
