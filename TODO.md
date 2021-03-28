@@ -2,10 +2,11 @@
 
 - [x] Responsive video players
 - [x] Lightbox Image Viewer
-- [ ] Replace in Repo
+- [x] Replace in Repo
 - [x] Render resume w/ react
-- [ ] Github CI
+- [x] Github CI
 - [ ] Blog posts
   - [ ] KoToR GUI Editor
   - [ ] Flowkey Scraper v2
   - [ ] Rewrite
+  - [ ] Spotify Playlist Generator
