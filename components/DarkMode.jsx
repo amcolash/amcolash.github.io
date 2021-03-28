@@ -1,11 +1,10 @@
 import { Moon, Sun } from 'react-feather';
 import useDarkMode from 'use-dark-mode';
 
-import { OuterPadding } from '../lib/constants';
 import { Button } from './Button';
 
 export function DarkMode(props) {
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode(true);
 
   return (
     <div className="darkMode" style={{ ...props.style }}>
