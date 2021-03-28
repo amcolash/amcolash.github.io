@@ -4,22 +4,22 @@ date: 2020-01-12T19:42:10.000Z
 
 images:
   - _target:
-    url: '/assets/img/blog/led-spectrum/IMG_20191101_224504_01.jpg'
+    url: '/assets/img/blog/2020/led-spectrum/IMG_20191101_224504_01.jpg'
     alt: 'ESP8266 w/ header connection for LED Matrix'
   - _target:
-    url: '/assets/img/blog/led-spectrum/IMG_20191109_203726.jpg'
+    url: '/assets/img/blog/2020/led-spectrum/IMG_20191109_203726.jpg'
     alt: 'Audio amplifier module and back of board'
   - _target:
-    url: '/assets/img/blog/led-spectrum/MVIMG_20191103_111655_01.jpg'
+    url: '/assets/img/blog/2020/led-spectrum/MVIMG_20191103_111655_01.jpg'
     alt: 'Testing on breadboard with oscilloscope'
   - _target:
-    url: '/assets/img/blog/led-spectrum/IMG_20200223_223522.jpg'
+    url: '/assets/img/blog/2020/led-spectrum/IMG_20200223_223522.jpg'
     alt: 'Final module with ATTiny85 and ambient light sensor'
   - _target:
-    url: '/assets/img/blog/led-spectrum/IMG_20200223_223530.jpg'
+    url: '/assets/img/blog/2020/led-spectrum/IMG_20200223_223530.jpg'
     alt: 'Ambient light sensor'
   - _target:
-    url: '/assets/img/blog/led-spectrum/MVIMG_20200218_091417.jpg'
+    url: '/assets/img/blog/2020/led-spectrum/MVIMG_20200218_091417.jpg'
     alt: 'Final Spectrum with Spotify song display'
 ---
 

@@ -4,76 +4,76 @@ date: 2020-02-21T04:53:39.000Z
 
 images:
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200106_172702.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200106_172702.jpg'
     alt: 'Starting Materials (Before I got more tools)'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200108_194404.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200108_194404.jpg'
     alt: 'Patterns on Foam'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200112_154531.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200112_154531.jpg'
     alt: 'DIY Router'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200112_154256.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200112_154256.jpg'
     alt: '"Routed" Foam Pieces (45° cuts)'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200117_212336_904.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200117_212336_904.jpg'
     alt: 'Helmet Assembly'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200118_211230.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200118_211230.jpg'
     alt: 'Back Detail Panel'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200118_215456.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200118_215456.jpg'
     alt: 'Back Strip and Sanded Caulk'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200118_215500.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200118_215500.jpg'
     alt: 'Side Details'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200118_215507.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200118_215507.jpg'
     alt: 'Front of Helmet after Caulk'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200121_195217.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200121_195217.jpg'
     alt: 'Fixing Details on Helmet Strip'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200121_195225.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200121_195225.jpg'
     alt: 'Drying Mechanism'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200121_211956.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200121_211956.jpg'
     alt: 'First Coat of Primer'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200126_115317.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200126_115317.jpg'
     alt: 'Filling with Automotive Body Putty'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200125_013352.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200125_013352.jpg'
     alt: 'Epoxy Coat #2'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200129_094017.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200129_094017.jpg'
     alt: 'Lots of Sanding Later...'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200211_000210.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200211_000210.jpg'
     alt: 'Base Black Acrylic Coat'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200211_181722.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200211_181722.jpg'
     alt: 'Metallic Silver Acrylic  Dry Brush'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200211_235933.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200211_235933.jpg'
     alt: 'Rubbing in Graphite Powder'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200211_234426.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200211_234426.jpg'
     alt: 'After Graphite Powder'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200219_190441.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200219_190441.jpg'
     alt: 'Getting the New Airbrush Set Up'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200215_202636.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200215_202636.jpg'
     alt: 'Mandalorian Crest from Airbrush Stencil'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200215_194805.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200215_194805.jpg'
     alt: 'Back of Helmet with Weathering'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200215_194753.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200215_194753.jpg'
     alt: 'Green Highlights on Front'
   - _target:
-    url: '/assets/img/blog/mandalorian-helmet/IMG_20200218_225737.jpg'
+    url: '/assets/img/blog/2020/mandalorian-helmet/IMG_20200218_225737.jpg'
     alt: 'Final Helmet!'
 
 video: 4piuQQDu9xY

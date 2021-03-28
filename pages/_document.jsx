@@ -21,6 +21,7 @@ class MyDocument extends Document {
             .dark-mode :focus { outline: 3px solid ${Colors.White}; }
             * { transition: background 0.25s; }
             a { transition: color 0.25s; }
+            .post img, .project img { max-width: 100%; }
           `}</style>
         </Head>
         <body style={{ margin: 0, fontFamily: 'Rubik, sans-serif', fontSize: '1.25rem' }}>

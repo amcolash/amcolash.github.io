@@ -4,22 +4,22 @@ date: 2019-08-11T08:24:19.000Z
 
 images:
   - _target:
-    url: '/assets/img/blog/retrostone-brightness/IMG_5369.jpg'
+    url: '/assets/img/blog/2019/retrostone-brightness/IMG_5369.jpg'
     alt: 'Final Result of Brightness vs. Darkness'
   - _target:
-    url: '/assets/img/blog/retrostone-brightness/IMG_20190810_230641.jpg'
+    url: '/assets/img/blog/2019/retrostone-brightness/IMG_20190810_230641.jpg'
     alt: 'Potentiometer Rig'
   - _target:
-    url: '/assets/img/blog/retrostone-brightness/IMG_20190810_231450.jpg'
+    url: '/assets/img/blog/2019/retrostone-brightness/IMG_20190810_231450.jpg'
     alt: 'Attached Potentiometer Rig'
   - _target:
-    url: '/assets/img/blog/retrostone-brightness/IMG_20190811_002407.jpg'
+    url: '/assets/img/blog/2019/retrostone-brightness/IMG_20190811_002407.jpg'
     alt: 'Step Up Converter'
   - _target:
-    url: '/assets/img/blog/retrostone-brightness/IMG_20190811_183824.jpg'
+    url: '/assets/img/blog/2019/retrostone-brightness/IMG_20190811_183824.jpg'
     alt: 'LCD Modifications'
   - _target:
-    url: '/assets/img/blog/retrostone-brightness/IMG_20190811_185759.jpg'
+    url: '/assets/img/blog/2019/retrostone-brightness/IMG_20190811_185759.jpg'
     alt: 'Final Brightness Mod'
 ---
 
