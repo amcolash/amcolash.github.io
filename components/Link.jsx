@@ -1,5 +1,6 @@
 import NextLink from 'next/link';
 import { cssRule, style } from 'typestyle';
+
 import { Colors, interactiveStyle } from '../lib/constants';
 
 cssRule('.dark-mode a', {

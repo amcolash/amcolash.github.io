@@ -1,12 +1,12 @@
-import useDarkMode from 'use-dark-mode';
+import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import { Wrapper, Button, Menu, closeMenu } from 'react-aria-menubutton';
 import { Menu as Burger } from 'react-feather';
 import { cssRule, style } from 'typestyle';
+import useDarkMode from 'use-dark-mode';
 
-import { Colors, interactiveStyle, OuterPadding } from '../lib/constants';
 import { Link } from './Link';
-import { useRouter } from 'next/router';
+import { Colors, interactiveStyle, OuterPadding } from '../lib/constants';
 
 const menuButtonClass = style(interactiveStyle);
 

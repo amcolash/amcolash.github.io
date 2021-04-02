@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
-import { Link } from '../components/Link';
 
+import { Link } from '../components/Link';
 import { getAllData, postsDirectory } from '../lib/api';
 import { OuterPadding } from '../lib/constants';
 

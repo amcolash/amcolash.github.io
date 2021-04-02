@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { style } from 'typestyle';
-import { Link } from '../components/Link';
 
+import { Link } from '../components/Link';
 import { getAllData, projectsDirectory } from '../lib/api';
 import { OuterPadding } from '../lib/constants';
 

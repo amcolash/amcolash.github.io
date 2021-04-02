@@ -1,9 +1,9 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { cssRule } from 'typestyle';
-import { OuterPadding } from '../lib/constants';
 
 import { usePrevious } from './util';
+import { OuterPadding } from '../lib/constants';
 
 cssRule('@media print', {
   body: { background: 'none !important', color: 'black !important', textShadow: 'none !important' },

@@ -2,11 +2,11 @@ import { useRouter } from 'next/router';
 import { cssRule } from 'typestyle';
 import useDarkMode from 'use-dark-mode';
 
-import { Colors, OuterPadding } from '../lib/constants';
 import { DarkMode } from './DarkMode';
-
 import { Link } from './Link';
 import { NavMenu } from './NavMenu';
+
+import { Colors, OuterPadding } from '../lib/constants';
 
 cssRule('@media print', {
   header: { display: 'none' },

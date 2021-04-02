@@ -1,10 +1,10 @@
-import GitHubCalendar from 'react-github-calendar';
+import { formatDistance } from 'date-fns';
 import { Frown, GitBranch } from 'react-feather';
+import GitHubCalendar from 'react-github-calendar';
 import useSWR from 'swr';
+import useDarkMode from 'use-dark-mode';
 
 import { Colors, OuterPadding } from '../lib/constants';
-import useDarkMode from 'use-dark-mode';
-import { formatDistance } from 'date-fns';
 
 function Repo(props) {
   return (

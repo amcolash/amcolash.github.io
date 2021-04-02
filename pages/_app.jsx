@@ -2,9 +2,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { SWRConfig } from 'swr';
 
+import { Footer } from '../components/Footer';
 import { GreenSlide } from '../components/GreenSlide';
 import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
 import { Main } from '../components/Main';
 
 // Disable SSR (so I can use state easily): https://dev.to/apkoponen/how-to-disable-server-side-rendering-ssr-in-next-js-1563

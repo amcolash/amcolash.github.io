@@ -2,14 +2,13 @@ import ErrorPage from 'next/error';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ArrowLeftCircle } from 'react-feather';
-import { cssRule } from 'typestyle';
-
-import { getDataBySlug, getAllData, postsDirectory } from '../../lib/api';
-import markdownToHtml from '../../lib/markdownToHtml';
-import { OuterPadding } from '../../lib/constants';
 
 import { Button } from '../../components/Button';
 import { Media } from '../../components/Media';
+
+import { getDataBySlug, getAllData, postsDirectory } from '../../lib/api';
+import { OuterPadding } from '../../lib/constants';
+import markdownToHtml from '../../lib/markdownToHtml';
 
 export default function Post({ post }) {
   const router = useRouter();

@@ -3,12 +3,12 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ArrowLeftCircle } from 'react-feather';
 
+import { Button } from '../../components/Button';
+import { Media } from '../../components/Media';
+
 import { getDataBySlug, getAllData, projectsDirectory } from '../../lib/api';
 import { OuterPadding } from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
-
-import { Button } from '../../components/Button';
-import { Media } from '../../components/Media';
 
 export default function Project({ project }) {
   const router = useRouter();

@@ -1,4 +1,5 @@
 import { style } from 'typestyle';
+
 import { interactiveStyle } from '../lib/constants';
 
 const buttonClass = style(interactiveStyle);
