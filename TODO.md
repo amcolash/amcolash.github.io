@@ -6,7 +6,7 @@
 - [x] Render resume w/ react
 - [x] Github CI
 - [ ] Blog posts
-  - [ ] KoToR GUI Editor
+  - [x] KoToR GUI Editor
   - [ ] Flowkey Scraper v2
-  - [ ] Rewrite
+  - [ ] Rewrite Website
   - [ ] Spotify Playlist Generator
