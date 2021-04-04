@@ -1,4 +1,4 @@
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/youtube';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import { cssRule } from 'typestyle';
 
