@@ -38,7 +38,7 @@ class MyDocument extends Document {
           `}</style>
         </Head>
         <body style={{ margin: 0, fontFamily: 'Rubik, sans-serif', fontSize: '1.25rem' }}>
-          <script src="noflash.js" />
+          <script src="/noflash.js" />
           <Main />
           <NextScript />
         </body>
