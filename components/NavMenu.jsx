@@ -9,8 +9,9 @@ import { Link } from './Link';
 import { Colors, interactiveStyle, OuterPadding } from '../lib/constants';
 
 const menuButtonClass = style(interactiveStyle);
+const menuButtonId = 'MyMenuButton';
 
-cssRule('#MyMenuButton-menu li', {
+cssRule(`#${menuButtonId}-menu li`, {
   margin: 4,
 });
 
@@ -19,7 +20,7 @@ export const NavMenu = () => {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = () => closeMenu('MyMenuButton');
+    const handleRouteChange = () => closeMenu(menuButtonId);
 
     router.events.on('routeChangeStart', handleRouteChange);
 
@@ -28,12 +29,12 @@ export const NavMenu = () => {
   }, []);
 
   return (
-    <Wrapper id="MyMenuButton" style={{ position: 'relative' }}>
-      <Button id="MyMenuButton-button" className={`${menuButtonClass}`} style={{ display: 'flex', color: Colors.Black }}>
+    <Wrapper id={menuButtonId} style={{ position: 'relative' }}>
+      <Button id={`${menuButtonId}-button`} className={menuButtonClass} style={{ display: 'flex', color: Colors.Black }}>
         <Burger />
       </Button>
       <Menu
-        id="MyMenuButton-menu"
+        id={`${menuButtonId}-menu`}
         style={{
           position: 'absolute',
           top: '100%',

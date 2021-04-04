@@ -1,7 +1,7 @@
 import { formatDistance } from 'date-fns';
 import { Frown, GitBranch } from 'react-feather';
 import GitHubCalendar from 'react-github-calendar';
-import useSWR from 'swr';
+import useSWR, { SWRConfig } from 'swr';
 import useDarkMode from 'use-dark-mode';
 
 import { Colors, OuterPadding } from '../lib/constants';
@@ -42,18 +42,27 @@ export default function Github() {
   const darkMode = useDarkMode();
 
   return (
-    <div>
-      <h3>My Contributions</h3>
-      <GitHubCalendar
-        username="amcolash"
-        theme={{ text: darkMode.value ? Colors.White : Colors.Black, grade0: darkMode.value ? '#555' : '#ddd' }}
-        style={{ marginBottom: 40 }}
-      />
+    <SWRConfig
+      value={{
+        fetcher: (resource, init) => fetch(resource, init).then((res) => res.json()),
+        onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+          if (retryCount > 1) return;
+        },
+      }}
+    >
+      <div>
+        <h3>My Contributions</h3>
+        <GitHubCalendar
+          username="amcolash"
+          theme={{ text: darkMode.value ? Colors.White : Colors.Black, grade0: darkMode.value ? '#555' : '#ddd' }}
+          style={{ marginBottom: 40 }}
+        />
 
-      {/* Get all repositories. Since I am not at 200 total yet, this will be more than sufficient for now */}
-      <RepoHeader />
-      <Repos page={1} />
-      <Repos page={2} />
-    </div>
+        {/* Get all repositories. Since I am not at 200 total yet, this will be more than sufficient for now */}
+        <RepoHeader />
+        <Repos page={1} />
+        <Repos page={2} />
+      </div>
+    </SWRConfig>
   );
 }
