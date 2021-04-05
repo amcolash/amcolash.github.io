@@ -1,6 +1,10 @@
-import ReactPlayer from 'react-player/youtube';
-import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+// import ReactPlayer from 'react-player/youtube';
+import { lazy, Suspense, useState } from 'react';
+import Lightbox from 'react-awesome-lightbox';
+import 'react-awesome-lightbox/build/style.css';
 import { cssRule } from 'typestyle';
+
+const ReactPlayer = lazy(() => import('react-player/youtube'));
 
 import { Colors } from '../lib/constants';
 
@@ -32,6 +36,9 @@ cssRule('.mediaImg', {
 });
 
 export function Media(props) {
+  const [visible, setVisible] = useState(false);
+  const [startIndex, setStartIndex] = useState(0);
+
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
       {props.video && (
@@ -44,35 +51,46 @@ export function Media(props) {
             paddingTop: '56.25%',
           }}
         >
-          <ReactPlayer
-            width="100%"
-            height="100%"
-            style={{ position: 'absolute', top: 0, left: 0 }}
-            url={`https://www.youtube.com/watch?v=${props.video}`}
-          />
+          <Suspense fallback={<div>Loading...</div>}>
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              style={{ position: 'absolute', top: 0, left: 0 }}
+              url={`https://www.youtube.com/watch?v=${props.video}`}
+            />
+          </Suspense>
         </div>
       )}
       {props.images && (
-        <SimpleReactLightbox>
-          <SRLWrapper
-            options={{
-              buttons: {
-                showAutoplayButton: false,
-                showDownloadButton: false,
-                showFullscreenButton: false,
-                showThumbnailsButton: false,
-              },
-            }}
-          >
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {props.images.map((i) => (
-                <a href={i.url || i} className="mediaImg" key={i.url || i}>
-                  <img src={i.url || i} alt={i.alt} className={props.square ? 'square' : ''} />
-                </a>
-              ))}
-            </div>
-          </SRLWrapper>
-        </SimpleReactLightbox>
+        <>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {props.images.map((i, index) => (
+              <div className="mediaImg" key={i.url || i} tabIndex="0">
+                <img
+                  src={i.url || i}
+                  alt={i.alt}
+                  onClick={() => {
+                    setStartIndex(index);
+                    setVisible(true);
+                  }}
+                  className={props.square ? 'square' : ''}
+                />
+              </div>
+            ))}
+          </div>
+          {visible && (
+            <Lightbox
+              images={props.images.map((i) => {
+                return { url: i.url || i, title: i.alt };
+              })}
+              startIndex={startIndex}
+              onClose={() => setVisible(false)}
+              allowZoom={false}
+              allowRotate={false}
+              allowReset={false}
+            />
+          )}
+        </>
       )}
     </div>
   );
