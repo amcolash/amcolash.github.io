@@ -8,7 +8,7 @@ export function DarkMode(props) {
 
   return (
     <div className="darkMode" style={{ ...props.style }}>
-      <Button style={{ display: 'flex' }} onClick={darkMode.toggle}>
+      <Button onClick={darkMode.toggle} title="Dark Mode" style={{ display: 'flex' }}>
         {darkMode.value && <Sun />}
         {!darkMode.value && <Moon />}
       </Button>

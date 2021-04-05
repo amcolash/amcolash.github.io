@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import Tooltip from 'the-only-react-tooltip';
 import { cssRule, style } from 'typestyle';
 
 import { Colors, interactiveStyle } from '../lib/constants';
@@ -20,7 +21,7 @@ cssRule('.dark-mode a:hover, .light-mode a:hover', {
 const buttonLinkClass = style({ ...interactiveStyle });
 
 export function Link(props) {
-  return props.external ? (
+  const inner = props.external ? (
     <a
       className={`link ${buttonLinkClass} abutton`}
       style={{ ...props.style, display: 'flex', color: Colors.Black }}
@@ -34,4 +35,6 @@ export function Link(props) {
       <a style={{ ...props.style }}>{props.children}</a>
     </NextLink>
   );
+
+  return props.title ? <Tooltip body={props.title}>{inner}</Tooltip> : inner;
 }

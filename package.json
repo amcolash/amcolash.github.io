@@ -20,6 +20,7 @@
     "react-player": "^2.9.0",
     "simple-react-lightbox": "^3.6.4",
     "swr": "^0.5.4",
+    "the-only-react-tooltip": "^2.0.2",
     "typestyle": "^2.1.0",
     "use-dark-mode": "^2.3.1"
   },

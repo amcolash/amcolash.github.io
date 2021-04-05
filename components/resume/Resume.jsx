@@ -42,7 +42,7 @@ export function Resume(props) {
       style={{ fontFamily: "'Open Sans', Arial, sans-serif", display: 'flex', flexDirection: 'column', alignItems: 'center' }}
     >
       <div className="buttons" style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', maxWidth: 1080, marginBottom: 20 }}>
-        <Button onClick={() => window.print()}>
+        <Button onClick={() => window.print()} title="Print Resume">
           <Printer />
         </Button>
       </div>

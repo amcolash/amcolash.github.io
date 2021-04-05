@@ -37,7 +37,7 @@ class MyDocument extends Document {
             .post img, .project img { max-width: 100%; }
           `}</style>
         </Head>
-        <body style={{ margin: 0, fontFamily: 'Rubik, sans-serif', fontSize: '1.25rem' }}>
+        <body style={{ margin: 0, fontFamily: 'Rubik, sans-serif', fontSize: '1.25rem', overflowX: 'hidden' }}>
           <script src="/noflash.js" />
           <Main />
           <NextScript />
