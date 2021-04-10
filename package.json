@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build && next export",
+    "postbuild": "next-sitemap && cp public/robots.txt public/sitemap.xml out/",
     "start": "next start",
     "analyze": "ANALYZE=true npm run build"
   },
@@ -12,6 +13,7 @@
     "framer-motion": "^4.0.3",
     "gray-matter": "4.0.2",
     "next": "latest",
+    "next-sitemap": "^1.6.25",
     "preact": "^10.5.13",
     "react-aria-menubutton": "^7.0.1",
     "react-awesome-lightbox": "^1.8.0",

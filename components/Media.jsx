@@ -1,4 +1,3 @@
-// import ReactPlayer from 'react-player/youtube';
 import { lazy, Suspense, useState } from 'react';
 import Lightbox from 'react-awesome-lightbox';
 import 'react-awesome-lightbox/build/style.css';
@@ -26,11 +25,15 @@ cssRule('.mediaImg', {
     img: {
       maxWidth: '100%',
       maxHeight: '100%',
+      objectFit: 'cover',
+      width: '100%',
+      height: '100%',
     },
 
     'img.square': {
       maxWidth: '150%',
       maxHeight: '150%',
+      objectFit: 'cover',
     },
   },
 });
